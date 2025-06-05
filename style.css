@@ -183,7 +183,7 @@ nav ul li a:hover {
 
 .btn:hover {
   background-color: transparent;
-  color: black;
+  color: white;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
