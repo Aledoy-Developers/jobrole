@@ -7,10 +7,10 @@
                 </button>
                 <nav>
                     <ul id="navMenu">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#speakers">Speakers</a></li>
-                        <li><a href="#agenda">Agenda</a></li>
-                        <li><a href="#awards">Awards</a></li>
+                        <li><a href="about.php">About</a></li>
+                        <li><a href="speaker.php">Speakers</a></li>
+                        <li><a href="agenda.php">Agenda</a></li>
+                        <!-- <li><a href="award.php">Awards</a></li> -->
                         <li><a href="register.php">Register</a></li>
                     </ul>
                 </nav>
