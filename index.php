@@ -32,7 +32,7 @@
                         <h1>Unlocking Africa's Future</h1>
                         <p>Innovation, Talent & Vision in a Changing World</p>
                         <p>Be part of a future-forward gathering where ideas, talent, and technology collide to shape what's next.</p>
-                        <a href="#agenda" class="btn">Explore Full Agenda</a>
+                        <a href="agenda.php" class="btn">Explore Full Agenda</a>
                     </div>
                 </div>
                 
@@ -41,7 +41,7 @@
                     <div class="carousel-content">
                         <h1>🎤 Dynamic Speakers. Powerful Conversations.</h1>
                         <p>From startups to enterprises, meet Africa's top thinkers, doers, and builders.</p>
-                        <a href="#speakers" class="btn">Meet the Speakers</a>
+                        <a href="speaker.php" class="btn">Meet the Speakers</a>
                     </div>
                 </div>
                 
@@ -107,16 +107,6 @@
     <?php include('footer.php'); ?>
 
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navMenu = document.getElementById('navMenu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-            mobileMenuBtn.innerHTML = navMenu.classList.contains('show') ? 
-                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
-        
         // Carousel Functionality
         const carouselItems = document.querySelectorAll('.carousel-item');
         const prevBtn = document.getElementById('prevSlide');
@@ -185,30 +175,6 @@
         });
         
         carousel.addEventListener('mouseleave', startAutoPlay);
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    if (navMenu.classList.contains('show')) {
-                        navMenu.classList.remove('show');
-                        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-                    }
-                }
-            });
-        });
     </script>
 </body>
 </html>

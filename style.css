@@ -32,7 +32,7 @@ body {
   padding: 0 20px;
 }
 
-/* Header Styles */
+/* Header */
 header {
   background-color: white;
   color: white;
@@ -83,12 +83,12 @@ nav ul li a:hover {
   display: none;
   background: none;
   border: none;
-  color: white;
+  color: var(--secondary); 
   font-size: 24px;
   cursor: pointer;
+  z-index: 1001; 
 }
 
-/* Hero Carousel Styles */
 .hero {
   position: relative;
   height: 100vh;
@@ -207,7 +207,6 @@ nav ul li a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Carousel Navigation */
 .carousel-control {
   position: absolute;
   top: 50%;
@@ -379,7 +378,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   margin-right: 10px;
-  color: white;
+  color: white !important;
   text-decoration: none;
   transition: all 0.3s;
 }
@@ -402,7 +401,6 @@ footer {
     padding-left: 100px;
 }
 
-/* Minimal Form Styles */
 .form {
     max-width: 600px;
     margin: 40px auto;
@@ -731,9 +729,6 @@ footer {
   transform: translateY(-3px);
 }
 
-/* ======================
- KEYNOTE SECTION
- ====================== */
 .keynote-section {
   background-color: var(--secondary);
   color: white;
@@ -805,9 +800,7 @@ footer {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* ======================
- TRACK SELECTION
- ====================== */
+/*  */
 .track-selection {
   background-color: var(--secondary);
   padding: 30px 0;
@@ -839,9 +832,7 @@ footer {
   color: var(--dark);
 }
 
-/* ======================
- AGENDA TIMELINE
- ====================== */
+/*  */
 .agenda-section {
   padding: 80px 0;
   background-color: white;
@@ -963,7 +954,11 @@ footer {
   color: #666;
 }
 
-/* Responsive adjustments */
+.agenda-day .time-slot {
+  scroll-margin-top: 200px;
+}
+
+
 @media (max-width: 768px) {
     .form {
         padding: 25px 20px;
@@ -975,7 +970,6 @@ footer {
     }
 }
 
-/* Responsive Styles */
 @media (max-width: 992px) {
   .carousel h1 {
     font-size: 2.8rem;
@@ -993,10 +987,12 @@ footer {
     top: 70px;
     left: 0;
     width: 100%;
-    background-color: var(--secondary);
+    background-color: white;
     flex-direction: column;
     padding: 20px 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    
   }
 
   nav ul.show {
@@ -1006,13 +1002,19 @@ footer {
   nav ul li {
     margin: 0;
     text-align: center;
+    padding: 15px 0;
+  }
+
+  nav ul li a {
+    color: var(--dark);
     padding: 10px 0;
+    display: block;
   }
 
   .mobile-menu-btn {
     display: block;
-    
-  margin-left: 200px;
+    color: var(--dark);
+    margin-left: 50px ;
   }
 
   .carousel h1 {

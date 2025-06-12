@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About Us - Next Frontier 2025</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <?php include('header.php'); ?>
 
-
+    <!-- Hero Section -->
     <section class="about-hero">
         <div class="container">
             <div class="about-hero-content">
@@ -29,24 +30,27 @@
             </div>
             
             <div class="about-grid">
+                <!-- Our Story -->
                 <div class="about-card">
-                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Conference Audience">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1469&q=80" alt="Conference Audience">
                     <div class="about-card-content">
                         <h3>Our Story</h3>
                         <p>Founded in 2020, the Next Frontier Conference was born from a need to connect Africa's brightest minds and boldest innovators. What began as a small gathering has grown into the continent's premier platform for business and career transformation.</p>
                     </div>
                 </div>
-                
+
+                <!-- Our Impact -->
                 <div class="about-card">
-                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Networking at Conference">
+                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1469&q=80" alt="Networking at Conference">
                     <div class="about-card-content">
                         <h3>Our Impact</h3>
                         <p>With over 5,000 attendees across our events, we've facilitated partnerships that have launched 200+ startups, created 3,000+ jobs, and attracted $50M+ in investment to African businesses.</p>
                     </div>
                 </div>
-                
+
+                <!-- Our Community -->
                 <div class="about-card">
-                    <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Awards Ceremony">
+                    <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?auto=format&fit=crop&w=1470&q=80" alt="Awards Ceremony">
                     <div class="about-card-content">
                         <h3>Our Community</h3>
                         <p>Join a growing network of 15,000+ professionals, entrepreneurs, and innovators who are shaping Africa's economic future through collaboration and knowledge sharing.</p>
@@ -75,25 +79,22 @@
             
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80" alt="Amina Johnson">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=761&q=80" alt="Amina Johnson">
                     <h3>Amina Johnson</h3>
                     <p>Founder & CEO</p>
                 </div>
-                
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Kwame Okafor">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=687&q=80" alt="Kwame Okafor">
                     <h3>Kwame Okafor</h3>
                     <p>Conference Director</p>
                 </div>
-                
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Ngozi Adebayo">
+                    <img src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?auto=format&fit=crop&w=1470&q=80" alt="Ngozi Adebayo">
                     <h3>Ngozi Adebayo</h3>
                     <p>Partnerships Lead</p>
                 </div>
-                
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Tunde Williams">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=687&q=80" alt="Tunde Williams">
                     <h3>Tunde Williams</h3>
                     <p>Program Director</p>
                 </div>
@@ -111,42 +112,5 @@
     </section>
 
     <?php include('footer.php'); ?>
-
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navMenu = document.getElementById('navMenu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-            mobileMenuBtn.innerHTML = navMenu.classList.contains('show') ? 
-                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    if (navMenu.classList.contains('show')) {
-                        navMenu.classList.remove('show');
-                        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-                    }
-                }
-            });
-        });
-    </script>
-
 </body>
 </html>
