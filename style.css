@@ -885,9 +885,14 @@ footer {
   position: absolute;
   left: 0;
   top: 0;
-  width: 80px;
+  width: 70px;
   font-weight: 600;
   color: var(--accent);
+}
+
+.about-swap{
+  display: flex;
+  gap: 50px;
 }
 
 .session {

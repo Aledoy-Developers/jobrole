@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <?php include('header.php'); ?>
 
@@ -25,10 +27,10 @@
     <section class="about-section">
         <div class="container">
             <div class="section-title">
-                <h2>Our Conference</h2>
+                <h2>About The Next Frontier Conference</h2>
                 <p>The Next Frontier Conference is more than an event - it's a movement to unlock Africa's potential</p>
             </div>
-            
+
             <div class="about-grid">
                 <!-- Our Story -->
                 <div class="about-card">
@@ -59,6 +61,39 @@
             </div>
         </div>
     </section>
+<!-- 
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About The Next Frontier 2025</h2>
+                <p>Igniting Potential, Fueling Growth across Africa</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who Should Attend?</h3>
+                    <p>
+                    <ul>
+                        <li>- Founders & Startup Teams</li>
+                        <li>- SME Owners & Leaders</li>
+                        <li>- Career Professionals & Jobseekers</li>
+                        <li>- Investors, and Ecosystem Builders</li>
+                    </ul>
+                    <strong>This is more than a conference, it’s a launchpad for your next big move.</strong>
+                    </p>
+                    <a href="register.php" class="" style="padding: 7px;">Register Now</a>
+                    <a href="register.php" class="" style="padding: 7px;">Become a Sponsor</a>
+                    <a href="register.php" class="" style="padding: 7px;">Become a Partner</a>
+                    <a href="agenda.php" class="" style="padding: 7px;">View Agenda</a>
+                </div>
+
+                <div class="about-image">
+                    <img src="images/images.jpg">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
 
     <!-- Mission Section -->
     <section class="mission">
@@ -76,7 +111,7 @@
                 <h2>Meet The Team</h2>
                 <p>The passionate individuals driving the Next Frontier vision forward</p>
             </div>
-            
+
             <div class="team-grid">
                 <div class="team-member">
                     <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=761&q=80" alt="Amina Johnson">
@@ -113,4 +148,5 @@
 
     <?php include('footer.php'); ?>
 </body>
+
 </html>

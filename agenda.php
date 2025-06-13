@@ -45,18 +45,18 @@
         <div class="container agenda-container">
             <!-- Day 1 -->
             <div class="agenda-day">
-                <div class="day-header">
+                <!-- <div class="day-header">
                     <h2>Day 1: September 20, 2025</h2>
-                </div>
+                </div> -->
 
                 <!-- Session 1 -->
                 <div class="time-slot" data-tracks="all networking" id="networking-day1">
-                    <div class="time">08:00 AM</div>
+                    <div class="time">9:00 – 10:00 AM</div>
                     <div class="session">
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Networking</span>
-                                <h3 class="session-title">Registration & Breakfast</h3>
+                                <h3 class="session-title">Arrival, Registration & Breakfast Lounge</h3>
                             </div>
                         </div>
                         <p class="session-description">Arrive, check-in, and enjoy breakfast while networking with
@@ -67,12 +67,12 @@
 
                 <!-- Session 2 -->
                 <div class="time-slot" data-tracks="all" id="alltrack">
-                    <div class="time">09:00 AM</div>
+                    <div class="time">10:00 – 10:20 AM</div>
                     <div class="session">
                         <div class="session-header">
                             <div>
                                 <span class="session-track">All Tracks</span>
-                                <h3 class="session-title">Opening Keynote: The Future of African Innovation</h3>
+                                <h3 class="session-title">Official Welcome & Opening Remarks</h3>
                                 <p class="session-speaker">Dr. Amina Johnson, Founder & CEO, TechInnovate Africa</p>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                 </div>
 
                 <!-- Session 3 -->
-                <div class="time-slot" data-tracks="all" id="networking-day1">
+                <!-- <div class="time-slot" data-tracks="all" id="networking-day1">
                     <div class="time">10:30 AM</div>
                     <div class="session break-session">
                         <div class="session-header">
@@ -93,16 +93,16 @@
                         </div>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i> Exhibition Hall</p>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Session 4 -->
                 <div class="time-slot" data-tracks="entrepreneur tech" id="entrepreneur">
-                    <div class="time">11:00 AM</div>
+                    <div class="time">10:20 – 10:40 AM</div>
                     <div class="session">
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Entrepreneur | Tech</span>
-                                <h3 class="session-title">Scaling Startups: Lessons from Africa's Unicorns</h3>
+                                <h3 class="session-title">Opening Performance: Spoken Word</h3>
                                 <p class="session-speaker">Tunde Williams, Investment Director, Pan-African Ventures</p>
                             </div>
                         </div>
@@ -114,12 +114,12 @@
 
                 <!-- Session 5 -->
                 <div class="time-slot" data-tracks="career" id="career">
-                    <div class="time">11:00 AM</div>
+                    <div class="time">10:40 – 11:15 AM</div>
                     <div class="session">
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Career Growth</span>
-                                <h3 class="session-title">Future-Proofing Your Career in the Age of AI</h3>
+                                <h3 class="session-title">Opening Keynote: “The Next Frontier”</h3>
                                 <p class="session-speaker">Oluwaseun Adebayo, Head of Talent, Andela</p>
                             </div>
                         </div>
@@ -131,12 +131,12 @@
 
                 <!-- Session 6 -->
                 <div class="time-slot" data-tracks="sme" id="sme">
-                    <div class="time">11:00 AM</div>
+                    <div class="time">11:15 – 11:40 AM</div>
                     <div class="session">
                         <div class="session-header">
                             <div>
                                 <span class="session-track">SME Growth</span>
-                                <h3 class="session-title">Digital Transformation for Small Businesses</h3>
+                                <h3 class="session-title">Founders Panel: “Building Bold in Africa”</h3>
                                 <p class="session-speaker">Ngozi Adebayo, CTO, DigitalPay Africa</p>
                             </div>
                         </div>
@@ -151,18 +151,18 @@
 
             <!-- Day 2 -->
             <div class="agenda-day">
-                <div class="day-header">
+                <!-- <div class="day-header">
                     <h2>Day 2: September 21, 2025</h2>
-                </div>
+                </div> -->
 
                 <!-- Session 1 -->
                 <div class="time-slot" data-tracks="all networking" id="networking">
-                    <div class="time">08:00 AM</div>
+                    <div class="time">11:40 – 12:00 PM</div>
                     <div class="session">
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Networking</span>
-                                <h3 class="session-title">Breakfast & Networking</h3>
+                                <h3 class="session-title">Networking + Launch Break</h3>
                             </div>
                         </div>
                         <p class="session-description">Start your day with breakfast and valuable connections.</p>
@@ -172,12 +172,12 @@
 
                 <!-- Session 2 -->
                 <div class="time-slot" data-tracks="entrepreneur tech" id="entrepreneur">
-                    <div class="time">09:00 AM</div>
+                    <div class="time">12:00 – 1:40 PM</div>
                     <div class="session">
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Entrepreneur | Tech</span>
-                                <h3 class="session-title">The Growth Exchange - Solve It Live!</h3>
+                                <h3 class="session-title">Interactive Workshop Tracks</h3>
                                 <p class="session-speaker">Kwame Okafor, CEO, GreenFuture Energy</p>
                             </div>
                         </div>
@@ -189,12 +189,12 @@
 
                 <!-- Session 3 -->
                 <div class="time-slot" data-tracks="career" id="career">
-                    <div class="time">09:00 AM</div>
+                    <div class="time">1:40 – 2:00 PM</div>
                     <div class="session">
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Career Growth</span>
-                                <h3 class="session-title">Mastering the Art of Personal Branding</h3>
+                                <h3 class="session-title">Entertainment Break</h3>
                                 <p class="session-speaker">Fatima Diallo, Founder, AgriTech Solutions</p>
                             </div>
                         </div>
@@ -208,12 +208,60 @@
 
                 <!-- Session 4 -->
                 <div class="time-slot" id="networking-day1" data-tracks="all networking">
-                    <div class="time">07:00 PM</div>
+                    <div class="time">2:00 – 2:30 PM</div>
                     <div class="session">
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Networking</span>
-                                <h3 class="session-title">Next Frontier Trailblazers Awards & Celebration</h3>
+                                <h3 class="session-title">Keynote: “Navigating Change”</h3>
+                            </div>
+                        </div>
+                        <p class="session-description">Join us as we celebrate Africa's most innovative startups and
+                            leaders, followed by an evening of music and networking.</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Grand Ballroom</p>
+                    </div>
+                </div>
+
+                <!-- Session 4 -->
+                <div class="time-slot" id="networking-day1" data-tracks="all networking">
+                    <div class="time">2:30 – 3:00 PM</div>
+                    <div class="session">
+                        <div class="session-header">
+                            <div>
+                                <span class="session-track">Networking</span>
+                                <h3 class="session-title">Keynote: “Tech, Talent & Tenacity”</h3>
+                            </div>
+                        </div>
+                        <p class="session-description">Join us as we celebrate Africa's most innovative startups and
+                            leaders, followed by an evening of music and networking.</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Grand Ballroom</p>
+                    </div>
+                </div>
+
+                <!-- Session 4 -->
+                <div class="time-slot" id="networking-day1" data-tracks="all networking">
+                    <div class="time">3:00 – 3:30 PM</div>
+                    <div class="session">
+                        <div class="session-header">
+                            <div>
+                                <span class="session-track">Networking</span>
+                                <h3 class="session-title">Speed Mentoring: “The Growth Exchange”</h3>
+                            </div>
+                        </div>
+                        <p class="session-description">Join us as we celebrate Africa's most innovative startups and
+                            leaders, followed by an evening of music and networking.</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Grand Ballroom</p>
+                    </div>
+                </div>
+
+                <!-- Session 4 -->
+                <div class="time-slot" id="networking-day1" data-tracks="all networking">
+                    <div class="time">3:30 – 4:00 PM</div>
+                    <div class="session">
+                        <div class="session-header">
+                            <div>
+                                <span class="session-track">Networking</span>
+                                <h3 class="session-title">Special Recognition: Trailblazer Awards</h3>
                             </div>
                         </div>
                         <p class="session-description">Join us as we celebrate Africa's most innovative startups and

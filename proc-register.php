@@ -7,9 +7,10 @@ $email        = $_POST['email'];
 $phone        = $_POST['phone'];
 $organization = $_POST['organization'];
 $position     = $_POST['position'];
+$attend       = $_POST['attend'];
 
 // Validation
-if (!$fullname || !$email || !$phone || !$organization || !$position) {
+if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend) {
     $msg = 'error';
     $comment = 'All fields are required';
     include('register.php');
@@ -27,7 +28,7 @@ if (strlen($phone) != 11) {
 include('conn.php');
 
 // Insert into database
-$query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position'";
+$query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position', attend = '$attend'";
 $result = mysqli_query($conn, $query);
 
 // Build email content
@@ -44,6 +45,7 @@ $body = '
 <p><strong>Phone:</strong> ' . $phone . '</p>
 <p><strong>Program:</strong> ' . $organization . '</p>
 <p><strong>Skill:</strong> ' . $position . ' </p>
+<p><strong>Attend:</strong> ' . $attend . ' </p>
 </td>
 </tr>
 </table>
@@ -74,7 +76,7 @@ $mail->send();
 if (!$mail->send()) {
    $info = 'error';
    $correction = 'Could Not Send Mail';
-   include('index.php');
+   include('register.php');
    exit;
 }
 
