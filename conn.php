@@ -9,7 +9,7 @@ ob_start();
 
 date_default_timezone_set('Africa/Lagos');
 
-$conn = mysqli_connect('localhost', 'next_frontier', 'SM)1im7QpLDtjGOC', 'next_frontier');
+$conn = mysqli_connect('localhost', 'jobrfnso_frontier', 'SM)1im7QpLDtjGOC', 'jobrfnso_frontier');
 
 if (!$conn) {
 echo 'Cannot connect to database server';

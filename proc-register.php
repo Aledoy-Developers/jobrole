@@ -24,14 +24,10 @@ if (strlen($phone) != 11) {
 }
 
 // Database connection
-$conn = mysqli_connect('localhost', 'next_frontier', 'SM)1im7QpLDtjGOC', 'next_frontier');
-if (!$conn) {
-    echo 'Cannot connect to database server';
-    exit;
-}
+include('conn.php');
 
 // Insert into database
-$query = "INSERT INTO registation SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position'";
+$query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position'";
 $result = mysqli_query($conn, $query);
 
 // Build email content
@@ -81,5 +77,9 @@ if (!$mail->send()) {
    include('index.php');
    exit;
 }
+
+$msg = 'success';
+include('register.php');
+exit;
 
 ?>
