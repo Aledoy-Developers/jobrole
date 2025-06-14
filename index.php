@@ -33,7 +33,8 @@
                     <div class="carousel-content">
                         <h1>Unlocking Africa's Future</h1>
                         <p>Innovation, Talent & Vision in a Changing World</p>
-                        <p>Be part of a future-forward gathering where ideas, talent, and technology collide to shape what's next.</p>
+                        <p>Be part of a future-forward gathering where ideas, talent, and technology collide to shape
+                            what's next.</p>
                         <a href="agenda.php" class="btn">Explore Full Agenda</a>
                     </div>
                 </div>
@@ -92,7 +93,10 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Why We're Hosting the Next Frontier 2025</h3>
-                    <p>The Next Frontier Conference is where visionaries, and innovators collide to shape Africa’s future of work and business. Whether you’re an entrepreneur, SME founder, career professional, or a growth-seeker, this one-day experience is designed to equip you with clarity, connections, and a community for your next big leap.
+                    <p>The Next Frontier Conference is where visionaries, and innovators collide to shape Africa’s
+                        future of work and business. Whether you’re an entrepreneur, SME founder, career professional,
+                        or a growth-seeker, this one-day experience is designed to equip you with clarity, connections,
+                        and a community for your next big leap.
                     </p>
                     <!-- <p>As the world of work rapidly evolves and Africa's entrepreneurial landscape continues to expand, it is critical that startups, jobseekers, SMEs, and founders are not just keeping pace but leading with Clarity, vision, and adaptability. This conference is a bold response to that need.</p> -->
                     <a href="register.php" class="btn">Register Now</a>
@@ -131,12 +135,10 @@
                             <li>Recognition for trailblazers</li>
                             <li>High-impact networking, entertainment, and insight</li>
                         </ul>
-                        <strong>Ready to step into your next frontier? Join 200+ innovators and changemakers as we unlock the future together.</strong>
+                        <strong>Ready to step into your next frontier? Join 200+ innovators and changemakers as we
+                            unlock the future together.</strong>
                         </p>
-                        <a href="register.php" class="" style="padding: 7px;">Register Now</a>
-                        <a href="register.php" class="" style="padding: 7px;">Become a Sponsor</a>
-                        <a href="register.php" class="" style="padding: 7px;">Become a Partner</a>
-                        <a href="agenda.php" class="" style="padding: 7px;">View Agenda</a>
+                        <a href="agenda.php" class="btn">View Agenda</a>
                     </div>
                 </div>
             </div>
@@ -149,74 +151,74 @@
     <?php include('footer.php'); ?>
 
     <script>
-        // Carousel Functionality
-        const carouselItems = document.querySelectorAll('.carousel-item');
-        const prevBtn = document.getElementById('prevSlide');
-        const nextBtn = document.getElementById('nextSlide');
-        const dotsContainer = document.getElementById('carouselDots');
-        let currentIndex = 0;
-        let autoPlayInterval;
-        const slideInterval = 6000; // 6 seconds
+    // Carousel Functionality
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    const prevBtn = document.getElementById('prevSlide');
+    const nextBtn = document.getElementById('nextSlide');
+    const dotsContainer = document.getElementById('carouselDots');
+    let currentIndex = 0;
+    let autoPlayInterval;
+    const slideInterval = 6000; // 6 seconds
 
-        // Create dots
-        carouselItems.forEach((_, index) => {
-            const dot = document.createElement('div');
-            dot.classList.add('dot');
-            if (index === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goToSlide(index));
-            dotsContainer.appendChild(dot);
-        });
+    // Create dots
+    carouselItems.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
 
-        const dots = document.querySelectorAll('.dot');
+    const dots = document.querySelectorAll('.dot');
 
-        // Function to go to specific slide
-        function goToSlide(index) {
-            carouselItems[currentIndex].classList.remove('active');
-            dots[currentIndex].classList.remove('active');
+    // Function to go to specific slide
+    function goToSlide(index) {
+        carouselItems[currentIndex].classList.remove('active');
+        dots[currentIndex].classList.remove('active');
 
-            currentIndex = (index + carouselItems.length) % carouselItems.length;
+        currentIndex = (index + carouselItems.length) % carouselItems.length;
 
-            carouselItems[currentIndex].classList.add('active');
-            dots[currentIndex].classList.add('active');
+        carouselItems[currentIndex].classList.add('active');
+        dots[currentIndex].classList.add('active');
 
-            // Reset autoplay timer when manually navigating
-            resetAutoPlay();
-        }
+        // Reset autoplay timer when manually navigating
+        resetAutoPlay();
+    }
 
-        // Next slide function
-        function nextSlide() {
-            goToSlide(currentIndex + 1);
-        }
+    // Next slide function
+    function nextSlide() {
+        goToSlide(currentIndex + 1);
+    }
 
-        // Previous slide function
-        function prevSlide() {
-            goToSlide(currentIndex - 1);
-        }
+    // Previous slide function
+    function prevSlide() {
+        goToSlide(currentIndex - 1);
+    }
 
-        // Auto-play functionality
-        function startAutoPlay() {
-            autoPlayInterval = setInterval(nextSlide, slideInterval);
-        }
+    // Auto-play functionality
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, slideInterval);
+    }
 
-        function resetAutoPlay() {
-            clearInterval(autoPlayInterval);
-            startAutoPlay();
-        }
-
-        // Event listeners
-        prevBtn.addEventListener('click', prevSlide);
-        nextBtn.addEventListener('click', nextSlide);
-
-        // Start autoplay
+    function resetAutoPlay() {
+        clearInterval(autoPlayInterval);
         startAutoPlay();
+    }
 
-        // Pause autoplay when hovering over carousel
-        const carousel = document.querySelector('.carousel');
-        carousel.addEventListener('mouseenter', () => {
-            clearInterval(autoPlayInterval);
-        });
+    // Event listeners
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
 
-        carousel.addEventListener('mouseleave', startAutoPlay);
+    // Start autoplay
+    startAutoPlay();
+
+    // Pause autoplay when hovering over carousel
+    const carousel = document.querySelector('.carousel');
+    carousel.addEventListener('mouseenter', () => {
+        clearInterval(autoPlayInterval);
+    });
+
+    carousel.addEventListener('mouseleave', startAutoPlay);
     </script>
 </body>
 

@@ -18,7 +18,8 @@
         <div class="container">
             <div class="about-hero-content">
                 <h1>About Next Frontier 2025</h1>
-                <p>Discover the vision, mission, and people behind Africa's premier conference for innovators and changemakers</p>
+                <p>Discover the vision, mission, and people behind Africa's premier conference for innovators and
+                    changemakers</p>
             </div>
         </div>
     </section>
@@ -28,40 +29,48 @@
         <div class="container">
             <div class="section-title">
                 <h2>About The Next Frontier Conference</h2>
-                <p>The Next Frontier Conference is more than an event - it's a movement to unlock Africa's potential</p>
+                <p>Welcome to The Next Frontier Conference 2025 <br> <strong>Date:</strong> September 20, 2025
             </div>
 
             <div class="about-grid">
                 <!-- Our Story -->
                 <div class="about-card">
-                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1469&q=80" alt="Conference Audience">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1469&q=80"
+                        alt="Conference Audience">
                     <div class="about-card-content">
                         <h3>Our Story</h3>
-                        <p>Founded in 2020, the Next Frontier Conference was born from a need to connect Africa's brightest minds and boldest innovators. What began as a small gathering has grown into the continent's premier platform for business and career transformation.</p>
+                        <p>Founded in 2020, the Next Frontier Conference was born from a need to connect Africa's
+                            brightest minds and boldest innovators. What began as a small gathering has grown into the
+                            continent's premier platform for business and career transformation.</p>
                     </div>
                 </div>
 
                 <!-- Our Impact -->
                 <div class="about-card">
-                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1469&q=80" alt="Networking at Conference">
+                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1469&q=80"
+                        alt="Networking at Conference">
                     <div class="about-card-content">
                         <h3>Our Impact</h3>
-                        <p>With over 5,000 attendees across our events, we've facilitated partnerships that have launched 200+ startups, created 3,000+ jobs, and attracted $50M+ in investment to African businesses.</p>
+                        <p>With over 5,000 attendees across our events, we've facilitated partnerships that have
+                            launched 200+ startups, created 3,000+ jobs, and attracted $50M+ in investment to African
+                            businesses.</p>
                     </div>
                 </div>
 
                 <!-- Our Community -->
                 <div class="about-card">
-                    <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?auto=format&fit=crop&w=1470&q=80" alt="Awards Ceremony">
+                    <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?auto=format&fit=crop&w=1470&q=80"
+                        alt="Awards Ceremony">
                     <div class="about-card-content">
                         <h3>Our Community</h3>
-                        <p>Join a growing network of 15,000+ professionals, entrepreneurs, and innovators who are shaping Africa's economic future through collaboration and knowledge sharing.</p>
+                        <p>Join a growing network of 15,000+ professionals, entrepreneurs, and innovators who are
+                            shaping Africa's economic future through collaboration and knowledge sharing.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<!-- 
+    <!-- 
     <section class="about" id="about">
         <div class="container">
             <div class="section-title">
@@ -99,7 +108,8 @@
     <section class="mission">
         <div class="container">
             <h2>Our Mission</h2>
-            <p>To ignite individual and collective potential across Africa by creating platforms for learning, connection, and co-creation that fuel business, career, and community growth.</p>
+            <p>To ignite individual and collective potential across Africa by creating platforms for learning,
+                connection, and co-creation that fuel business, career, and community growth.</p>
             <a href="register.html" class="btn">Join the Movement</a>
         </div>
     </section>
@@ -114,22 +124,26 @@
 
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=761&q=80" alt="Amina Johnson">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=761&q=80"
+                        alt="Amina Johnson">
                     <h3>Amina Johnson</h3>
                     <p>Founder & CEO</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=687&q=80" alt="Kwame Okafor">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=687&q=80"
+                        alt="Kwame Okafor">
                     <h3>Kwame Okafor</h3>
                     <p>Conference Director</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?auto=format&fit=crop&w=1470&q=80" alt="Ngozi Adebayo">
+                    <img src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?auto=format&fit=crop&w=1470&q=80"
+                        alt="Ngozi Adebayo">
                     <h3>Ngozi Adebayo</h3>
                     <p>Partnerships Lead</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=687&q=80" alt="Tunde Williams">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=687&q=80"
+                        alt="Tunde Williams">
                     <h3>Tunde Williams</h3>
                     <p>Program Director</p>
                 </div>
@@ -141,7 +155,8 @@
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Be Part of Africa's Next Frontier?</h2>
-            <p>Join us on September 20, 2025 at Landmark Towers, Lagos for an unforgettable experience of learning, networking, and growth.</p>
+            <p>Join us on September 20, 2025 at Landmark Towers, Lagos for an unforgettable experience of learning,
+                networking, and growth.</p>
             <a href="register.php" class="btn">Register Now</a>
         </div>
     </section>
