@@ -179,6 +179,7 @@ nav ul li a:hover {
   font-weight: 600;
   transition: all 0.3s;
   border: 2px solid var(--accent);
+  width: fit-content;
 }
 
 .about-content .btn {
@@ -263,6 +264,11 @@ nav ul li a:hover {
 .about {
   padding: 100px 0;
   background-color: white;
+}
+
+.abt {
+  display: flex;
+  gap: 5px;
 }
 
 .section-title {
@@ -1016,6 +1022,14 @@ footer {
     display: block;
   }
 
+  .track-selection {
+    display: none;
+  }
+
+  .agenda-container {
+    margin-top: 60px;
+  }
+
   .mobile-menu-btn {
     display: block;
     color: var(--dark);
@@ -1045,6 +1059,13 @@ footer {
 
   .af {
     padding-left: 0;
+  }
+
+  .abt {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
   }
 }
 

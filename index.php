@@ -103,28 +103,20 @@
                 </div>
 
                 <div class="about-image">
-                    <img src="images/images.jpg">
+                    <img src="images/images.jpg" style="width:100%;">
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
         <div class="container">
             <div class="row">
-                <!-- <div class="section-title">
-                <h2>About The Next Frontier 2025</h2>
-                <p>Igniting Potential, Fueling Growth across Africa</p>
-            </div> -->
-
                 <div class="about-content about-swap">
                     <div class="about-image md-6">
                         <img src="images/images.jpg" class="img-fluid">
                     </div>
 
 
-                    <div class="about-text md-6">
+                    <div class="about-text container md-6">
                         <h3>What to Expect</h3>
                         <p>
                         <ul>
@@ -139,6 +131,33 @@
                             unlock the future together.</strong>
                         </p>
                         <a href="agenda.php" class="btn">View Agenda</a>
+                    </div>
+                </div>
+
+
+                <div class="about-content about-swap">
+                    <div class="about-image md-6">
+                        <img src="images/4.png" class="img-fluid">
+                    </div>
+
+
+                    <div class="about-text container md-6">
+                        <h3>Who Should Attend?</h3>
+                        <p>
+                        <ul>
+                            <li>Founders & Startup Teams</li>
+                            <li>SME Owners & Leaders</li>
+                            <li>Career Professionals & Jobseekers</li>
+                            <li>Investors, and Ecosystem Builders</li>
+                        </ul>
+                        <strong>This is more than a conference, it’s a launchpad for your next big move.
+                        </strong>
+                        </p>
+                        <div class="abt">
+                            <a href="register.php" class="btn">Register Now</a>
+                            <a href="agenda.php" class="btn">View Agenda</a>
+                            <a href="speaker.php" class="btn">Meet the Speakers</a>
+                        </div>
                     </div>
                 </div>
             </div>
