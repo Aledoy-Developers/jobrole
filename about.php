@@ -32,42 +32,36 @@
                 <p>Welcome to The Next Frontier Conference 2025 <br> <strong>Date:</strong> September 20, 2025
             </div>
 
-            <div class="about-grid">
-                <!-- Our Story -->
-                <div class="about-card">
-                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1469&q=80"
-                        alt="Conference Audience">
-                    <div class="about-card-content">
-                        <h3>Our Story</h3>
-                        <p>Founded in 2020, the Next Frontier Conference was born from a need to connect Africa's
-                            brightest minds and boldest innovators. What began as a small gathering has grown into the
-                            continent's premier platform for business and career transformation.</p>
-                    </div>
-                </div>
+            <div class="container">
 
-                <!-- Our Impact -->
-                <div class="about-card">
-                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1469&q=80"
-                        alt="Networking at Conference">
-                    <div class="about-card-content">
-                        <h3>Our Impact</h3>
-                        <p>With over 5,000 attendees across our events, we've facilitated partnerships that have
-                            launched 200+ startups, created 3,000+ jobs, and attracted $50M+ in investment to African
-                            businesses.</p>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>About The Next Frontier Conference</h3>
+                        <p>About The Next Frontier Conference
+                            The Next Frontier Conference is the flagship annual gathering hosted by Jobrole Consulting
+                            Limited, created to inspire, equip, and accelerate the growth journeys of startups, SMEs,
+                            and professionals across Nigeria and Africa.
+                        </p>
+                        <p>
+                            With our 2025 theme, “Igniting Potential, Fueling Growth,” we’re spotlighting the emerging
+                            opportunities and bold shifts shaping the future of work and entrepreneurship in Africa.
+                        </p>
+                        <p>
+                            Our mission is to foster deeper conversations around clarity, resilience, and innovation,
+                            while connecting people with ideas, solutions, and collaborators that propel lasting
+                            success.
+                        </p>
+                        <!-- <p>As the world of work rapidly evolves and Africa's entrepreneurial landscape continues to expand, it is critical that startups, jobseekers, SMEs, and founders are not just keeping pace but leading with Clarity, vision, and adaptability. This conference is a bold response to that need.</p> -->
+                        <a href="register.php" class="btn">Register Now</a>
                     </div>
-                </div>
 
-                <!-- Our Community -->
-                <div class="about-card">
-                    <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?auto=format&fit=crop&w=1470&q=80"
-                        alt="Awards Ceremony">
-                    <div class="about-card-content">
-                        <h3>Our Community</h3>
-                        <p>Join a growing network of 15,000+ professionals, entrepreneurs, and innovators who are
-                            shaping Africa's economic future through collaboration and knowledge sharing.</p>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            style="width:100%;">
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <!-- 

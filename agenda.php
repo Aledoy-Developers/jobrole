@@ -22,19 +22,21 @@
                     <button class="track-btn active" data-track="all">All Tracks</button>
                 </a>
                 <a href="#entrepreneur">
-                    <button class="track-btn" data-track="entrepreneur">Entrepreneur</button>
+                    <button class="track-btn" data-track="entrepreneur">Opening
+                        keynote
+                    </button>
                 </a>
                 <a href="#career">
-                    <button class="track-btn" data-track="career">Career Growth</button>
+                    <button class="track-btn" data-track="career">Founders Panel</button>
                 </a>
                 <a href="#sme">
-                    <button class="track-btn" data-track="sme">SME Growth</button>
+                    <button class="track-btn" data-track="sme">Networking</button>
                 </a>
                 <a href="#tech">
-                    <button class="track-btn" data-track="tech">Tech Innovation</button>
+                    <button class="track-btn" data-track="tech">Keynote 2</button>
                 </a>
                 <a href="#networking-day1">
-                    <button class="track-btn" data-track="networking">Networking</button>
+                    <button class="track-btn" data-track="networking">Trailblazer Awards</button>
                 </a>
             </div>
         </div>
@@ -61,7 +63,7 @@
                         </div>
                         <p class="session-description">Arrive, check-in, and enjoy breakfast while networking with
                             fellow attendees.</p>
-                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Main Lobby</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
 
@@ -78,7 +80,7 @@
                         </div>
                         <p class="session-description">Our opening keynote will set the stage for the conference,
                             exploring emerging trends and opportunities across Africa's innovation landscape.</p>
-                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Grand Ballroom</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
 
@@ -108,7 +110,7 @@
                         </div>
                         <p class="session-description">Learn from the success stories of Africa's fastest-growing
                             startups and the strategies they used to scale across the continent.</p>
-                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Room A</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
 
@@ -125,7 +127,7 @@
                         </div>
                         <p class="session-description">Discover the skills and mindsets needed to thrive in the rapidly
                             evolving world of work.</p>
-                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Room B</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
 
@@ -142,7 +144,7 @@
                         </div>
                         <p class="session-description">Practical strategies for leveraging technology to grow your small
                             or medium enterprise.</p>
-                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Room C</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
 
@@ -166,7 +168,7 @@
                             </div>
                         </div>
                         <p class="session-description">Start your day with breakfast and valuable connections.</p>
-                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Main Lobby</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
 
@@ -183,7 +185,7 @@
                         </div>
                         <p class="session-description">Bring your business challenges and get real-time solutions from
                             experts and peers in this interactive session.</p>
-                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Grand Ballroom</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
 
@@ -200,7 +202,7 @@
                         </div>
                         <p class="session-description">Learn how to build a powerful personal brand that opens doors to
                             new opportunities.</p>
-                        <p class="session-location"><i class="fas fa-map-markr-alt"></i> Room A</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
 
@@ -218,7 +220,7 @@
                         </div>
                         <p class="session-description">Join us as we celebrate Africa's most innovative startups and
                             leaders, followed by an evening of music and networking.</p>
-                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Grand Ballroom</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
 
@@ -234,7 +236,7 @@
                         </div>
                         <p class="session-description">Join us as we celebrate Africa's most innovative startups and
                             leaders, followed by an evening of music and networking.</p>
-                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Grand Ballroom</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
 
@@ -250,7 +252,7 @@
                         </div>
                         <p class="session-description">Join us as we celebrate Africa's most innovative startups and
                             leaders, followed by an evening of music and networking.</p>
-                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Grand Ballroom</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
 
@@ -266,7 +268,7 @@
                         </div>
                         <p class="session-description">Join us as we celebrate Africa's most innovative startups and
                             leaders, followed by an evening of music and networking.</p>
-                        <p class="session-location"><i class="fas fa-map-marker-alt"></i> Grand Ballroom</p>
+                        <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
             </div>
