@@ -1,4 +1,11 @@
 <?php 
+
+
+error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
+//ini_set('display_errors', 1);
+ini_set('display_errors', 0);
+
+
 require_once('PHPMailer/PHPMailerAutoload.php');
 
 // Collect POST data
@@ -64,7 +71,7 @@ $mail = new PHPMailer();
 // $mail->SMTPSecure = 'tls';
 $mail->From = "noreply@ecardnaija.com";
 $mail->FromName = "Next Frontier";
-$mail->AddAddress('emmanueligbinazaka3@gmail.com');
+$mail->AddAddress('luabikoye@yahoo.com');
 $mail->CharSet = 'UTF-8';
 $mail->IsHTML(true);
 $mail->Subject = $subject;
@@ -81,7 +88,7 @@ if (!$mail->send()) {
 }
 
 $msg = 'success';
-include('register.php');
+include('thankyou.php');
 exit;
 
 ?>

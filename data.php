@@ -4,7 +4,7 @@ include('conn.php');
 
 echo '<h2>Registered Users</h2>';
 
-$res = mysqli_query($db,"select * from registration order by id desc");
+$res = mysqli_query($conn,"select * from registration order by id desc");
 $num = mysqli_num_rows($res);
 
 echo '<h3> Total Records: '.$num.'</h3>';

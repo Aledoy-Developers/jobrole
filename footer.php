@@ -27,7 +27,11 @@
                 <h3>Contact Us</h3>
                 <ul>
                     <li><i class="fas fa-envelope"></i> info@jobrole.com</li>
-                    <li><i class="fas fa-phone"></i> +234 800 000 0000</li>
+                    <li><i class="fas fa-phone"></i> +234-7025001536
+                        <div style="margin-left:20px;">+234-7025001539
+                            <br>+234-8036764455
+                        </div>
+                    </li>
                     <li><i class="fas fa-map-marker-alt"></i> Landmark Towers, Lagos, Nigeria</li>
                 </ul>
             </div>
