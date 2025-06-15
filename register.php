@@ -12,66 +12,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <style>
-    .custom-select-container {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        background-color: transparent;
-    }
+.custom-select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: transparent;
+}
 
-    .custom-select-display {
-        padding: 10px 20px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        background-color: white;
-        cursor: pointer;
-        user-select: none;
-    }
+.custom-select-display {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+}
 
-    .custom-options {
-        display: none;
-        position: absolute;
-        background-color: white;
-        border: 1px solid #ccc;
-        width: 100%;
-        z-index: 1;
-    }
+.custom-options {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    z-index: 1;
+}
 
-    .custom-options div {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
+.custom-options div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
 
-    .custom-options div:hover {
-        background-color: #f1f1f1;
-    }
+.custom-options div:hover {
+    background-color: #f1f1f1;
+}
 
-    .show-options .custom-options {
-        display: block;
-    }
+.show-options .custom-options {
+    display: block;
+}
 
-    .select-wrapper {
-        margin-bottom: 20px;
-    }
+.select-wrapper {
+    margin-bottom: 20px;
+}
 
-    #fruitSelect {
-        width: 100%;
-    }
+#fruitSelect {
+    width: 100%;
+}
 
-    select {
-        padding: 10px 15px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-    .selected-value {
-        font-size: 18px;
-        font-weight: bold;
-        color: #333;
-    }
+.selected-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
 </style>
 
 <body>
@@ -90,11 +90,11 @@
                     <form action="proc-register.php" method="post">
 
                         <?php if (!empty($msg) && $msg == 'success') : ?>
-                            <div class="alert alert-success">Message Sent</div>
+                        <div class="alert alert-success">Message Sent</div>
                         <?php endif; ?>
 
                         <?php if (!empty($msg) && $msg == 'error') : ?>
-                            <div class="alert alert-danger"><?php echo htmlspecialchars($comment); ?></div>
+                        <div class="alert alert-danger"><?php echo htmlspecialchars($comment); ?></div>
                         <?php endif; ?>
 
                         <div class="mb-3">
@@ -129,13 +129,16 @@
 
                         <div class="dropdown mb-3">
                             <div class="select-wrapper">
-                                <label for="fruitSelect">Who Should Attend:</label>
+                                <label for="fruitSelect">Who is Attend:</label>
                                 <select id="fruitSelect" name="attend">
                                     <option value="" disabled selected>Select an option</option>
-                                    <option value="Founders & Startup Teams" name="input">Founders & Startup Teams</option>
+                                    <option value="Founders & Startup Teams" name="input">Founders & Startup Teams
+                                    </option>
                                     <option value="SME Owners & Leaders" name="input">SME Owners & Leaders</option>
-                                    <option value="Career Professionals & Jobseekers" name="input">Career Professionals & Jobseekers</option>
-                                    <option value="Investors, and Ecosystem Builders" name="input">Investors, and Ecosystem Builders</option>
+                                    <option value="Career Professionals & Jobseekers" name="input">Career Professionals
+                                        & Jobseekers</option>
+                                    <option value="Investors, and Ecosystem Builders" name="input">Investors, and
+                                        Ecosystem Builders</option>
                                 </select>
                             </div>
                         </div>
@@ -151,13 +154,13 @@
     </div>
 
     <script>
-        const fruitSelect = document.getElementById('fruitSelect');
-        const display = document.getElementById('displaySelection');
+    const fruitSelect = document.getElementById('fruitSelect');
+    const display = document.getElementById('displaySelection');
 
-        fruitSelect.addEventListener('change', function() {
-            const selected = this.value;
-            display.textContent = 'You selected: ' + selected;
-        });
+    fruitSelect.addEventListener('change', function() {
+        const selected = this.value;
+        display.textContent = 'You selected: ' + selected;
+    });
     </script>
 </body>
 
