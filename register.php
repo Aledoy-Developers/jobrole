@@ -129,7 +129,7 @@ select {
 
                         <div class="dropdown mb-3">
                             <div class="select-wrapper">
-                                <label for="fruitSelect">Who is Attend:</label>
+                                <label for="fruitSelect">Who should Attend:</label>
                                 <select id="fruitSelect" name="attend">
                                     <option value="" disabled selected>Select an option</option>
                                     <option value="Founders & Startup Teams" name="input">Founders & Startup Teams
