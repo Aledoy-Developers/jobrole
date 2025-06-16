@@ -60,6 +60,10 @@
         width: 100%;
     }
 
+    #choose {
+        width: 100%;
+    }
+
     select {
         padding: 10px 15px;
         font-size: 16px;
@@ -142,14 +146,41 @@
 
                         <div class="dropdown mb-3">
                             <div class="select-wrapper">
-                                <label for="fruitSelect">Physical Or Virtual:</label>
+                                <label for="fruitSelect">How Do You Want To Attend:</label>
                                 <select id="fruitSelect" name="meeting">
-                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="" disabled selected>Choose One</option>
                                     <option value="Physical" name="option">Physical</option>
                                     <option value="Virtual" name="option">Virtual</option>
                                 </select>
                             </div>
                         </div>
+
+                        <div class="dropdown mb-3">
+                            <div class="select-wrapper">
+                                <label for="fruitSelect">Do You Want A Certificate:</label>
+                                <select id="choose" name="certified">
+                                    <option value="" disabled selected>Choose One</option>
+                                    <option value="yes" name="option">Yes</option>
+                                    <option value="no" name="option">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="dropdown mb-3">
+                            <div class="select-wrapper">
+                                <!-- <label for="2"></label> -->
+                                <!-- <input type="text" id="hide" name="position" class="form-control" hidden> -->
+                                 <div class="" id="hide" hidden>
+                                    <p><strong>Acct No: </strong>0942158396.</p>
+                                    <p><strong>Name: </strong>Soaga Faruk.</p>
+                                    <p><strong>Price: </strong>#160,000.</p>
+                                    <p><strong>Validity: </strong>365 Days.</p>
+                                 </div>
+                            </div>
+                        </div>
+
+
+
 
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -162,6 +193,17 @@
     </div>
 
     <script>
+        document.getElementById('choose').addEventListener('change', function() {
+            const message = document.getElementById('hide');
+            if (this.value === "yes") {
+                message.hidden = false;
+            } else {
+                message.hidden = true;
+            }
+        });
+    </script>
+
+    <script>
         const fruitSelect = document.getElementById('fruitSelect');
         const display = document.getElementById('displaySelection');
 
@@ -170,6 +212,8 @@
             display.textContent = 'You selected: ' + selected;
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

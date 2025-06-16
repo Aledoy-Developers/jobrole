@@ -16,9 +16,10 @@ $organization = $_POST['organization'];
 $position     = $_POST['position'];
 $attend       = $_POST['attend'];
 $meeting       = $_POST['meeting'];
+$certified       = $_POST['certified'];
 
 // Validation
-  if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend || !$meeting) {
+  if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend || !$meeting || !$certified) {
     $msg = 'error';
     $comment = 'All fields are required';
     include('register.php');
@@ -37,7 +38,7 @@ if (strlen($phone) != 11) {
 include('conn.php');
 
 // Insert into database
-$query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position', attend = '$attend', meeting = '$meeting'";
+$query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position', attend = '$attend', meeting = '$meeting', certified = '$certified'";
 $result = mysqli_query($conn, $query);
 
 // Build email content
@@ -56,6 +57,7 @@ $body = '
 <p><strong>Skill:</strong> ' . $position . ' </p>
 <p><strong>Attend:</strong> ' . $attend . ' </p>
 <p><strong>Meeting:</strong> ' . $meeting . ' </p>
+<p><strong>Certified:</strong> ' . $certified . ' </p>
 </td>
 </tr>
 </table>
