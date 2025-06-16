@@ -12,70 +12,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <style>
-    .custom-select-container {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        background-color: transparent;
-    }
+.custom-select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: transparent;
+}
 
-    .custom-select-display {
-        padding: 10px 20px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        background-color: white;
-        cursor: pointer;
-        user-select: none;
-    }
+.custom-select-display {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+}
 
-    .custom-options {
-        display: none;
-        position: absolute;
-        background-color: white;
-        border: 1px solid #ccc;
-        width: 100%;
-        z-index: 1;
-    }
+.custom-options {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    z-index: 1;
+}
 
-    .custom-options div {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
+.custom-options div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
 
-    .custom-options div:hover {
-        background-color: #f1f1f1;
-    }
+.custom-options div:hover {
+    background-color: #f1f1f1;
+}
 
-    .show-options .custom-options {
-        display: block;
-    }
+.show-options .custom-options {
+    display: block;
+}
 
-    .select-wrapper {
-        margin-bottom: 20px;
-    }
+.select-wrapper {
+    margin-bottom: 20px;
+}
 
-    #fruitSelect {
-        width: 100%;
-    }
+#fruitSelect {
+    width: 100%;
+}
 
-    #choose {
-        width: 100%;
-    }
+#choose {
+    width: 100%;
+}
 
-    select {
-        padding: 10px 15px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-    .selected-value {
-        font-size: 18px;
-        font-weight: bold;
-        color: #333;
-    }
+.selected-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
 </style>
 
 <body>
@@ -94,11 +94,11 @@
                     <form action="proc-register.php" method="post">
 
                         <?php if (!empty($msg) && $msg == 'success') : ?>
-                            <div class="alert alert-success">Message Sent</div>
+                        <div class="alert alert-success">Message Sent</div>
                         <?php endif; ?>
 
                         <?php if (!empty($msg) && $msg == 'error') : ?>
-                            <div class="alert alert-danger"><?php echo htmlspecialchars($comment); ?></div>
+                        <div class="alert alert-danger"><?php echo htmlspecialchars($comment); ?></div>
                         <?php endif; ?>
 
                         <div class="mb-3">
@@ -134,20 +134,23 @@
                         <div class="dropdown mb-3">
                             <div class="select-wrapper">
                                 <label for="fruitSelect">Category:</label>
-                                <select id="fruitSelect" name="attend">
+                                <select id="fruitSelect" name="category">
                                     <option value="" disabled selected>Select an option</option>
-                                    <option value="Founders & Startup Teams" name="input">Founders & Startup Teams</option>
+                                    <option value="Founders & Startup Teams" name="input">Founders & Startup Teams
+                                    </option>
                                     <option value="SME Owners & Leaders" name="input">SME Owners & Leaders</option>
-                                    <option value="Career Professionals & Jobseekers" name="input">Career Professionals & Jobseekers</option>
-                                    <option value="Investors, and Ecosystem Builders" name="input">Investors, and Ecosystem Builders</option>
+                                    <option value="Career Professionals & Jobseekers" name="input">Career Professionals
+                                        & Jobseekers</option>
+                                    <option value="Investors, and Ecosystem Builders" name="input">Investors, and
+                                        Ecosystem Builders</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="dropdown mb-3">
                             <div class="select-wrapper">
-                                <label for="fruitSelect">How Do You Want To Attend:</label>
-                                <select id="fruitSelect" name="meeting">
+                                <label for="fruitSelect">How you do you want to attend?</label>
+                                <select id="fruitSelect" name="attend">
                                     <option value="" disabled selected>Choose One</option>
                                     <option value="Physical" name="option">Physical</option>
                                     <option value="Virtual" name="option">Virtual</option>
@@ -157,7 +160,7 @@
 
                         <div class="dropdown mb-3">
                             <div class="select-wrapper">
-                                <label for="fruitSelect">Do You Want A Certificate:</label>
+                                <label for="fruitSelect">Do you want a certificate of attendance?</label>
                                 <select id="choose" name="certified">
                                     <option value="" disabled selected>Choose One</option>
                                     <option value="yes" name="option">Yes</option>
@@ -170,12 +173,12 @@
                             <div class="select-wrapper">
                                 <!-- <label for="2"></label> -->
                                 <!-- <input type="text" id="hide" name="position" class="form-control" hidden> -->
-                                 <div class="" id="hide" hidden>
-                                    <p><strong>Acct No: </strong>0942158396.</p>
-                                    <p><strong>Name: </strong>Soaga Faruk.</p>
-                                    <p><strong>Price: </strong>#160,000.</p>
-                                    <p><strong>Validity: </strong>365 Days.</p>
-                                 </div>
+                                <div class="" id="hide" hidden>
+                                    <p>Please make payment to the account details below. Send receipt via WhatsApp
+                                        +234 810 286 4120 </p>
+                                    <p><strong>GTBank: </strong>00000000 / Jobrole Consulting Ltd.<br><strong>Price:
+                                        </strong>#160,000.</p>
+                                </div>
                             </div>
                         </div>
 
@@ -193,24 +196,24 @@
     </div>
 
     <script>
-        document.getElementById('choose').addEventListener('change', function() {
-            const message = document.getElementById('hide');
-            if (this.value === "yes") {
-                message.hidden = false;
-            } else {
-                message.hidden = true;
-            }
-        });
+    document.getElementById('choose').addEventListener('change', function() {
+        const message = document.getElementById('hide');
+        if (this.value === "yes") {
+            message.hidden = false;
+        } else {
+            message.hidden = true;
+        }
+    });
     </script>
 
     <script>
-        const fruitSelect = document.getElementById('fruitSelect');
-        const display = document.getElementById('displaySelection');
+    const fruitSelect = document.getElementById('fruitSelect');
+    const display = document.getElementById('displaySelection');
 
-        fruitSelect.addEventListener('change', function() {
-            const selected = this.value;
-            display.textContent = 'You selected: ' + selected;
-        });
+    fruitSelect.addEventListener('change', function() {
+        const selected = this.value;
+        display.textContent = 'You selected: ' + selected;
+    });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>

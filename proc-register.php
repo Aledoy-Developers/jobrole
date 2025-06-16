@@ -14,12 +14,12 @@ $email        = $_POST['email'];
 $phone        = $_POST['phone'];
 $organization = $_POST['organization'];
 $position     = $_POST['position'];
+$category       = $_POST['category'];
 $attend       = $_POST['attend'];
-$meeting       = $_POST['meeting'];
 $certified       = $_POST['certified'];
 
 // Validation
-  if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend || !$meeting || !$certified) {
+  if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend || !$category || !$certified) {
     $msg = 'error';
     $comment = 'All fields are required';
     include('register.php');
@@ -38,7 +38,7 @@ if (strlen($phone) != 11) {
 include('conn.php');
 
 // Insert into database
-$query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position', attend = '$attend', meeting = '$meeting', certified = '$certified'";
+$query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position', attend = '$attend', category = '$category', certified = '$certified'";
 $result = mysqli_query($conn, $query);
 
 // Build email content
@@ -56,8 +56,8 @@ $body = '
 <p><strong>Program:</strong> ' . $organization . '</p>
 <p><strong>Skill:</strong> ' . $position . ' </p>
 <p><strong>Attend:</strong> ' . $attend . ' </p>
-<p><strong>Meeting:</strong> ' . $meeting . ' </p>
-<p><strong>Certified:</strong> ' . $certified . ' </p>
+<p><strong>Category:</strong> ' . $category . ' </p>
+<p><strong>Require Certificate:</strong> ' . $certified . ' </p>
 </td>
 </tr>
 </table>
@@ -76,7 +76,7 @@ $mail = new PHPMailer();
 // $mail->SMTPSecure = 'tls';
 $mail->From = "noreply@ecardnaija.com";
 $mail->FromName = "Next Frontier";
-$mail->AddAddress('luabikoye@yahoo.com');
+$mail->AddAddress('info@jobroleng.com');
 $mail->CharSet = 'UTF-8';
 $mail->IsHTML(true);
 $mail->Subject = $subject;

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 16, 2025 at 08:21 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
+-- Host: localhost:8889
+-- Generation Time: Jun 16, 2025 at 10:09 PM
+-- Server version: 5.7.39
+-- PHP Version: 7.4.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,28 +28,20 @@ CREATE TABLE `registration` (
   `phone` varchar(50) DEFAULT NULL,
   `organization` varchar(100) DEFAULT NULL,
   `position` varchar(100) DEFAULT NULL,
-  `attend` varchar(100) NOT NULL,
-  `meeting` varchar(100) DEFAULT NULL,
-  `certified` varchar(10) DEFAULT NULL,
-  `date_created` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+  `attend` varchar(100) DEFAULT NULL,
+  `category` varchar(100) NOT NULL,
+  `certified` varchar(10) NOT NULL,
+  `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `registration`
 --
 
-INSERT INTO `registration` (`id`, `fullname`, `email`, `phone`, `organization`, `position`, `attend`, `meeting`, `certified`, `date_created`) VALUES
-(1, 'faruk', 'soagafaruk@gmail.com', '09876543210', 'sdvds', 'se', '', '', NULL, '2025-06-13 09:41:21'),
-(2, 'faruk', 'soagafaruk@gmail.com', '11111111111', 'aledoy', 'fullstack', '', '', NULL, '2025-06-13 12:27:14'),
-(3, 'faruk', 'mayowadelu@gmail.com', '09876543210', 'aledoy', 'fullstack', 'Orange', '', NULL, '2025-06-13 15:47:27'),
-(4, 'faruk', 'mayowadelu@gmail.com', '09876543210', 'aledoy', 'fullstack', 'Orange', '', NULL, '2025-06-13 15:47:54'),
-(5, 'faruk', 'mayowadelu@gmail.com', '09876543210', 'aledoy', 'fullstack', 'Orange', '', NULL, '2025-06-13 15:49:44'),
-(6, 'faruk', 'soagafaruk@gmail.com', '09876543210', 'aledoy', 'fullstack', 'SME Owners & Leaders', '', NULL, '2025-06-13 15:50:36'),
-(7, 'faruk', 'soagafaruk@gmail.com', '09876543210', 'aledoy', 'fullstack', 'SME Owners & Leaders', '', NULL, '2025-06-13 15:51:48'),
-(8, 'faruk', 'mayowadelu@gmail.com', '11111111111', 'aledoy', 'fullstack', 'Career Professionals & Jobseekers', '', NULL, '2025-06-16 12:23:50'),
-(9, 'faruk', 'mayowadelu@gmail.com', '11111111111', 'aledoy', 'fullstack', 'Founders & Startup Teams', 'Physical', NULL, '2025-06-16 12:27:11'),
-(10, 'faruk', 'mayowadelu@gmail.com', '11111111111', 'aledoy', 'fullstack', 'Founders & Startup Teams', 'Virtual', NULL, '2025-06-16 12:27:47'),
-(11, 'faruk', 'mayowadelu@gmail.com', '07081546969', 'aledoy', 'fullstack', 'Career Professionals & Jobseekers', 'Virtual', 'Yes', '2025-06-16 15:14:16');
+INSERT INTO `registration` (`id`, `fullname`, `email`, `phone`, `organization`, `position`, `attend`, `category`, `certified`, `date_created`) VALUES
+(4, 'Francis Badejo', 'phrancisgilbert@yahoo.com', '07042629011', 'Aledoy Solution Limited', 'Web Developer', 'Career Professionals & Jobseekers', '', '', '2025-06-15 19:01:50'),
+(3, 'Francis Badejo', 'phrancisgilbert@yahoo.com', '07042629011', 'BAN BC72', 'Head, Human Resource', 'Founders & Startup Teams', '', '', '2025-06-15 18:51:32'),
+(5, 'Olumide Abikoye', 'domains@aledoy.com', '08023443581', 'Aledoy Solution Limited', 'Web Developer', 'Founders & Startup Teams', 'Physical', 'yes', '2025-06-16 21:57:35');
 
 --
 -- Indexes for dumped tables
@@ -69,5 +61,5 @@ ALTER TABLE `registration`
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
