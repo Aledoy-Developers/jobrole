@@ -12,70 +12,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <style>
-.custom-select-container {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    background-color: transparent;
-}
+    .custom-select-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background-color: transparent;
+    }
 
-.custom-select-display {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    background-color: white;
-    cursor: pointer;
-    user-select: none;
-}
+    .custom-select-display {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        background-color: white;
+        cursor: pointer;
+        user-select: none;
+    }
 
-.custom-options {
-    display: none;
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
-    width: 100%;
-    z-index: 1;
-}
+    .custom-options {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #ccc;
+        width: 100%;
+        z-index: 1;
+    }
 
-.custom-options div {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-}
+    .custom-options div {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
 
-.custom-options div:hover {
-    background-color: #f1f1f1;
-}
+    .custom-options div:hover {
+        background-color: #f1f1f1;
+    }
 
-.show-options .custom-options {
-    display: block;
-}
+    .show-options .custom-options {
+        display: block;
+    }
 
-.select-wrapper {
-    margin-bottom: 20px;
-}
+    .select-wrapper {
+        margin-bottom: 20px;
+    }
 
-#fruitSelect {
-    width: 100%;
-}
+    #fruitSelect {
+        width: 100%;
+    }
 
-#choose {
-    width: 100%;
-}
+    #choose {
+        width: 100%;
+    }
 
-select {
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+    select {
+        padding: 10px 15px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
 
-.selected-value {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-}
+    .selected-value {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
 </style>
 
 <body>
@@ -94,11 +94,11 @@ select {
                     <form action="proc-register.php" method="post">
 
                         <?php if (!empty($msg) && $msg == 'success') : ?>
-                        <div class="alert alert-success">Message Sent</div>
+                            <div class="alert alert-success">Message Sent</div>
                         <?php endif; ?>
 
                         <?php if (!empty($msg) && $msg == 'error') : ?>
-                        <div class="alert alert-danger"><?php echo htmlspecialchars($comment); ?></div>
+                            <div class="alert alert-danger"><?php echo htmlspecialchars($comment); ?></div>
                         <?php endif; ?>
 
                         <div class="mb-3">
@@ -175,9 +175,15 @@ select {
                                 <!-- <input type="text" id="hide" name="position" class="form-control" hidden> -->
                                 <div class="" id="hide" hidden>
                                     <p>Please make payment to the account details below. Send receipt via WhatsApp
-                                        +234 810 286 4120 </p>
-                                    <p><strong>GTBank: </strong>00000000 / Jobrole Consulting Ltd.<br><strong>Price:
-                                        </strong>#160,000.</p>
+                                        <strong>+234 810 286 4120</strong>
+                                    </p>
+                                    <!-- <p><strong>UBA: </strong>1023747141 / Jobrole Consulting Limited.<br><strong>Price:
+                                        </strong>#15,000.</p> -->
+                                    <p>
+                                        <strong>Name: </strong>Jobrole Consulting Limited. <br>
+                                        <strong>Bank: </strong>UBA <br>
+                                        <strong>Price: </strong>#15,000. <br>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -196,24 +202,24 @@ select {
     </div>
 
     <script>
-    document.getElementById('choose').addEventListener('change', function() {
-        const message = document.getElementById('hide');
-        if (this.value === "yes") {
-            message.hidden = false;
-        } else {
-            message.hidden = true;
-        }
-    });
+        document.getElementById('choose').addEventListener('change', function() {
+            const message = document.getElementById('hide');
+            if (this.value === "yes") {
+                message.hidden = false;
+            } else {
+                message.hidden = true;
+            }
+        });
     </script>
 
     <script>
-    const fruitSelect = document.getElementById('fruitSelect');
-    const display = document.getElementById('displaySelection');
+        const fruitSelect = document.getElementById('fruitSelect');
+        const display = document.getElementById('displaySelection');
 
-    fruitSelect.addEventListener('change', function() {
-        const selected = this.value;
-        display.textContent = 'You selected: ' + selected;
-    });
+        fruitSelect.addEventListener('change', function() {
+            const selected = this.value;
+            display.textContent = 'You selected: ' + selected;
+        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
