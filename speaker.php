@@ -57,71 +57,72 @@
         <div class="speakers-grid">
             <!-- Speaker 1 -->
             <div class="speaker-card">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" alt="Tunde Williams" class="speaker-image">
+                <img src="images/Paul (1).jpg" alt="Ngozi Adebayo" class="speaker-image">
                 <div class="speaker-info">
-                    <h3>Tunde Williams</h3>
-                    <p class="position">Investment Director, Pan-African Ventures</p>
-                    <p class="bio">Expert in startup funding with $50M+ deployed across African tech startups.</p>
-                    <div class="social-links">
+                    <h3>Mr Paul Onwuanibe</h3>
+                    <p class="position">CEO, Landmark Group</p>
+                    <p class="bio">Paul Onwuanibe is the Founder and Group Chief Executive Officer, of Landmark Group.</p>
+                    <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             
+            
             <!-- Speaker 2 -->
             <div class="speaker-card">
-                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" alt="Kwame Okafor" class="speaker-image">
+                <img src="images/Olumide Abikoye Headshot .jpg" alt="Kwame Okafor" class="speaker-image">
                 <div class="speaker-info">
-                    <h3>Kwame Okafor</h3>
-                    <p class="position">CEO, GreenFuture Energy</p>
-                    <p class="bio">Pioneer in renewable energy solutions for African markets.</p>
-                    <div class="social-links">
+                    <h3>Mr Olumide Abikoye</h3>
+                    <p class="position">CEO, Founder, Technology Strategist, and Talent Accelerator</p>
+                    <p class="bio">A visionary digital technology leader with over 20 years of experience building and scaling product-driven companies across HRTech, EdTech, and Cloud Solutions.</p>
+                    <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             
             <!-- Speaker 3 -->
             <div class="speaker-card">
-                <img src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Ngozi Adebayo" class="speaker-image">
+                <img src="images/Mrs Ifeoma Headshot .png" alt="Tunde Williams" class="speaker-image">
                 <div class="speaker-info">
-                    <h3>Ngozi Adebayo</h3>
-                    <p class="position">CTO, DigitalPay Africa</p>
-                    <p class="bio">Leading Africa's fintech revolution with innovative payment solutions.</p>
-                    <div class="social-links">
+                    <h3>Mrs Ifeoma Okoruen</h3>
+                    <p class="position">HOD, Mouka Limited</p>
+                    <p class="bio">Head of Human Resource at Mouka Limited, bringing over 20 years of experience in strategic HR management across various sectors.</p>
+                    <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
             <!-- Speaker 4 -->
             <div class="speaker-card">
-                <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Oluwaseun Adebayo" class="speaker-image">
+                <img src="images/mrs chisom headshot.jpg" alt="Oluwaseun Adebayo" class="speaker-image">
                 <div class="speaker-info">
-                    <h3>Oluwaseun Adebayo</h3>
-                    <p class="position">Head of Talent, Andela</p>
-                    <p class="bio">Expert in building high-performing tech teams across Africa.</p>
-                    <div class="social-links">
+                    <h3>Mrs Chisom Emenalom</h3>
+                    <p class="position">Mreember of ASIS International</p>
+                    <p class="bio">A seasoned expert in legal and enterprise risk management with over 15 years of experience.</p>
+                    <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
             <!-- Speaker 5 -->
             <div class="speaker-card">
-                <img src="https://images.unsplash.com/photo-1562788869-4ed32648eb72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Fatima Diallo" class="speaker-image">
+                <img src="images/Mr. Tudor Osademe.jpg" alt="Fatima Diallo" class="speaker-image">
                 <div class="speaker-info">
-                    <h3>Fatima Diallo</h3>
+                    <h3>Mr Tudor Osademe</h3>
                     <p class="position">Founder, AgriTech Solutions</p>
                     <p class="bio">Transforming African agriculture through technology and innovation.</p>
-                    <div class="social-links">
+                    <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

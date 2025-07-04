@@ -58,7 +58,7 @@
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Networking</span>
-                                <h3 class="session-title">Arrival, Registration & Breakfast Lounge</h3>
+                                <h3 class="session-title">Arrival & Registration</h3>
                             </div>
                         </div>
                         <p class="session-description">Arrive, check-in, and enjoy breakfast while networking with
