@@ -16,13 +16,12 @@ $organization = $_POST['organization'];
 $position     = $_POST['position'];
 $category       = $_POST['category'];
 $attend       = $_POST['attend'];
-$certified       = $_POST['certified'];
 
 // Validation
-  if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend || !$category || !$certified) {
+  if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend || !$category) {
     $msg = 'error';
     $comment = 'All fields are required';
-    include('register.php');
+    include('register-form.php');
     exit;
 }
 
@@ -34,6 +33,15 @@ if (strlen($phone) != 11) {
     exit;
 }
 
+if($category == 'no')
+{
+  $category = 'Standard Ticket - FREE';
+}
+else{
+  
+  $category = 'Premium Ticket - N15,000';
+}
+
 // Database connection
 include('conn.php');
 
@@ -41,56 +49,44 @@ include('conn.php');
 $query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position', attend = '$attend', category = '$category', certified = '$certified'";
 $result = mysqli_query($conn, $query);
 
+$ticket_id = date('mi').rand(100,999);
+
 // Build email content
-$subject = $fullname.' registers for '.$program;
-$body = '
-<table cellpadding="0" cellspacing="0" width="100%" style="font-family: Arial, sans-serif; color: #333;">
-<tr>
-<td align="center">
-<table width="600" cellpadding="20" cellspacing="0" style="border: 1px solid #ddd; background-color: #fff;">
-<tr>
-<td>
-<p><strong>Name:</strong> ' . $fullname . '</p>
-<p><strong>Email:</strong> ' . $email . '</p>
-<p><strong>Phone:</strong> ' . $phone . '</p>
-<p><strong>Program:</strong> ' . $organization . '</p>
-<p><strong>Skill:</strong> ' . $position . ' </p>
-<p><strong>Attend:</strong> ' . $attend . ' </p>
-<p><strong>Category:</strong> ' . $category . ' </p>
-<p><strong>Require Certificate:</strong> ' . $certified . ' </p>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-';
+$subject = 'You registered for Next Frontier Conference 2025';
+$body = "Dear $fullname,<br><br>
+
+Thank you for registering for Next Frontier Conference 2025, proudly organized by Jobrole Consulting Limited.
+<br><br>
+📍 Venue: Landmark Towers, Lagos<br>
+📅 Date: Saturday, September 20 2025<br>
+🎟️ Ticket Category: $category<br>
+🆔 Ticket ID: $ticket_id<br><br>
+
+We look forward to igniting your potential and fueling your growth at Next Frontier Conference 2025.<br><br>
+
+For questions ,feel free to reply to this email.<br><br>
+
+Warm regards,<br>
+The Jobrole Consulting Team<br>
+info@jobroleconsulting.com<br>
+www.jobroleconsulting.com<br>";
 
 $mail = new PHPMailer();
-// $mail->IsSMTP();
-// $mail->Port = 587;
-// $mail->SMTPAuth = true;
-// $mail->Username = 'noreply@ecardnaija.com';
-// $mail->Password = 'Aledoy@2025';
-// $mail->Host = 'mail.ecardnaija.com';
-// $mail->SMTPSecure = 'tls';
-$mail->From = "noreply@ecardnaija.com";
+$mail->IsSMTP();
+$mail->Port = 465;
+$mail->SMTPAuth = true;
+$mail->Username='info@jobroleng.com';
+$mail->Password = 'NewAledoy@123123';  //yahoo app password for noreply email 
+$mail->Host='smtppro.zoho.com';
+$mail->SMTPSecure = 'ssl'; 
+$mail->From = 'info@jobroleng.com';
 $mail->FromName = "Next Frontier";
-$mail->AddAddress('info@jobroleng.com');
+$mail->AddAddress($email);
 $mail->CharSet = 'UTF-8';
 $mail->IsHTML(true);
 $mail->Subject = $subject;
 $mail->Body = $body;
 $mail->send();
-
-
-
-if (!$mail->send()) {
-   $info = 'error';
-   $correction = 'Could Not Send Mail';
-   include('register.php');
-   exit;
-}
 
 $msg = 'success';
 include('thankyou.php');
