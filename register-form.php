@@ -197,6 +197,9 @@
         </div>
     </div>
 
+    <?php include('footer.php'); ?>
+
+
     <script>
         document.getElementById('choose').addEventListener('change', function() {
             const message = document.getElementById('hide');
@@ -219,3 +222,6 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+    </html>
