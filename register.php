@@ -171,7 +171,7 @@
                                 <!-- <input type="text" id="hide" name="position" class="form-control" hidden> -->
                                 <div class="" id="hide" hidden>
                                     <p>Please make payment to the account details below. Send receipt via WhatsApp
-                                        <strong>+234 810 286 4120</strong>
+                                        <strong>+234 916 000 5955</strong>
                                     </p>
                                     <!-- <p><strong>UBA: </strong>1023747141 / Jobrole Consulting Limited.<br><strong>Price:
                                         </strong>#15,000.</p> -->
