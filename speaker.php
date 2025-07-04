@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="style.css">
     <!-- <script src="script.js"></script> -->
 </head>
+
 <body>
     <!-- Header -->
     <?php include('header.php'); ?>
 
-        
+
     <!-- Speakers Hero Section -->
     <section class="speakers-hero">
         <div class="container">
@@ -47,98 +49,104 @@
 
     <!-- All Speakers Grid -->
     <!-- All Speakers Grid -->
-<section class="speakers-section">
-    <div class="container">
-        <div class="section-title">
-            <h2>Conference Speakers</h2>
-            <p>Meet the visionary thinkers and doers who will share their expertise at Next Frontier 2025</p>
-        </div>
-        
-        <div class="speakers-grid">
-            <!-- Speaker 1 -->
-            <div class="speaker-card">
-                <img src="images/Paul (1).jpg" alt="Ngozi Adebayo" class="speaker-image">
-                <div class="speaker-info">
-                    <h3>Mr Paul Onwuanibe</h3>
-                    <p class="position">CEO, Landmark Group</p>
-                    <p class="bio">Paul Onwuanibe is the Founder and Group Chief Executive Officer, of Landmark Group.</p>
-                    <!-- <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div> -->
-                </div>
-            </div>
-            
-            
-            <!-- Speaker 2 -->
-            <div class="speaker-card">
-                <img src="images/Olumide Abikoye Headshot .jpg" alt="Kwame Okafor" class="speaker-image">
-                <div class="speaker-info">
-                    <h3>Mr Olumide Abikoye</h3>
-                    <p class="position">CEO, Founder, Technology Strategist, and Talent Accelerator</p>
-                    <p class="bio">A visionary digital technology leader with over 20 years of experience building and scaling product-driven companies across HRTech, EdTech, and Cloud Solutions.</p>
-                    <!-- <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div> -->
-                </div>
-            </div>
-            
-            <!-- Speaker 3 -->
-            <div class="speaker-card">
-                <img src="images/Mrs Ifeoma Headshot .png" alt="Tunde Williams" class="speaker-image">
-                <div class="speaker-info">
-                    <h3>Mrs Ifeoma Okoruen</h3>
-                    <p class="position">HOD, Mouka Limited</p>
-                    <p class="bio">Head of Human Resource at Mouka Limited, bringing over 20 years of experience in strategic HR management across various sectors.</p>
-                    <!-- <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div> -->
-                </div>
+    <section class="speakers-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Conference Speakers</h2>
+                <p>Meet the visionary thinkers and doers who will share their expertise at Next Frontier 2025</p>
             </div>
 
-            <!-- Speaker 4 -->
-            <div class="speaker-card">
-                <img src="images/mrs chisom headshot.jpg" alt="Oluwaseun Adebayo" class="speaker-image">
-                <div class="speaker-info">
-                    <h3>Mrs Chisom Emenalom</h3>
-                    <p class="position">Mreember of ASIS International</p>
-                    <p class="bio">A seasoned expert in legal and enterprise risk management with over 15 years of experience.</p>
-                    <!-- <div class="social-links">
+            <div class="speakers-grid">
+                <!-- Speaker 1 -->
+                <div class="speaker-card">
+                    <img src="images/paul.jpg" alt="Paul Inwuanibe" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Mr Paul Onwuanibe</h3>
+                        <p class="position">CEO, Landmark Group</p>
+                        <p class="bio">Paul Onwuanibe is the Founder and Group Chief Executive Officer, of Landmark
+                            Group.</p>
+                        <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
+                    </div>
                 </div>
-            </div>
 
-            <!-- Speaker 5 -->
-            <div class="speaker-card">
-                <img src="images/Mr. Tudor Osademe.jpg" alt="Fatima Diallo" class="speaker-image">
-                <div class="speaker-info">
-                    <h3>Mr Tudor Osademe</h3>
-                    <p class="position">Founder, AgriTech Solutions</p>
-                    <p class="bio">Transforming African agriculture through technology and innovation.</p>
-                    <!-- <div class="social-links">
+
+                <!-- Speaker 2 -->
+                <div class="speaker-card">
+                    <img src="images/lu.jpg" alt="Lu Abikoye" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Lu Abikoye</h3>
+                        <p class="position">CEO, Founder, Technology Strategist, and Talent Accelerator</p>
+                        <p class="bio">A visionary digital technology leader with over 20 years of experience building
+                            and scaling product-driven companies across HRTech, EdTech, and Cloud Solutions.</p>
+                        <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
+                    </div>
+                </div>
+
+                <!-- Speaker 3 -->
+                <div class="speaker-card">
+                    <img src="images/ifeoma.jpg" alt="Ifeoma Okoruen" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Mrs Ifeoma Okoruen</h3>
+                        <p class="position">HOD, Mouka Limited</p>
+                        <p class="bio">Head of Human Resource at Mouka Limited, bringing over 20 years of experience in
+                            strategic HR management across various sectors.</p>
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    </div>
+                </div>
+
+                <!-- Speaker 4 -->
+                <div class="speaker-card">
+                    <img src="images/chisom.jpg" alt="Chisom Emenalom" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Mrs Chisom Emenalom</h3>
+                        <p class="position">Member of ASIS International</p>
+                        <p class="bio">A seasoned expert in legal and enterprise risk management with over 15 years of
+                            experience.</p>
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    </div>
+                </div>
+
+                <!-- Speaker 5 -->
+                <div class="speaker-card">
+                    <img src="images/tudor.jpg" alt="Tudor Osademe" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Mr Tudor Osademe</h3>
+                        <p class="position">Founder, AgriTech Solutions</p>
+                        <p class="bio">Transforming African agriculture through technology and innovation.</p>
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- CTA Section -->
     <section class="keynote-section" style="padding: 60px 0;">
         <div class="container" style="text-align: center;">
             <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Want to Join These Amazing Speakers?</h2>
-            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px;">Register now to secure your spot at Next Frontier 2025</p>
+            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px;">Register now to secure your spot at
+                Next Frontier 2025</p>
             <a href="register.php" class="btn btn-light">Register Now</a>
         </div>
     </section>
 
-   <?php include('footer.php'); ?>
+    <?php include('footer.php'); ?>
 </body>
+
 </html>
