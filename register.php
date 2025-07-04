@@ -133,27 +133,26 @@
 
                         <div class="dropdown mb-3">
                             <div class="select-wrapper">
-                                <label for="fruitSelect">Category:</label>
-                                <select id="fruitSelect" name="category">
-                                    <option value="" disabled selected>Select an option</option>
-                                    <option value="Standard Ticket - FREE" name="input">Standard Ticket - FREE
-                                    </option>
-                                    <option value="Premium Ticket - ₦15,000" name="input">Premium Ticket - ₦15,000</option>
+                                <label for="fruitSelect">How you do you want to attend?</label>
+                                <select id="fruitSelect" name="attend">
+                                    <option value="" disabled selected>Choose One</option>
+                                    <option value="physical" name="option">Physical</option>
+                                    <option value="virtual" name="option">Virtual</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="dropdown mb-3">
                             <div class="select-wrapper">
-                                <label for="fruitSelect">How you do you want to attend?</label>
-                                <select id="choose" name="attend">
-                                    <option value="" disabled selected>Choose One</option>
-                                    <option value="yes" name="option">Physical</option>
-                                    <option value="yes" name="option">Virtual</option>
+                                <label for="fruitSelect">Category:</label>
+                                <select id="choose" name="category">
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="no" name="option">Standard Ticket - FREE
+                                    </option>
+                                    <option value="yes" name="option">Premium Ticket - ₦15,000</option>
                                 </select>
                             </div>
                         </div>
-
                         <!-- <div class="dropdown mb-3">
                             <div class="select-wrapper">
                                 <label for="fruitSelect">Do you want a certificate of attendance?</label>
