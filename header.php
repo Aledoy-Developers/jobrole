@@ -12,7 +12,7 @@
                     <li><a href="speaker.php">Speakers</a></li>
                     <li><a href="agenda.php">Agenda</a></li>
                     <!-- <li><a href="award.php">Awards</a></li> -->
-                    <li><a href="register.php">Register</a></li>
+                    <li><a href="register-text.php">Register</a></li>
                 </ul>
             </nav>
         </div>
