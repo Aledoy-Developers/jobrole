@@ -18,6 +18,8 @@ for($i=0; $i<$num; $i++)
     echo 'Organization: '.$row['organization'].'<br>';
     echo 'Position: '.$row['position'].'<br>';
     echo 'Participant: '.$row['attend'].'<br>';
+    echo 'Category: '.$row['category'].'<br>';
+    echo 'Certificate: '.$row['certified'].'<br>';
     echo '<hr>';
 }
 ?>
