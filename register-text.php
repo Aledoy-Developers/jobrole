@@ -116,5 +116,10 @@ li {
     <div class="re">
         <a href="register.php" class="btn">Register Now</a>
     </div>
+
+    <br>
+
+    <?php include('footer.php'); ?>
+
 </body>
 </html>

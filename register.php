@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Register Now</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
@@ -136,13 +136,9 @@
                                 <label for="fruitSelect">Category:</label>
                                 <select id="fruitSelect" name="category">
                                     <option value="" disabled selected>Select an option</option>
-                                    <option value="Founders & Startup Teams" name="input">Founders & Startup Teams
+                                    <option value="Standard Ticket - FREE" name="input">Standard Ticket - FREE
                                     </option>
-                                    <option value="SME Owners & Leaders" name="input">SME Owners & Leaders</option>
-                                    <option value="Career Professionals & Jobseekers" name="input">Career Professionals
-                                        & Jobseekers</option>
-                                    <option value="Investors, and Ecosystem Builders" name="input">Investors, and
-                                        Ecosystem Builders</option>
+                                    <option value="Premium Ticket - ₦15,000" name="input">Premium Ticket - ₦15,000</option>
                                 </select>
                             </div>
                         </div>
@@ -222,4 +218,4 @@
         });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></s
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
