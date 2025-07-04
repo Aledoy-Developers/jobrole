@@ -146,15 +146,15 @@
                         <div class="dropdown mb-3">
                             <div class="select-wrapper">
                                 <label for="fruitSelect">How you do you want to attend?</label>
-                                <select id="fruitSelect" name="attend">
+                                <select id="choose" name="attend">
                                     <option value="" disabled selected>Choose One</option>
-                                    <option value="Physical" name="option">Physical</option>
-                                    <option value="Virtual" name="option">Virtual</option>
+                                    <option value="yes" name="option">Physical</option>
+                                    <option value="yes" name="option">Virtual</option>
                                 </select>
                             </div>
                         </div>
 
-                        <div class="dropdown mb-3">
+                        <!-- <div class="dropdown mb-3">
                             <div class="select-wrapper">
                                 <label for="fruitSelect">Do you want a certificate of attendance?</label>
                                 <select id="choose" name="certified">
@@ -163,7 +163,7 @@
                                     <option value="no" name="option">No</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="dropdown mb-3">
                             <div class="select-wrapper">
@@ -176,8 +176,9 @@
                                     <!-- <p><strong>UBA: </strong>1023747141 / Jobrole Consulting Limited.<br><strong>Price:
                                         </strong>#15,000.</p> -->
                                     <p>
-                                        <strong>Name: </strong>Jobrole Consulting Limited. <br>
+                                        <strong>Account number: </strong>1023747141<br>
                                         <strong>Bank: </strong>UBA <br>
+                                        <strong>Name: </strong>Jobrole Consulting Limited. <br>
                                         <strong>Price: </strong>#15,000. <br>
                                     </p>
                                 </div>
