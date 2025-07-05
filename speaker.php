@@ -59,6 +59,21 @@
             <div class="speakers-grid">
                 <!-- Speaker 1 -->
                 <div class="speaker-card">
+                    <img src="images/chigbo.jpg" alt="Chigbo Okeke" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Mr Chigbo Okeke</h3>
+                        <p class="position">Host/Lead Consultant, Jobrole Consulting</p>
+                        <p class="bio">He has led various teams in HR Consulting, Personnel Outsourcing, Employee Risk
+                            Management, Strategy and Business Development.</p>
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    </div>
+                </div>
+
+
+                <div class="speaker-card">
                     <img src="images/paul.jpg" alt="Paul Inwuanibe" class="speaker-image">
                     <div class="speaker-info">
                         <h3>Mr Paul Onwuanibe</h3>
