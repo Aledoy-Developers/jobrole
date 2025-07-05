@@ -122,8 +122,10 @@
                 <div class="speaker-card">
                     <img src="images/chisom.jpg" alt="Chisom Emenalom" class="speaker-image">
                     <div class="speaker-info">
-                        <h3>Mrs Chisom Emenalom</h3>
-                        <p class="position">Member of ASIS International</p>
+                        <h3>Mrs Chisom Emenalom LLB EPO BL CPP
+                        </h3>
+                        <p class="position">Associate Vice President, Business growth & Operations Bulwark Intelligence
+                        </p>
                         <p class="bio">A seasoned expert in legal and enterprise risk management with over 15 years of
                             experience.</p>
                         <!-- <div class="social-links">
@@ -138,14 +140,32 @@
                     <img src="images/tudor.jpg" alt="Tudor Osademe" class="speaker-image">
                     <div class="speaker-info">
                         <h3>Mr Tudor Osademe</h3>
-                        <p class="position">Founder, AgriTech Solutions</p>
-                        <p class="bio">Transforming African agriculture through technology and innovation.</p>
+                        <p class="position">Head Human Capital, Rex Insurance</p>
+                        <p class="bio">A CMD Certified Management Trainer, Associate member of Nigeria Institute of
+                            Management (NIM) and the Chartered Institute of Personnel Management (CIPM).</p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
                     </div>
                 </div>
+
+
+                <div class="speaker-card">
+                    <img src="images/arthur.jpg" alt="Arthur Usiagwu" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Engr. Arthur Usiagwu</h3>
+                        <p class="position">Managing Director/CEO CCS Technology Limited</p>
+                        <p class="bio">A CMD Certified Management Trainer, Associate member of Nigeria Institute of
+                            Management (NIM) and the Chartered Institute of Personnel Management (CIPM).</p>
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
