@@ -92,7 +92,7 @@ select {
                         <?php if (!empty($msg) && $msg == 'success') : ?>
                         <div class="alert alert-success">Thank you <?php echo $fullname; ?>!<br><br>Your registration
                             was
-                            successful</div>
+                            successful. </div>
                         <?php endif; ?>
 
 

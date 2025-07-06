@@ -20,7 +20,8 @@
         <div class="container">
             <div class="speakers-hero-content">
                 <h1>Meet Our Speakers</h1>
-                <p>Africa's brightest minds and boldest innovators sharing their insights at Next Frontier 2025</p>
+                <p>The visionary thinkers and doers who will share their expertise at the Next Frontier Conference 2025!
+                </p>
             </div>
         </div>
     </section>
@@ -151,19 +152,17 @@
                 </div>
 
 
-                <div class="speaker-card">
+                <!-- <div class="speaker-card">
                     <img src="images/arthur.jpg" alt="Arthur Usiagwu" class="speaker-image">
                     <div class="speaker-info">
                         <h3>Engr. Arthur Usiagwu</h3>
                         <p class="position">Managing Director/CEO CCS Technology Limited</p>
                         <p class="bio">A CMD Certified Management Trainer, Associate member of Nigeria Institute of
                             Management (NIM) and the Chartered Institute of Personnel Management (CIPM).</p>
-                        <!-- <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div> -->
+                    
+                        
                     </div>
-                </div>
+                </div> -->
 
 
             </div>
