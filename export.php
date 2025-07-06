@@ -1,6 +1,6 @@
 <?php
 // Create MySQLi connection
-include('conn.php'); // $conn should be the mysqli connection
+include('conn.php'); 
 
 $sql = "SELECT * FROM registration";
 $result = mysqli_query($conn, $sql);
