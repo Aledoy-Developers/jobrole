@@ -24,23 +24,6 @@ jobs:
         run: |
           cat changed_files.txt
 
-      - name: Install MySQL Client
-        run: sudo apt-get install -y mysql-client
-
-      - name: Run Database Script
-        env:
-          CPANEL_USER: ${{ secrets.CPANEL_USER }}
-          CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }}
-          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
-          DB_NAME: ${{ secrets.DB_NAME }}
-          DB_USER: ${{ secrets.DB_USER }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-        run: |
-          mysql --host=${{ secrets.CPANEL_HOST }} \
-                --user=${{ secrets.DB_USER }} \
-                --password=${{ secrets.DB_PASSWORD }} \
-                ${{ secrets.DB_NAME }} < database_script.sql
-
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
 
