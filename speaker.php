@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speakers - Next Frontier 2025</title>
+    <title>Speakers - Next Frontier 2025!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- <script src="script.js"></script> -->
@@ -64,7 +64,8 @@
                     <div class="speaker-info">
                         <h3>Mr Chigbo Okeke</h3>
                         <p class="position">Host/Lead Consultant, Jobrole Consulting</p>
-                        <p class="bio">Meet the visionary thinkers and doers who will share their expertise at the Next Frontier Conference 2025!</p>
+                        <p class="bio">Meet the visionary thinkers and doers who will share their expertise at the Next
+                            Frontier Conference 2025!</p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
