@@ -46,7 +46,7 @@ else{
 include('conn.php');
 
 // Insert into database
-$query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position', attend = '$attend', category = '$category', category = '$category'";
+$query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position', attend = '$attend', category = '$category'";
 $result = mysqli_query($conn, $query);
 
 $ticket_id = date('mi').rand(100,999);
