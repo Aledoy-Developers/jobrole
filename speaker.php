@@ -123,12 +123,11 @@
                 <div class="speaker-card">
                     <img src="images/chisom.jpg" alt="Chisom Emenalom" class="speaker-image">
                     <div class="speaker-info">
-                        <h3>Mrs Chisom Emenalom LLB EPO BL CPP
+                        <h3>Chisom Emenalom BL CPP
                         </h3>
-                        <p class="position">Associate Vice President, Business growth & Operations Bulwark Intelligence
+                        <p class="position">Seasoned expert in Legal and Enterprise risk management with over 15 years of experience.
                         </p>
-                        <p class="bio">A seasoned expert in legal and enterprise risk management with over 15 years of
-                            experience.</p>
+                        <p class="bio">Throughout her career, Chisom has worked with various companies to restructure business operations, strategy and management while leveraging on her expertise to drive growth and efficiency.</p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
