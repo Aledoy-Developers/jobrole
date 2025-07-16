@@ -45,6 +45,18 @@ else{
 // Database connection
 include('conn.php');
 
+
+$res = mysqli_query($conn,"select * from registration where email = '$email' or phone = '$phone'");
+$num = mysqli_num_rows($res);
+
+if($num > 0)
+{
+  $msg = 'error';
+    $comment = 'Sorry! It apears you already registered';
+    include('register-form.php');
+    exit;
+}
+
 // Insert into database
 $query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position', attend = '$attend', category = '$category'";
 $result = mysqli_query($conn, $query);
