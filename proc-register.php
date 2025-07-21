@@ -84,14 +84,14 @@ info@jobroleng.com<br>
 www.jobroleng.com<br>";
 
 $mail = new PHPMailer();
-// $mail->IsSMTP();
-// $mail->Port = 587;
-// $mail->SMTPAuth = true;
-// $mail->Username='info@jobroleng.com';
-// $mail->Password = 'bput password here';  //yahoo app password for noreply email 
-// $mail->Host='smtppro.zoho.com';
-// $mail->SMTPSecure = 'tls'; 
-$mail->From = 'info@jobroleng.com';
+$mail->IsSMTP();
+$mail->Port = 587;
+$mail->SMTPAuth = true;
+$mail->Username='notification@jobroleng.com';
+$mail->Password = 'hZ@ql&Wz;nyD';  //yahoo app password for noreply email 
+$mail->Host='mail.jobroleng.com';
+$mail->SMTPSecure = 'tls'; 
+$mail->From = 'notification@jobroleng.com';
 $mail->FromName = "Next Frontier";
 $mail->AddAddress($email);
 $mail->CharSet = 'UTF-8';
