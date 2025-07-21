@@ -1,24 +1,43 @@
 <?php
+declare(strict_types=1);
 
-include('conn.php');
+require_once 'conn.php';  // Uses the improved mysqli connection
 
 echo '<h2>Registered Users - <a href="export.php">Export to Ms Excel</a></h2>';
 
-$res = mysqli_query($conn,"select * from registration order by id desc");
-$num = mysqli_num_rows($res);
+// Query the database
+$sql = "SELECT * FROM registration ORDER BY id DESC";
+$result = $conn->query($sql);
 
-echo '<h3> Total Record(s): '.$num.'</h3>';
-for($i=0; $i<$num; $i++)
-{
-    $row = mysqli_fetch_array($res);
-    echo 'Date: '.date('D d M Y h:i:s',strtotime($row['date_created'])).'<br>';
-    echo 'Full name: '.$row['fullname'].'<br>';
-    echo 'Email: '.$row['email'].'<br>';
-    echo 'Phone: '.$row['phone'].'<br>';
-    echo 'Organization: '.$row['organization'].'<br>';
-    echo 'Position: '.$row['position'].'<br>';
-    echo 'Attendance: '.$row['attend'].'<br>';
-    echo 'Category: '.$row['category'].'<br>';
-    echo '<hr>';
+if (!$result) {
+    // Log the error, but show a friendly message
+    error_log("DB Query Error: " . $conn->error);
+    echo "<p>Unable to retrieve registrations at the moment.</p>";
+    exit;
 }
+
+$total = $result->num_rows;
+echo '<h3>Total Record(s): ' . $total . '</h3>';
+
+// Display records
+if ($total > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo '<div style="margin-bottom:15px;">';
+        echo '<strong>Date:</strong> ' . date('D d M Y h:i:s', strtotime($row['date_created'])) . '<br>';
+        echo '<strong>Full name:</strong> ' . htmlspecialchars($row['fullname']) . '<br>';
+        echo '<strong>Email:</strong> ' . htmlspecialchars($row['email']) . '<br>';
+        echo '<strong>Phone:</strong> ' . htmlspecialchars($row['phone']) . '<br>';
+        echo '<strong>Organization:</strong> ' . htmlspecialchars($row['organization']) . '<br>';
+        echo '<strong>Position:</strong> ' . htmlspecialchars($row['position']) . '<br>';
+        echo '<strong>Attendance:</strong> ' . htmlspecialchars($row['attend']) . '<br>';
+        echo '<strong>Category:</strong> ' . htmlspecialchars($row['category']) . '<br>';
+        echo '<hr>';
+        echo '</div>';
+    }
+} else {
+    echo "<p>No registrations found.</p>";
+}
+
+// Free the result set
+$result->free();
 ?>

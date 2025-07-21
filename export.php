@@ -1,44 +1,48 @@
 <?php
-// Create MySQLi connection
-include('conn.php'); 
+declare(strict_types=1);
 
-$sql = "SELECT * FROM registration";
-$result = mysqli_query($conn, $sql);
+require_once 'conn.php'; // Uses improved mysqli OOP connection
+
+$sql = "SELECT * FROM registration ORDER BY id DESC";
+$result = $conn->query($sql);
 
 if (!$result) {
-    die("Error executing query: " . mysqli_error($conn));
+    error_log("Export query failed: " . $conn->error);
+    die("❌ Error retrieving data for export.");
 }
 
-$filename = "participants.xls";
+$filename = "participants_" . date('Y-m-d_H-i') . ".xls";
 
-// Send headers to force download as Excel
-header("Content-Type: application/vnd.ms-excel");
-header("Content-Disposition: attachment; filename=$filename");
+// Send headers for Excel download
+header("Content-Type: application/vnd.ms-excel; charset=UTF-8");
+header("Content-Disposition: attachment; filename=\"$filename\"");
 header("Pragma: no-cache");
 header("Expires: 0");
 
-$sep = "\t";
+$sep = "\t"; // tab separator
 
-// Output column headers
-$fields = mysqli_fetch_fields($result);
+// ✅ Output column headers
+$fields = $result->fetch_fields();
 foreach ($fields as $field) {
     echo $field->name . $sep;
 }
 echo "\n";
 
-// Output each row
-while ($row = mysqli_fetch_assoc($result)) {
-    $line = '';
+// ✅ Output each row
+while ($row = $result->fetch_assoc()) {
+    $lineData = [];
     foreach ($row as $value) {
         if (!isset($value)) {
-            $line .= "NULL" . $sep;
-        } elseif ($value != "") {
-            $line .= str_replace(array("\t", "\n", "\r"), ' ', $value) . $sep;
+            $lineData[] = "NULL";
         } else {
-            $line .= "" . $sep;
+            // Clean tabs & newlines to avoid breaking Excel cells
+            $cleanValue = str_replace(["\t", "\r", "\n"], ' ', $value);
+            $lineData[] = $cleanValue;
         }
     }
-    echo trim($line) . "\n";
+    echo implode($sep, $lineData) . "\n";
 }
+
+// Free result set
+$result->free();
 exit;
-?>

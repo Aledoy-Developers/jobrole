@@ -1,116 +1,127 @@
-<?php 
-
-
+<?php
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
-//ini_set('display_errors', 1);
 ini_set('display_errors', 0);
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-require_once('PHPMailer/PHPMailerAutoload.php');
+require_once __DIR__ . '/vendor/autoload.php';  // Make sure PHPMailer is installed via Composer
 
-// Collect POST data
-$fullname     = $_POST['fullname'];
-$email        = $_POST['email'];
-$phone        = $_POST['phone'];
-$organization = $_POST['organization'];
-$position     = $_POST['position'];
-$category       = $_POST['category'];
-$attend       = $_POST['attend'];
+// Collect POST data safely
+$fullname     = trim($_POST['fullname'] ?? '');
+$email        = trim($_POST['email'] ?? '');
+$phone        = trim($_POST['phone'] ?? '');
+$organization = trim($_POST['organization'] ?? '');
+$position     = trim($_POST['position'] ?? '');
+$category     = trim($_POST['category'] ?? '');
+$attend       = trim($_POST['attend'] ?? '');
 
 // Validation
-  if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend || !$category) {
+if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend || !$category) {
     $msg = 'error';
     $comment = 'All fields are required';
     include('register-form.php');
     exit;
 }
 
-
-if (strlen($phone) != 11) {
+if (!preg_match('/^\d{11}$/', $phone)) {
     $msg = 'error';
     $comment = 'Please enter a valid 11-digit phone number';
-    include('register.php');
+    include('register-form.php');
     exit;
 }
 
-if($category == 'no')
-{
-  $category = 'Standard Ticket - FREE';
-}
-else{
-  
-  $category = 'Premium Ticket - N15,000';
+// Ticket category
+if ($category === 'no') {
+    $category = 'Standard Ticket - FREE';
+} else {
+    $category = 'Premium Ticket - N15,000';
 }
 
 // Database connection
 include('conn.php');
 
+// Check for duplicate registration
+$stmt = $conn->prepare("SELECT id FROM registration WHERE email = ? OR phone = ?");
+$stmt->bind_param('ss', $email, $phone);
+$stmt->execute();
+$result = $stmt->get_result();
 
-$res = mysqli_query($conn,"select * from registration where email = '$email' or phone = '$phone'");
-$num = mysqli_num_rows($res);
-
-if($num > 0)
-{
-  $msg = 'error';
-    $comment = 'Sorry! It apears you already registered';
+if ($result->num_rows > 0) {
+    $msg = 'error';
+    $comment = 'Sorry! It appears you already registered';
     include('register-form.php');
     exit;
 }
 
-// Insert into database
-$query = "INSERT INTO registration SET fullname = '$fullname', email = '$email', phone = '$phone', organization = '$organization', position = '$position', attend = '$attend', category = '$category'";
-$result = mysqli_query($conn, $query);
+// Insert into database securely
+$stmt = $conn->prepare("INSERT INTO registration (fullname, email, phone, organization, position, attend, category) VALUES (?, ?, ?, ?, ?, ?, ?)");
+$stmt->bind_param('sssssss', $fullname, $email, $phone, $organization, $position, $attend, $category);
+$stmt->execute();
 
-$ticket_id = date('mi').rand(100,999);
+// Generate ticket ID
+$ticket_id = date('mi') . rand(100, 999);
 
 // Build email content
 $subject = 'You registered for Next Frontier Conference 2025';
-$body = "Dear $fullname,<br><br>
+$body = "
+Dear {$fullname},<br><br>
 
-Thank you for registering for Next Frontier Conference 2025, proudly organized by Jobrole Consulting Limited.
-<br><br>
-📍 Venue: Landmark Towers, Lagos<br>
-📅 Date: Saturday, September 20 2025<br>
-🎟️ Ticket Category: $category<br>
-🆔 Ticket ID: $ticket_id<br><br>
+Thank you for registering for <strong>Next Frontier Conference 2025</strong>, proudly organized by Jobrole Consulting Limited.<br><br>
+
+📍 <strong>Venue:</strong> Landmark Towers, Lagos<br>
+📅 <strong>Date:</strong> Saturday, September 20, 2025<br>
+🎟️ <strong>Ticket Category:</strong> {$category}<br>
+🆔 <strong>Ticket ID:</strong> #{$ticket_id}<br><br>
 
 We look forward to igniting your potential and fueling your growth at Next Frontier Conference 2025.<br><br>
 
-For questions ,feel free to reply to this email.<br><br>
+For any questions, feel free to reply to this email.<br><br>
 
 Warm regards,<br>
-The Jobrole Consulting Team<br>
+<strong>The Jobrole Consulting Team</strong><br>
 info@jobroleng.com<br>
-www.jobroleng.com<br>";
+<a href='https://www.jobroleng.com'>www.jobroleng.com</a><br>
+";
 
-$mail = new PHPMailer();
-$mail->IsSMTP();
-$mail->Port = 587;
-$mail->SMTPAuth = true;
-$mail->Username='notification@jobroleng.com';
-$mail->Password = 'hZ@ql&Wz;nyD';  //yahoo app password for noreply email 
-$mail->Host='mail.jobroleng.com';
-$mail->SMTPSecure = 'tls'; 
-$mail->From = 'notification@jobroleng.com';
-$mail->FromName = "Next Frontier";
-$mail->AddAddress($email);
-$mail->CharSet = 'UTF-8';
-$mail->IsHTML(true);
-$mail->Subject = $subject;
-$mail->Body = $body;
+// ✅ Modern PHPMailer usage
+$mail = new PHPMailer(true);
 
-if(!$mail->send()) {
-  // Optional: Log or display the error
-  error_log('Mailer Error: ' . $mail->ErrorInfo);
-  $msg = 'error';
-  $comment = 'Unable to send confirmation email at the moment.';
-  include('register-form.php');
-  exit;
-} else {
-  $msg = 'success';
-  include('thankyou.php');
-  exit;
+try {
+    // SMTP Settings
+    $mail->isSMTP();
+    $mail->Host       = 'mail.cheapwebsitenigeria.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'noreply@cheapwebsitenigeria.com';
+    $mail->Password   = 'Aledoy@2025!'; // Use app password or secure secret storage
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // TLS encryption
+    $mail->Port       = 587;
+
+    // Email Headers
+    $mail->setFrom('noreply@cheapwebsitenigeria.com', 'Next Frontier');
+    $mail->addAddress($email);
+    $mail->addReplyTo('info@jobroleng.com', 'Jobrole Consulting');
+
+    // Content
+    $mail->isHTML(true);
+    $mail->CharSet = 'UTF-8';
+    $mail->Subject = $subject;
+    $mail->Body    = $body;
+
+    // Optional Debugging
+    // $mail->SMTPDebug = 2; 
+    // $mail->Debugoutput = 'html';
+
+    $mail->send();
+
+    $msg = 'success';
+    include('thankyou.php');
+    exit;
+
+} catch (Exception $e) {
+    error_log('Mailer Error: ' . $mail->ErrorInfo);
+    $msg = 'error';
+    $comment = 'Unable to send confirmation email at the moment.';
+    include('register-form.php');
+    exit;
 }
-
-
-?>
