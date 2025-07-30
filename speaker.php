@@ -150,6 +150,39 @@
                     </div>
                 </div>
 
+                <!-- Speaker 6 -->
+                <div class="speaker-card">
+                    <img src="images/samuel.jpg" alt="Olawale Samuel" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Mr Olawale Samuel</h3>
+                        <p class="position">CEO and Co-founder, Axia Africa</p>
+                        <p class="bio">With a relentless drive to bridge the digital skills gap across the continent, Olawale is redefining
+                        the future of education and employment in Africa. 
+                        </p>
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    </div>
+                </div>
+
+                <!-- Speaker 7 -->
+                <div class="speaker-card">
+                    <img src="images/bright.jpg" alt="Bright Sekoni" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Mr Bright Sekoni</h3>
+                        <p class="position">Founder and CEO, Audacia Properties</p>
+                        <p class="bio">An inspiring tale of resilience, ambition, and innovation. A prominent
+                        Nigerian entrepreneur, Bright is the Founder and CEO of Audacia Propertiesi, one of Nigeria’s
+                        fastest-growing real estate firms. 
+</p>
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    </div>
+                </div>
+
 
                 <!-- <div class="speaker-card">
                     <img src="images/arthur.jpg" alt="Arthur Usiagwu" class="speaker-image">
