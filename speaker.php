@@ -174,6 +174,27 @@
                         <p class="position">CEO and Co-founder, Axia Africa</p>
                         <p class="bio">With a relentless drive to bridge the digital skills gap across the continent, Olawale is redefining
                         the future of education and employment in Africa. 
+                        
+                        </p>
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        
+                        git a
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> --> 
+                    </div>
+                </div>
+                
+
+                
+                <!-- Speaker 8 -->
+                <div class="speaker-card">
+                    <img src="images/mariam.jpg" alt="Mariam Abdullahi " class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Mrs Mariam Abdullahi</h3>
+                        <p class="position">Business Transformation & Strategy Expert, Certified Strategy Professional, SPHRi, Product & Process Leader</p>
+                        <p class="bio">Transformation and strategy leader with experience spanning Banking, eCommerce, Fintech and the Energy sector, known for driving impactful change at the intersection of technology, talent, and process improvement.
+
                         </p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -181,7 +202,7 @@
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
                     </div>
-
+                </div>
                 <!-- <div class="speaker-card">
                     <img src="images/arthur.jpg" alt="Arthur Usiagwu" class="speaker-image">
                     <div class="speaker-info">
@@ -189,12 +210,8 @@
                         <p class="position">Managing Director/CEO CCS Technology Limited</p>
                         <p class="bio">A CMD Certified Management Trainer, Associate member of Nigeria Institute of
                             Management (NIM) and the Chartered Institute of Personnel Management (CIPM).</p>
-                    
-                        
                     </div>
                 </div> -->
-
-
             </div>
         </div>
     </section>
