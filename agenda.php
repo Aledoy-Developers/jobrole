@@ -74,7 +74,7 @@
                             <div>
                                 <span class="session-track">All Tracks</span>
                                 <h3 class="session-title">Official Welcome & Opening Remarks</h3>
-                                <p class="session-speaker">Mr Chigbo</p>
+                                <!-- <p class="session-speaker">Mr Chigbo</p> -->
                             </div>
                         </div>
                         <p class="session-description">MC kickoff and opening address by Jobrole CEO</p>
