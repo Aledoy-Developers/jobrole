@@ -61,8 +61,7 @@
                                 <h3 class="session-title">Arrival & Registration</h3>
                             </div>
                         </div>
-                        <p class="session-description">Arrive, check-in, and enjoy breakfast while networking with
-                            fellow attendees.</p>
+                        <p class="session-description">Smooth check-in with background music, welcome kits.</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
@@ -75,11 +74,10 @@
                             <div>
                                 <span class="session-track">All Tracks</span>
                                 <h3 class="session-title">Official Welcome & Opening Remarks</h3>
-                                <p class="session-speaker">Dr. Amina Johnson, Founder & CEO, TechInnovate Africa</p>
+                                <p class="session-speaker">Mr Chigbo</p>
                             </div>
                         </div>
-                        <p class="session-description">Our opening keynote will set the stage for the conference,
-                            exploring emerging trends and opportunities across Africa's innovation landscape.</p>
+                        <p class="session-description">MC kickoff and opening address by Jobrole CEO</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
@@ -105,11 +103,10 @@
                             <div>
                                 <span class="session-track">Entrepreneur | Tech</span>
                                 <h3 class="session-title">Opening Performance: Spoken Word</h3>
-                                <p class="session-speaker">Tunde Williams, Investment Director, Pan-African Ventures</p>
+                                <!-- <p class="session-speaker">Tunde Williams, Investment Director, Pan-African Ventures</p> -->
                             </div>
                         </div>
-                        <p class="session-description">Learn from the success stories of Africa's fastest-growing
-                            startups and the strategies they used to scale across the continent.</p>
+                        <p class="session-description">Energizing performance themed around career and development</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
@@ -121,12 +118,11 @@
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Career Growth</span>
-                                <h3 class="session-title">Opening Keynote: “The Next Frontier”</h3>
-                                <p class="session-speaker">Oluwaseun Adebayo, Head of Talent, Andela</p>
+                                <h3 class="session-title">Opening Keynote: “The Next Frontier: Thriving in a Bold New Era” (Era of work, growth and opportunity)</h3>
+                                <!-- <p class="session-speaker">Oluwaseun Adebayo, Head of Talent, Andela</p> -->
                             </div>
                         </div>
-                        <p class="session-description">Discover the skills and mindsets needed to thrive in the rapidly
-                            evolving world of work.</p>
+                        <p class="session-description">Visionary keynote by a thought leader.</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
@@ -138,12 +134,11 @@
                         <div class="session-header">
                             <div>
                                 <span class="session-track">SME Growth</span>
-                                <h3 class="session-title">Founders Panel: “Building Bold in Africa”</h3>
-                                <p class="session-speaker">Ngozi Adebayo, CTO, DigitalPay Africa</p>
+                                <h3 class="session-title">Power Panel: “Founders Who Ignite: Building Bold in Africa”</h3>
+                                <!-- <p class="session-speaker">Ngozi Adebayo, CTO, DigitalPay Africa</p> -->
                             </div>
                         </div>
-                        <p class="session-description">Practical strategies for leveraging technology to grow your small
-                            or medium enterprise.</p>
+                        <p class="session-description">Facilitated mingling with networking cards or games.</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
@@ -167,7 +162,7 @@
                                 <h3 class="session-title">Networking + Launch Break</h3>
                             </div>
                         </div>
-                        <p class="session-description">Start your day with breakfast and valuable connections.</p>
+                        <p class="session-description">Facilitated mingling with networking cards or games.</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
@@ -179,12 +174,11 @@
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Entrepreneur | Tech</span>
-                                <h3 class="session-title">Interactive Workshop Tracks</h3>
-                                <p class="session-speaker">Kwame Okafor, CEO, GreenFuture Energy</p>
+                                <h3 class="session-title">Interactive Workshop: “Design Your 2026 Growth Blueprint EMPLOYABILITY SESSION: Strategic Career  Positioning in a Crowded Market ENTREPRENEURS SESSION: Vision Driven Growth: Building companies that attract talent, capital & community</h3>
+                                <!-- <p class="session-speaker">Kwame Okafor, CEO, GreenFuture Energy</p> -->
                             </div>
                         </div>
-                        <p class="session-description">Bring your business challenges and get real-time solutions from
-                            experts and peers in this interactive session.</p>
+                        <p class="session-description">Hands-on session with facilitator-guided planning</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
@@ -197,11 +191,10 @@
                             <div>
                                 <span class="session-track">Career Growth</span>
                                 <h3 class="session-title">Entertainment Break</h3>
-                                <p class="session-speaker">Fatima Diallo, Founder, AgriTech Solutions</p>
+                                <!-- <p class="session-speaker">Fatima Diallo, Founder, AgriTech Solutions</p> -->
                             </div>
                         </div>
-                        <p class="session-description">Learn how to build a powerful personal brand that opens doors to
-                            new opportunities.</p>
+                        <p class="session-description">Short musical performance to keep energy high</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
@@ -215,11 +208,10 @@
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Networking</span>
-                                <h3 class="session-title">Keynote: “Navigating Change”</h3>
+                                <h3 class="session-title">Guest Speaker 1: Feature: “Navigating Change in Business & Beyond”</h3>
                             </div>
                         </div>
-                        <p class="session-description">Join us as we celebrate Africa's most innovative startups and
-                            leaders, followed by an evening of music and networking.</p>
+                        <p class="session-description">Talk by a renowned guest entrepreneur or investor.</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
@@ -231,11 +223,10 @@
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Networking</span>
-                                <h3 class="session-title">Keynote: “Tech, Talent & Tenacity”</h3>
+                                <h3 class="session-title">Guest Speaker 2: “Tech, Talent, and Tenacity.</h3>
                             </div>
                         </div>
-                        <p class="session-description">Join us as we celebrate Africa's most innovative startups and
-                            leaders, followed by an evening of music and networking.</p>
+                        <p class="session-description">How Tech can enhance the productivity of your business and as a career professional. Tech tools to enhance your business from finance to projects</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
@@ -247,11 +238,10 @@
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Networking</span>
-                                <h3 class="session-title">Speed Mentoring: “The Growth Exchange”</h3>
+                                <h3 class="session-title">Masterclass (From Startup to Enterprise)</h3>
                             </div>
                         </div>
-                        <p class="session-description">Join us as we celebrate Africa's most innovative startups and
-                            leaders, followed by an evening of music and networking.</p>
+                        <p class="session-description">How operational strategy and leadership must adapt from early stage to scale</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
@@ -263,11 +253,10 @@
                         <div class="session-header">
                             <div>
                                 <span class="session-track">Networking</span>
-                                <h3 class="session-title">Special Recognition: Trailblazer Awards</h3>
+                                <h3 class="session-title">Special Recognition Segment: Next Frontier Trailblazers Awards</h3>
                             </div>
                         </div>
-                        <p class="session-description">Join us as we celebrate Africa's most innovative startups and
-                            leaders, followed by an evening of music and networking.</p>
+                        <p class="session-description">Awards for impactful startups and innovators. Sponsors/partners.</p>
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>
                 </div>
