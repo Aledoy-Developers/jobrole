@@ -229,7 +229,7 @@
                             Management (NIM) and the Chartered Institute of Personnel Management (CIPM).</p>
                     </div>
                 </div> -->
-            </div>
+            </div>  
         </div>
     </section> 
 
