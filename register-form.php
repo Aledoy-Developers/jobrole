@@ -135,9 +135,8 @@ select {
                             <div class="select-wrapper">
                                 <label for="fruitSelect">How you do you want to attend?</label>
                                 <select id="fruitSelect" name="attend">
-                                    <option value="" disabled selected>Choose One</option>
+                                    <!-- <option value="" disabled selected>Choose One</option> -->
                                     <option value="physical" name="option">Physical</option>
-                                    <option value="virtual" name="option">Virtual</option>
                                 </select>
                             </div>
                         </div>

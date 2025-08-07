@@ -89,17 +89,20 @@ $mail = new PHPMailer(true);
 
 try {
     // SMTP Settings
-    $mail->isSMTP();
-    $mail->Host       = 'mail.cheapwebsitenigeria.com';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'noreply@cheapwebsitenigeria.com';
-    $mail->Password   = 'Aledoy@2025!'; // Use app password or secure secret storage
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // TLS encryption
-    $mail->Port       = 587;
+       $mail->IsSMTP();    
+    $mail->Port = 465;
+    $mail->SMTPAuth = true;               
+    //sendgrid
+     $mail->Username='aledoysolutions231@gmail.com';
+    $mail->Password = 'jhah axwo ykxl pbmx';  //yahoo app password for noreply email 
+    $mail->Host='smtp.gmail.com';
+    $mail->SMTPSecure = 'ssl'; 
+    $mail->From = 'aledoysolutions231@gmail.com';
+    $mail->FromName = "JOBROLE WRBSITE";
 
     // Email Headers
-    $mail->setFrom('noreply@cheapwebsitenigeria.com', 'Next Frontier');
-    $mail->addAddress($email);
+    $mail->setFrom('aledoysolutions231@gmail.com', 'Next Frontier');
+    $mail->addAddress("$email");
     $mail->addReplyTo('info@jobroleng.com', 'Jobrole Consulting');
 
     // Content
