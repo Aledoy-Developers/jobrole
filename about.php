@@ -27,10 +27,10 @@
     <!-- About Conference Section -->
     <section class="about-section">
         <div class="container">
-            <div class="section-title">
+            <!-- <div class="section-title">
                 <h2>About The Next Frontier Conference</h2>
                 <p>Welcome to The Next Frontier Conference 2025 <br> <strong>Date:</strong> September 20, 2025
-            </div>
+            </div> -->
 
             <div class="container">
 
@@ -109,7 +109,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="team">
+    <!-- <section class="team">
         <div class="container">
             <div class="section-title">
                 <h2>Meet The Team</h2>
@@ -143,7 +143,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- CTA Section -->
     <section class="cta-section">
