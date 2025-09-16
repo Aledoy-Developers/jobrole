@@ -90,7 +90,8 @@ li {
         <h2>Ticket Categories</h2>
 
         <div class="ticket-type">
-            <h3>Standard Ticket - FREE (Closed)</h3>
+            <h3>Standard Ticket - FREE <span style="color:red">(Closed)</span>
+            </h3>
             <p class="description">Perfect for aspiring professionals, students, and early-stage entrepreneurs.</p>
 
             <h4>What You Get:</h4>

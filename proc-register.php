@@ -34,7 +34,7 @@ if (!preg_match('/^\d{11}$/', $phone)) {
 // Ticket category
 if ($category === 'no') {
     $msg = 'error';
-    $comment = 'Free Package is closed';
+    $comment = 'Sorry! There are no more free tickets. To register, kindly choose the premium ticket option';
     include('register-form.php');
     exit;
 } else {
