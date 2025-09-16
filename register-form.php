@@ -146,7 +146,7 @@ select {
                                 <label for="fruitSelect">Category:</label>
                                 <select id="choose" name="category">
                                     <option value="" disabled selected>Select an option</option>
-                                    <option value="no" name="option">Standard Ticket - FREE
+                                    <option value="no" name="option">Standard Ticket - FREE(Closed)
                                     </option>
                                     <option value="yes" name="option">Premium Ticket - ₦15,000</option>
                                 </select>

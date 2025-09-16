@@ -33,7 +33,10 @@ if (!preg_match('/^\d{11}$/', $phone)) {
 
 // Ticket category
 if ($category === 'no') {
-    $category = 'Standard Ticket - FREE';
+    $msg = 'error';
+    $comment = 'Free Package is closed';
+    include('register-form.php');
+    exit;
 } else {
     $category = 'Premium Ticket - N15,000';
 }
