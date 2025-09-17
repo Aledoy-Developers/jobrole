@@ -220,6 +220,37 @@
                     </div> -->
                     </div>
                 </div>
+
+                <div class="speaker-card">
+                    <img src="images/sola.jpg" alt="Sola Oladunjoye " class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Mr Sola Oladunjoye</h3>
+                        <p class="position">Chief Executive Officer, Aigle Limited</p>
+                        <p class="bio">
+                            The Chief Executive Officer of Aigle Limited, a leading financial services company in Nigeria focused on providing simplified access to business financing for small and medium enterprises (SMEs).
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    </div>
+                </div>
+
+                <div class="speaker-card">
+                    <img src="images/anthony.jpg" alt="Sola Oladunjoye " class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Mr Anthony Anenechukwu</h3>
+                        <p class="position">Entrepreneur, Chief Executive Officer, Parktel International Limited.</p>
+                        <p class="bio">
+                            A graduate of Nnamdi Azikiwe University, Awka, he has built a remarkable track record of founding and developing successful businesses across various sectors.
+                        </p>
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    </div>
+                </div>
                 <!-- <div class="speaker-card">
                     <img src="images/arthur.jpg" alt="Arthur Usiagwu" class="speaker-image">
                     <div class="speaker-info">
