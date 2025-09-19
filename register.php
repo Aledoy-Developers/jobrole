@@ -118,7 +118,7 @@ li {
         </div>
     </div>
     <div class="re">
-        <a href="register-form.php" class="btn">Register Now</a>
+        <a href="register-closed.php" class="btn">Register Now</a>
     </div>
 
     <br>
