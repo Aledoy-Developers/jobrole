@@ -17,7 +17,7 @@
     <section class="about-hero">
         <div class="container">
             <div class="about-hero-content">
-                <h1>About Next Frontier 2025</h1>
+                <h1>About Next Frontier 2026</h1>
                 <p>Discover the vision, mission, and people behind Africa's premier conference for innovators and
                     changemakers</p>
             </div>
@@ -55,9 +55,8 @@
                         <a href="register.php" class="btn">Register Now</a>
                     </div>
 
-                    <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                            style="width:100%;">
+                    <div class="about-image md-6">
+                        <img src="images/cgbo.jpg" class="img-fluid">
                     </div>
                 </div>
             </div>

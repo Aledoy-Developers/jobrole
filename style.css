@@ -2,7 +2,7 @@
 :root {
   /* --primary: black; */
   --secondary: rgba(0, 0, 0, 0.87);
-  --accent: #ff9900;
+  --accent: #FF6C0D;
   --dark: #1a1a1a;
   --light: #f8f9fa;
   --overlay: rgba(0, 0, 0, 0.6);
@@ -66,7 +66,30 @@ nav ul {
 
 nav ul li {
   margin-left: 30px;
+  
 }
+
+li a.new-btton{
+  
+  
+  padding: 12px 30px;
+  background-color: var(--accent);
+  color: var(--dark);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 2px solid var(--accent);
+  width: fit-content;
+}
+
+li a.new-btton:hover {
+  background-color: transparent;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 nav ul li a {
   color: white;
@@ -78,6 +101,61 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--accent);
 }
+
+
+
+
+
+
+.btns {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--accent);
+  color: var(--dark);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 2px solid var(--accent);
+  width: fit-content;
+}
+
+
+/* Register Button (Navbar – matches Hero button) */
+.nav-btn {
+  background-color: var(--accent); /* #FC6A03 */
+  color: #1a1a1a !important;       /* Dark text like image */
+  padding: 12px 32px;
+  border-radius: 999px;            /* True pill */
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  border: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect – subtle & premium */
+.nav-btn:hover {
+  background-color: #e85f02; /* Slightly darker orange */
+  color: #1a1a1a !important;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(252, 106, 3, 0.35);
+}
+
+/* Spacing from other nav items */
+nav ul li:last-child {
+  margin-left: 20px;
+}
+
+.nav-cta {
+  padding: 10px 28px; /* slightly smaller than hero */
+}
+
+
+
 
 .mobile-menu-btn {
   display: none;
@@ -180,7 +258,37 @@ nav ul li a:hover {
   transition: all 0.3s;
   border: 2px solid var(--accent);
   width: fit-content;
+
+  
 }
+
+
+
+/* Shared Primary CTA Button (Hero + Navbar) */
+.cta-btn {
+  background-color: var(--accent); /* #FC6A03 */
+  color: #1a1a1a !important;
+  padding: 12px 34px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.cta-btn:hover {
+  background-color: #e85f02;
+  color: #1a1a1a !important;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(252, 106, 3, 0.35);
+}
+
 
 .about-content .btn {
   display: inline-block;
@@ -606,7 +714,7 @@ footer {
 }
 
 .cta-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/plt.jpg');
   background-size: cover;
   background-position: center;
   padding: 100px 0;
@@ -1078,3 +1186,145 @@ footer {
     font-size: 2rem;
   }
 }
+
+
+
+/* FORCE Register button styling in navbar */
+#navMenu li a.cta-btn {
+  background-color: var(--accent) !important;
+  color: #1a1a1a !important;
+  padding: 12px 34px !important;
+  border-radius: 999px !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+#navMenu li a.cta-btn:hover {
+  background-color: #e85f02 !important;
+  color: #1a1a1a !important;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(252, 106, 3, 0.35);
+}
+
+/* spacing */
+#navMenu li:last-child {
+  margin-left: 20px;
+}
+
+/* ===== FIX VIDEO BACKGROUND IN CAROUSEL ===== */
+
+.video-slide {
+  background: none !important;
+}
+
+/* Video container */
+.video-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+
+/* Actual video */
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay ABOVE video but BELOW text */
+.video-slide::before {
+  z-index: -1 !important;
+}
+
+/* Text always on top */
+.video-slide .carousel-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Conference Video Section - center content and iframe */
+.conference-video {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.conference-video h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.conference-video p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #666;
+}
+
+.conference-video iframe {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+/* Past Events Gallery */
+.gallery-section {
+  padding: 80px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+  color: #fff;
+}
+
+.gallery-caption h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.gallery-caption p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+
+
+

@@ -11,8 +11,12 @@
                     <li><a href="about.php">About</a></li>
                     <li><a href="speaker.php">Speakers</a></li>
                     <li><a href="agenda.php">Agenda</a></li>
+                    <li><a href="pastevent.php">Past Events</a></li>
                     <!-- <li><a href="award.php">Awards</a></li> -->
-                    <li><a href="register.php">Register</a></li>
+                    
+                      <li>
+                        <a href="register.php" class="new-btton">Register</a>
+                     </li>
                 </ul>
             </nav>
         </div>

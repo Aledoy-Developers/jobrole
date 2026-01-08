@@ -19,8 +19,8 @@
     <section class="speakers-hero">
         <div class="container">
             <div class="speakers-hero-content">
-                <h1>Meet Our Speakers</h1>
-                <p>The visionary thinkers and doers who will share their expertise at the Next Frontier Conference 2025!
+                <h1>Past Conference Speakers</h1>
+                <p>A lineup of trailblazers whose insights, experiences, and ideas helped define the future at previous Next Frontier conferences
                 </p>
             </div>
         </div>
@@ -53,8 +53,8 @@
     <section class="speakers-section">
         <div class="container">
             <div class="section-title">
-                <h2>Conference Speakers</h2>
-                <p>Meet the visionary thinkers and doers who will share their expertise at Next Frontier 2025</p>
+                <h2>Past Conference Speakers</h2>
+                <p>A lineup of trailblazers whose insights, experiences, and ideas helped define the future at previous Next Frontier conferences</p>
             </div>
 
             <div class="speakers-grid">
@@ -271,7 +271,7 @@
         <div class="container" style="text-align: center;">
             <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Want to Join These Amazing Speakers?</h2>
             <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px;">Register now to secure your spot at
-                Next Frontier 2025</p>
+                Next Frontier 2026</p>
             <a href="register.php" class="btn btn-light">Register Now</a>
         </div>
     </section>
