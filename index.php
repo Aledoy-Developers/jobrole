@@ -22,7 +22,7 @@
                 <div class="carousel-item active video-slide">
     <div class="video-wrapper">
         <video autoplay muted loop playsinline preload="auto">
-            <source src="video/hero.mp4" type="video/mp4">
+            <source src="video/hero.webm" type="video/mp4">
         </video>
     </div>
 

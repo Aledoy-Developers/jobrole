@@ -78,12 +78,12 @@ li {
     <br>
 
     <div class="container">
-        <h1>Next Frontier Conference 2025</h1>
-
+        <h1>Next Frontier Conference 2026</h1>
+ | Saturday,
         <div class="event-details">
-            <p><strong>Venue:</strong> Landmark Towers, Lagos</p>
-            <p><strong>Date:</strong> Saturday, September 20, 2025</p>
-            <p><strong>Theme:</strong> Igniting Potential, Fueling Growth</p>
+            <p><strong>Venue:</strong> AGIP Recital Hall, Muson Centre, Onikan, Lagos</p>
+            <p><strong>Date:</strong> Saturday, September 19, 2026</p>
+            <p><strong>Theme:</strong> Beyond Boundaries: Building the Future</p>
             <p><strong>Organized by:</strong> Jobrole Consulting Limited</p>
         </div>
 
