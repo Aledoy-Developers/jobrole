@@ -19,7 +19,7 @@
     <section class="speakers-hero">
         <div class="container">
             <div class="speakers-hero-content">
-                <h1>Past Conference Speakers</h1>
+                <h1>Past Conference Speakers 2025</h1>
                 <p>A lineup of trailblazers whose insights, experiences, and ideas helped define the future at previous Next Frontier conferences
                 </p>
             </div>
