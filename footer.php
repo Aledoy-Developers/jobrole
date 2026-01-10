@@ -4,12 +4,57 @@
             <div class="footer-column">
                 <h3>Next Frontier</h3>
                 <p>Empowering Africa's talent and businesses to thrive in the future of work.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+                <div class="" style=" display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;">
+                    <a href="#" style="  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white !important;
+  text-decoration: none;
+  transition: all 0.3s;" onmouseover="this.style.backgroundColor='#FF6C0D'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.1)'; this.style.transform='none';"><i class="fab fa-twitter"></i></a>
+                    <a href="#"  style="  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white !important;
+  text-decoration: none;
+  transition: all 0.3s;" onmouseover="this.style.backgroundColor='#FF6C0D'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.1)'; this.style.transform='none';"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"  style="  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white !important;
+  text-decoration: none;
+  transition: all 0.3s;" onmouseover="this.style.backgroundColor='#FF6C0D'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.1)'; this.style.transform='none';"><i class="fab fa-instagram"></i></a>
+                    <a href="#"  style="  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white !important;
+  text-decoration: none;
+  transition: all 0.3s;" onmouseover="this.style.backgroundColor='#FF6C0D'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.1)'; this.style.transform='none';"><i class="fab fa-facebook"></i></a>
                 </div>
+                <!-- <div class="" style="background-color: blue">
+
+                <p class="bg-primary" style="background-color: yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eligendi consectetur velit tenetur tempora, dicta quam voluptatem est dolore corporis.</p>
+
+
+                </div> -->
             </div>
 
             <div class="footer-column af">
@@ -32,13 +77,13 @@
                             <br>+234-8036764455
                         </div>
                     </li>
-                    <li><i class="fas fa-map-marker-alt"></i> Landmark Towers, Lagos, Nigeria</li>
+                    <li><i class="fas fa-map-marker-alt"></i>AGIP Recital Hall, Muson Centre, Onikan, Lagos</li>
                 </ul>
             </div>
         </div>
 
         <div class="copyright">
-            <p>&copy; 2025 JobRole Consulting Limited. All Rights Reserved.</p>
+            <p>&copy; 2026 JobRole Consulting Limited. All Rights Reserved.</p>
         </div>
     </div>
 </footer>
