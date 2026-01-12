@@ -951,6 +951,7 @@ footer .social-links a:hover {
 
 .track-btn {
   padding: 10px 25px;
+  margin-top: 20px;
   background-color: transparent;
   color: white;
   border: 2px solid var(--accent);
@@ -962,12 +963,13 @@ footer .social-links a:hover {
 
 .track-btn.active, .track-btn:hover {
   background-color: var(--accent);
-  color: var(--dark);
+  color: white;
 }
 
 /*  */
 .agenda-section {
   padding: 80px 0;
+  margin-top: 40px;
   background-color: white;
 }
 
@@ -1054,7 +1056,8 @@ footer .social-links a:hover {
   display: inline-block;
   padding: 3px 10px;
   background-color: var(--accent);
-  color: var(--dark);
+  /* color: var(--dark); */
+  color: #fff;
   border-radius: 4px;
   font-size: 0.8rem;
   font-weight: 600;
@@ -1342,6 +1345,33 @@ footer .social-links a:hover {
 .gallery-caption p {
   font-size: 0.9rem;
   opacity: 0.9;
+}
+
+
+.check-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.check-list li::before {
+  content: "\f00c"; /* Font Awesome check icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  color: var(--accent); /* Uses your brand color */
+  font-size: 16px;
 }
 
 

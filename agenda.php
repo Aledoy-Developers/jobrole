@@ -57,7 +57,7 @@
                     <div class="session">
                         <div class="session-header">
                             <div>
-                                <span class="session-track">Registration & Curated Networking</span>
+                                <span class="session-track" >Registration & Curated Networking</span>
                                 <h3 class="session-title">Guided networking, sector-based interaction</h3>
                             </div>
                         </div>
