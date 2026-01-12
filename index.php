@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next Frontier Conference 2025 | JobRole Consulting</title>
+    <title>Next Frontier Conference 2026 | JobRole Consulting</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- <script src="script.js"></script> -->
@@ -298,6 +298,9 @@
                             <li>SME Owners & Leaders</li>
                             <li>Career Professionals & Jobseekers</li>
                             <li>Investors, and Ecosystem Builders</li>
+                            <li>Aspiring entrepreneurs</li>
+                            <li>Career Transitioners</li>
+                            <li>Students/ Graduates</li>
                         </ul>
                         <strong>This is more than a conference, it’s a launchpad for your next big move.
                         </strong>
