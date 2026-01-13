@@ -70,8 +70,6 @@ nav ul li {
 }
 
 li a.new-btton{
-  
-  
   padding: 12px 30px;
   background-color: var(--accent);
   color: var(--dark);
@@ -972,6 +970,7 @@ footer .social-links a:hover {
   margin-top: 40px;
   background-color: white;
 }
+
 
 .agenda-container {
   max-width: 900px;

@@ -244,11 +244,18 @@
         <!-- Video Section -->
 <div class="container">
     <div class="conference-video" style="margin-top: 50px; margin-bottom: 50px;">
-        <h3>Experience the Energy of Our Past Conferences</h3>
+
+          <div class="section-title">
+                <h2>Experience the Energy of Our Past Conferences</h2>
+                <p>Relive powerful moments, inspiring talks, and the vibrant atmosphere
+            that define the Next Frontier Conference.
+                </p>
+            </div>
+        <!-- <h3>Experience the Energy of Our Past Conferences</h3>
         <p>
             Relive powerful moments, inspiring talks, and the vibrant atmosphere
             that define the Next Frontier Conference.
-        </p>
+        </p> -->
 
         <div >
             <iframe width="100%" height="500" src="https://www.youtube.com/embed/RN-srR4W5R0?si=R37yam84KkB1GPnG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -306,9 +313,9 @@
                         </strong>
                         </p>
                         <div class="abt">
-                            <a href="register.php" class="btn">Register Now</a>
-                            <a href="agenda.php" class="btn">View Agenda</a>
-                            <a href="speaker.php" class="btn">Meet the Speakers</a>
+                            <a href="register.php" class="btn">Register </a>
+                            <a href="agenda.php" class="btn">Agenda</a>
+                            <a href="speaker.php" class="btn">Speakers</a>
                         </div>
                     </div>
                     <div class="about-image md-6">
