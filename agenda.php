@@ -255,7 +255,7 @@
                     <div class="session">
                         <div class="session-header">
                             <div>
-                                <span class="session-track">Ask-Me-Anything (AMA)</span>
+                                <span class="session-track">Pitch Deck Session</span>
                                 <h3 class="session-title">Real Business Questions, Honest Answers</h3>
                             </div>
                         </div>
