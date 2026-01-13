@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speakers - Next Frontier 2025!</title>
+    <title>Speakers - Next Frontier 2026!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- <script src="script.js"></script> -->
@@ -91,7 +91,7 @@
                 <img src="images/paulo.jpg" alt="Keynote Session">
                 <div class="gallery-caption">
                     <h3>Keynote Sessions</h3>
-                    <p>Inspiring talks from Africa’s finest minds</p>
+                    <p>Inspiring talks from Africa's finest minds</p>
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
         <div class="container" style="text-align: center;">
             <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Want to Join These Amazing Speakers?</h2>
             <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px;">Register now to secure your spot at
-                Next Frontier 2025</p>
+                Next Frontier 2026</p>
             <a href="register.php" class="btn btn-light">Register Now</a>
         </div>
     </section>
