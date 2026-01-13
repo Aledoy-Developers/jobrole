@@ -43,7 +43,7 @@
                             and professionals across Nigeria and Africa.
                         </p>
                         <p>
-                            With our 2025 theme, “Igniting Potential, Fueling Growth,” we’re spotlighting the emerging
+                            With our 2026 theme, “Beyond Boundaries: Building the Future,” we’re spotlighting the emerging
                             opportunities and bold shifts shaping the future of work and entrepreneurship in Africa.
                         </p>
                         <p>
