@@ -77,7 +77,7 @@
                             <br>+234-8036764455
                         </div>
                     </li>
-                    <li><i class="fas fa-map-marker-alt"></i>AGIP Recital Hall, Muson Centre, Onikan, Lagos</li>
+                    <li><i class="fas fa-map-marker-alt"></i>  AGIP Recital Hall, Muson Centre,<br> Onikan, Lagos</li>
                 </ul>
             </div>
         </div>

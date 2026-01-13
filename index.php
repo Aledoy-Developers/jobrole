@@ -243,7 +243,7 @@
 
         <!-- Video Section -->
 <div class="container">
-    <div class="conference-video">
+    <div class="conference-video" style="margin-top: 50px; margin-bottom: 50px;">
         <h3>Experience the Energy of Our Past Conferences</h3>
         <p>
             Relive powerful moments, inspiring talks, and the vibrant atmosphere
@@ -268,14 +268,15 @@
                     <div class="about-text container md-6">
                         <h3>What to Expect</h3>
                         <p>
-                        <ul>
-                            <li>Actionable strategies from top industry minds</li>
-                            <li>Founders' stories of bold growth in Africa</li>
-                            <li>Hands-on workshops tailored to your stage</li>
-                            <li>Speed mentoring</li>
-                            <li>Recognition for trailblazers</li>
-                            <li>High-impact networking, entertainment, and insight</li>
-                        </ul>
+                       <ul class="check-list">
+    <li>Actionable strategies from top industry minds</li>
+    <li>Founders' stories of bold growth in Africa</li>
+    <li>Hands-on workshops tailored to your stage</li>
+    <li>Speed mentoring</li>
+    <li>Recognition for trailblazers</li>
+    <li>High-impact networking, entertainment, and insight</li>
+</ul>
+
                         <strong>Ready to step into your next frontier? Join 200+ innovators and changemakers as we
                             unlock the future together.</strong>
                         </p>
@@ -285,23 +286,22 @@
 
 
                 <div class="about-content about-swap">
-                    <div class="about-image md-6">
-                        <img src="images/nwt.jpg" class="img-fluid">
-                    </div>
+                    
 
 
                     <div class="about-text container md-6">
                         <h3>Who Should Attend?</h3>
                         <p>
-                        <ul>
-                            <li>Founders & Startup Teams</li>
-                            <li>SME Owners & Leaders</li>
-                            <li>Career Professionals & Jobseekers</li>
-                            <li>Investors, and Ecosystem Builders</li>
-                            <li>Aspiring entrepreneurs</li>
-                            <li>Career Transitioners</li>
-                            <li>Students/ Graduates</li>
-                        </ul>
+                        <ul class="check-list">
+                        <li>Founders & Startup Teams</li>
+                        <li>SME Owners & Leaders</li>
+                        <li>Career Professionals & Jobseekers</li>
+                        <li>Investors, and Ecosystem Builders</li>
+                        <li>Aspiring entrepreneurs</li>
+                        <li>Career Transitioners</li>
+                        <li>Students / Graduates</li>
+</ul>
+
                         <strong>This is more than a conference, it’s a launchpad for your next big move.
                         </strong>
                         </p>
@@ -310,6 +310,9 @@
                             <a href="agenda.php" class="btn">View Agenda</a>
                             <a href="speaker.php" class="btn">Meet the Speakers</a>
                         </div>
+                    </div>
+                    <div class="about-image md-6">
+                        <img src="images/nwt.jpg" class="img-fluid">
                     </div>
                 </div>
             </div>
