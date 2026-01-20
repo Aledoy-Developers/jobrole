@@ -1375,4 +1375,173 @@ footer .social-links a:hover {
 
 
 
+/* ============================
+   PITCH PROGRAM STYLING
+============================ */
+
+.pitch-section {
+  background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
+  color: #fff;
+  padding: 90px 0;
+}
+
+.pitch-section h1,
+.pitch-section h2 {
+  color: #fff;
+}
+
+.pitch-section p {
+  color: #ccc;
+  font-size: 17px;
+}
+
+.pitch-section ul {
+  padding-left: 0;
+}
+
+.pitch-section ul li {
+  list-style: none;
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  color: #eee;
+}
+
+.pitch-section ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ff6a00;
+  font-weight: bold;
+}
+
+/* CTA Button */
+.pitch-btn {
+  background: #ff6a00;
+  border: none;
+  padding: 14px 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.pitch-btn:hover {
+  background: #ff8a33;
+  color: #fff;
+}
+
+/* ============================
+   PITCH FORM PAGE
+============================ */
+
+.pitch-form-wrapper {
+  background: #0e0e0e;
+  min-height: 100vh;
+  padding: 80px 15px;
+}
+
+.pitch-form-box {
+  background: #1b1b1b;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(255,106,0,0.15);
+}
+
+.pitch-form-box h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.pitch-form-box p {
+  color: #bbb;
+  text-align: center;
+}
+
+.pitch-form-box label {
+  color: #ddd;
+  font-weight: 500;
+}
+
+.pitch-form-box input,
+.pitch-form-box textarea {
+  background: #0f0f0f;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.pitch-form-box input:focus,
+.pitch-form-box textarea:focus {
+  border-color: #ff6a00;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255,106,0,0,0.4);
+}
+
+.pitch-form-box button {
+  background: #ff6a00;
+  border: none;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  width: 100%;
+  color: #fff;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.pitch-form-box button:hover {
+  background: #ff8a33;
+}
+
+
+
+/* Pitch deck checkbox styling */
+.pitch-options {
+    display: flex;
+    gap: 30px; /* space between Yes and No */
+}
+
+.pitch-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Hide default checkbox */
+.pitch-option input {
+    display: none;
+}
+
+/* Custom checkbox */
+.pitch-option .checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #0d6efd; /* Jobrole blue */
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Checked state */
+.pitch-option input:checked + .checkmark {
+    background-color: #0d6efd;
+}
+
+.pitch-option input:checked + .checkmark::after {
+    content: "✓";
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
 
