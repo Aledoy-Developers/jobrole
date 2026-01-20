@@ -145,7 +145,7 @@ select {
             <label for="choose">Category:</label>
             <select id="choose" name="category">
                 <option value="" disabled selected>Select an option</option>                
-                <option value="yes">Premium Ticket - ₦15,000</option>
+                <option value="yes">Premium Ticket - ₦30,000</option>
             </select>
         </div>
     </div>
