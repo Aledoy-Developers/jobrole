@@ -158,14 +158,14 @@ select {
 
     <div class="pitch-options">
         <label class="pitch-option">
-            <input type="checkbox" id="pitchYes" name="pitch_session" value="yes"
+            <input type="radio" id="pitchYes" name="pitch_session" value="yes"
                 onclick="togglePitch(this)">
             <span class="checkmark"></span>
             Yes
         </label>
 
-        <label class="pitch-option">
-            <input type="checkbox" id="pitchNo" name="pitch_session" value="no"
+        <label class="pitch-option">            
+            <input type="radio" id="pitchNo" name="pitch_session" value="no"
                 onclick="togglePitch(this)" checked>
             <span class="checkmark"></span>
             No
