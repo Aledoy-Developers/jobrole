@@ -94,7 +94,7 @@
                                 was
                                 successful. <br><br>
                                 <?php if ($pitch_session == 'yes') { ?>
-                                    If you would like to submit your proposal, Kindly check your mail for further info
+                                    If you would like to submit your proposal, Kindly check your mail for further info or <a target="_blank" href="https://forms.gle/pJ91iC4osoreirLi8">Click this link to submit your prosposal for the pitch deck session</a> 
                             </div>
 
                     <?php }
