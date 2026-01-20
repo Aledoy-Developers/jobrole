@@ -65,7 +65,7 @@ $stmt->execute();
 $ticket_id = date('mi') . rand(100, 999);
 
 if ($pitch_session == 'yes') {
-    $pitch = '<a target="_blank" href="https://forms.gle/pJ91iC4osoreirLi8">Click this link Pitch deck session</a>';
+    $pitch = '<a target="_blank" href="https://forms.gle/pJ91iC4osoreirLi8">Click this link to submit your prosposal for the pitch deck session</a>';
 }
 // Build email content
 $subject = 'You registered for Next Frontier Conference 2025';
