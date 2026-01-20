@@ -87,9 +87,9 @@ li {
             <p><strong>Organized by:</strong> Jobrole Consulting Limited</p>
         </div>
 
-        <h2>Ticket Categories</h2>
+        <h2>Ticket</h2>
 
-        <div class="ticket-type">
+        <!-- <div class="ticket-type">
             <h3>Standard Ticket - FREE
             </h3>
             <p class="description">Perfect for aspiring professionals, students, and early-stage entrepreneurs.</p>
@@ -99,10 +99,11 @@ li {
                 <li>Access to keynote sessions</li>
                 <li>Access to panel discussions</li>
             </ul>
-        </div>
+        </div> -->
 
         <div class="ticket-type">
-            <h3>Premium Ticket - ₦15,000</h3>
+            <h3>Premium Ticket - ₦30,000</h3>
+            <p>Early Birds - ₦20,000 (Limited Time Offer)</p>
             <p class="description">For professionals, founders, and serious growth-minded attendees who want the full
                 immersive experience.</p>
 
