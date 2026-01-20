@@ -122,7 +122,7 @@ try {
     // $mail->SMTPDebug = 2; 
     // $mail->Debugoutput = 'html';
 
-    // $mail->send();
+    $mail->send();
 
     $msg = 'success';
     include('thankyou.php');
