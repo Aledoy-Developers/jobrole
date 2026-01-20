@@ -259,6 +259,7 @@
                                 <h3 class="session-title">Real Business Questions, Honest Answers</h3>
                             </div>
                         </div>
+                        
                         <!-- <p class="session-description">Awards for impactful startups and innovators. Sponsors/partners.</p> -->
                         <p class="session-location"><i class="fas fa-map-marker-alt"></i>Main Venue</p>
                     </div>

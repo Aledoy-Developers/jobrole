@@ -307,7 +307,7 @@
                         <li>Aspiring entrepreneurs</li>
                         <li>Career Transitioners</li>
                         <li>Students / Graduates</li>
-</ul>
+                        </ul>
 
                         <strong>This is more than a conference, it’s a launchpad for your next big move.
                         </strong>
@@ -325,6 +325,9 @@
             </div>
         </div>
     </section>
+
+  
+
 
 
 

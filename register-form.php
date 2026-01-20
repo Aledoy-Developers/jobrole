@@ -91,106 +91,112 @@ select {
                 <div class="form p-4 border rounded bg-light">
                     <h2 class="text-center mb-4">Conference Registration Form</h2>
 
-                    <form action="proc-register.php" method="post">
+                  <form action="proc-register.php" method="post">
 
-                        <?php if (!empty($msg) && $msg == 'success') : ?>
-                        <div class="alert alert-success">Message Sent</div>
-                        <?php endif; ?>
+    <?php if (!empty($msg) && $msg == 'success') : ?>
+        <div class="alert alert-success">Message Sent</div>
+    <?php endif; ?>
 
-                        <?php if (!empty($msg) && $msg == 'error') : ?>
-                        <div class="alert alert-danger"><?php echo htmlspecialchars($comment); ?></div>
-                        <?php endif; ?>
+    <?php if (!empty($msg) && $msg == 'error') : ?>
+        <div class="alert alert-danger"><?php echo htmlspecialchars($comment); ?></div>
+    <?php endif; ?>
 
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name:</label>
-                            <input type="text" id="name" name="fullname" class="form-control"
-                                value="<?php echo htmlspecialchars($fullname ?? ''); ?>">
-                        </div>
+    <div class="mb-3">
+        <label for="name" class="form-label">Full Name:</label>
+        <input type="text" id="name" name="fullname" class="form-control"
+            value="<?php echo htmlspecialchars($fullname ?? ''); ?>">
+    </div>
 
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" id="email" name="email" class="form-control"
-                                value="<?php echo htmlspecialchars($email ?? ''); ?>">
-                        </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" name="email" class="form-control"
+            value="<?php echo htmlspecialchars($email ?? ''); ?>">
+    </div>
 
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number:</label>
-                            <input type="number" id="phone" name="phone" class="form-control"
-                                value="<?php echo htmlspecialchars($phone ?? ''); ?>">
-                        </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number:</label>
+        <input type="number" id="phone" name="phone" class="form-control"
+            value="<?php echo htmlspecialchars($phone ?? ''); ?>">
+    </div>
 
-                        <div class="mb-3">
-                            <label for="organization" class="form-label">Organization/Company:</label>
-                            <input type="text" id="organization" name="organization" class="form-control"
-                                value="<?php echo htmlspecialchars($organization ?? ''); ?>">
-                        </div>
+    <div class="mb-3">
+        <label for="organization" class="form-label">Organization/Company:</label>
+        <input type="text" id="organization" name="organization" class="form-control"
+            value="<?php echo htmlspecialchars($organization ?? ''); ?>">
+    </div>
 
-                        <div class="mb-3">
-                            <label for="position" class="form-label">Position:</label>
-                            <input type="text" id="position" name="position" class="form-control"
-                                value="<?php echo htmlspecialchars($position ?? ''); ?>">
-                        </div>
+    <div class="mb-3">
+        <label for="position" class="form-label">Position:</label>
+        <input type="text" id="position" name="position" class="form-control"
+            value="<?php echo htmlspecialchars($position ?? ''); ?>">
+    </div>
 
-                        <div class="dropdown mb-3">
-                            <div class="select-wrapper">
-                                <label for="fruitSelect">How you do you want to attend?</label>
-                                <select id="fruitSelect" name="attend">
-                                    <!-- <option value="" disabled selected>Choose One</option> -->
-                                    <option value="physical" name="option">Physical</option>
-                                </select>
-                            </div>
-                        </div>
+    <div class="dropdown mb-3">
+        <div class="select-wrapper">
+            <label for="fruitSelect">How you do you want to attend?</label>
+            <select id="fruitSelect" name="attend">
+                <option value="physical">Physical</option>
+            </select>
+        </div>
+    </div>
 
-                        <div class="dropdown mb-3">
-                            <div class="select-wrapper">
-                                <label for="fruitSelect">Category:</label>
-                                <select id="choose" name="category">
-                                    <option value="" disabled selected>Select an option</option>
-                                    <option value="no" name="option">Standard Ticket - FREE
-                                    </option>
-                                    <option value="yes" name="option">Premium Ticket - ₦15,000</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- <div class="dropdown mb-3">
-                            <div class="select-wrapper">
-                                <label for="fruitSelect">Do you want a certificate of attendance?</label>
-                                <select id="choose" name="certified">
-                                    <option value="" disabled selected>Choose One</option>
-                                    <option value="yes" name="option">Yes</option>
-                                    <option value="no" name="option">No</option>
-                                </select>
-                            </div>
-                        </div> -->
+    <div class="dropdown mb-3">
+        <div class="select-wrapper">
+            <label for="choose">Category:</label>
+            <select id="choose" name="category">
+                <option value="" disabled selected>Select an option</option>                
+                <option value="yes">Premium Ticket - ₦15,000</option>
+            </select>
+        </div>
+    </div>
 
-                        <div class="dropdown mb-3">
-                            <div class="select-wrapper">
-                                <!-- <label for="2"></label> -->
-                                <!-- <input type="text" id="hide" name="position" class="form-control" hidden> -->
-                                <div class="" id="hide" hidden>
-                                    <p>Please make payment to the account details below. Send receipt via WhatsApp
-                                        <strong>+234 916 000 5955</strong>
-                                    </p>
-                                    <!-- <p><strong>UBA: </strong>1023747141 / Jobrole Consulting Limited.<br><strong>Price:
-                                        </strong>#15,000.</p> -->
-                                    <p>
-                                        <strong>Account number: </strong>1023747141<br>
-                                        <strong>Bank: </strong>UBA <br>
-                                        <strong>Name: </strong>Jobrole Consulting Limited. <br>
-                                        <strong>Price: </strong>#15,000. <br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+   <!-- ✅ PITCH DECK SECTION -->
+<div class="mb-4">
+    <label class="form-label fw-bold mb-3">
+        Would you like to be part of our pitch deck session?
+    </label>
 
+    <div class="pitch-options">
+        <label class="pitch-option">
+            <input type="checkbox" id="pitchYes" name="pitch_session" value="yes"
+                onclick="togglePitch(this)">
+            <span class="checkmark"></span>
+            Yes
+        </label>
 
+        <label class="pitch-option">
+            <input type="checkbox" id="pitchNo" name="pitch_session" value="no"
+                onclick="togglePitch(this)" checked>
+            <span class="checkmark"></span>
+            No
+        </label>
+    </div>
+</div>
+<!-- ✅ END PITCH DECK SECTION -->
 
+    <div class="dropdown mb-3">
+        <div class="select-wrapper">
+            <div id="hide" hidden>
+                <p>
+                    Please make payment to the account details below. Send receipt via WhatsApp
+                    <strong>+234 916 000 5955</strong>
+                </p>
+                <p>
+                    <strong>Account number: </strong>1023747141<br>
+                    <strong>Bank: </strong>UBA <br>
+                    <strong>Name: </strong>Jobrole Consulting Limited. <br>
+                    <strong>Price: </strong>30,000. <br>
+                </p>
+            </div>
+        </div>
+    </div>
 
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
 
-                    </form>
+</form>
+
                 </div>
             </div>
         </div>
@@ -221,6 +227,20 @@ select {
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    function togglePitch(selected) {
+    const yes = document.getElementById('pitchYes');
+    const no = document.getElementById('pitchNo');
+
+    if (selected === yes) {
+        no.checked = false;
+    } else {
+        yes.checked = false;
+    }
+}
+</script>
+
 
 </body>
 
