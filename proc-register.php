@@ -15,6 +15,8 @@ $organization = trim($_POST['organization'] ?? '');
 $position     = trim($_POST['position'] ?? '');
 $category     = trim($_POST['category'] ?? '');
 $attend       = trim($_POST['attend'] ?? '');
+$pitch_session = $_POST['pitch_session'];
+
 
 // Validation
 if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend || !$category) {
@@ -62,6 +64,9 @@ $stmt->execute();
 // Generate ticket ID
 $ticket_id = date('mi') . rand(100, 999);
 
+if ($pitch_session == 'yes') {
+    $pitch = '<a target="_blank" href="https://forms.gle/pJ91iC4osoreirLi8">Click this link Pitch deck session</a>';
+}
 // Build email content
 $subject = 'You registered for Next Frontier Conference 2025';
 $body = "
@@ -73,6 +78,8 @@ Thank you for registering for <strong>Next Frontier Conference 2025</strong>, pr
 📅 <strong>Date:</strong> Saturday, September 20, 2025<br>
 🎟️ <strong>Ticket Category:</strong> {$category}<br>
 🆔 <strong>Ticket ID:</strong> #{$ticket_id}<br><br>
+$pitch <br><br>
+
 
 We look forward to igniting your potential and fueling your growth at Next Frontier Conference 2025.<br><br>
 
@@ -115,7 +122,7 @@ try {
     // $mail->SMTPDebug = 2; 
     // $mail->Debugoutput = 'html';
 
-    $mail->send();
+    // $mail->send();
 
     $msg = 'success';
     include('thankyou.php');

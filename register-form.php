@@ -144,8 +144,7 @@ select {
         <div class="select-wrapper">
             <label for="choose">Category:</label>
             <select id="choose" name="category">
-                <option value="" disabled selected>Select an option</option>
-                <option value="no">Standard Ticket - FREE</option>
+                <option value="" disabled selected>Select an option</option>                
                 <option value="yes">Premium Ticket - ₦15,000</option>
             </select>
         </div>
