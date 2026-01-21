@@ -33,13 +33,6 @@ if (!preg_match('/^\d{11}$/', $phone)) {
     exit;
 }
 
-// Ticket category
-if ($category === 'no') {
-    $category = 'Standard Ticket - FREE';
-} else {
-    $category = 'Premium Ticket - N30,000';
-}
-
 // Database connection
 include('conn.php');
 
@@ -95,19 +88,19 @@ info@jobroleng.com<br>
 $mail = new PHPMailer(true);
 
     // SMTP Settings
-    $mail->IsSMTP();    
-    $mail->Port = 465;
-    $mail->SMTPAuth = true;               
-    //sendgrid
-     $mail->Username='aledoysolutions231@gmail.com';
-    $mail->Password = 'jhah axwo ykxl pbmx';  //yahoo app password for noreply email 
-    $mail->Host='smtp.gmail.com';
-    $mail->SMTPSecure = 'ssl'; 
-    $mail->From = 'aledoysolutions231@gmail.com';
+    // $mail->IsSMTP();    
+    // $mail->Port = 465;
+    // $mail->SMTPAuth = true;               
+    // //sendgrid
+    //  $mail->Username='aledoysolutions231@gmail.com';
+    // $mail->Password = 'jhah axwo ykxl pbmx';  //yahoo app password for noreply email 
+    // $mail->Host='smtp.gmail.com';
+    // $mail->SMTPSecure = 'ssl'; 
+    // $mail->From = 'aledoysolutions231@gmail.com';
     $mail->FromName = "JOBROLE WRBSITE";
 
     // Email Headers
-    $mail->setFrom('aledoysolutions231@gmail.com', 'Next Frontier');
+    $mail->setFrom('noreply@jobroleng.com', 'Next Frontier');
     $mail->addAddress("$email");
     $mail->addReplyTo('info@jobroleng.com', 'Jobrole Consulting');
 
@@ -121,7 +114,7 @@ $mail = new PHPMailer(true);
     // $mail->SMTPDebug = 2; 
     // $mail->Debugoutput = 'html';
 
-    // $mail->send();
+    $mail->send();
 
     $msg = 'success';
     include('thankyou.php');
