@@ -144,7 +144,7 @@ select {
         <div class="select-wrapper">
             <label for="choose">Ticket Type:</label>
             <select id="choose" name="category">               
-                <option value="yes">Early Bird ₦20,000</option>
+                <option value="Early Bird ₦20,000">Early Bird ₦20,000</option>
             </select>
         </div>
     </div>

@@ -61,14 +61,14 @@ if ($pitch_session == 'yes') {
     $pitch = '<a target="_blank" href="https://forms.gle/pJ91iC4osoreirLi8">Click this link to submit your prosposal for the pitch deck session</a>';
 }
 // Build email content
-$subject = 'You registered for Next Frontier Conference 2025';
+$subject = 'You registered for Next Frontier Conference 2026';
 $body = "
 Dear {$fullname},<br><br>
 
-Thank you for registering for <strong>Next Frontier Conference 2025</strong>, proudly organized by Jobrole Consulting Limited.<br><br>
+Thank you for registering for <strong>Next Frontier Conference 2026</strong>, proudly organized by Jobrole Consulting Limited.<br><br>
 
-📍 <strong>Venue:</strong> Landmark Towers, Lagos<br>
-📅 <strong>Date:</strong> Saturday, September 20, 2025<br>
+📍 <strong>Venue:</strong> AGIP Recital Hall, Muson Centre, Onikan, Lagos<br>
+📅 <strong>Date:</strong> Saturday, September 19, 2026<br>
 🎟️ <strong>Ticket Category:</strong> {$category}<br>
 🆔 <strong>Ticket ID:</strong> #{$ticket_id}<br><br>
 $pitch <br><br>
