@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
-ini_set('display_errors', 0);
+ini_set('display_errors', 1);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -24,16 +24,16 @@ if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend
     $comment = 'All fields are required';
     include('register-form.php');
     exit;
-}
-
+    }
+    
 if (!preg_match('/^\d{11}$/', $phone)) {
     $msg = 'error';
     $comment = 'Please enter a valid 11-digit phone number';
     include('register-form.php');
     exit;
-}
-
-// Database connection
+    }
+    
+    // Database connection
 include('conn.php');
 
 // Check for duplicate registration
@@ -53,6 +53,7 @@ if ($result->num_rows > 0) {
 $stmt = $conn->prepare("INSERT INTO registration (fullname, email, phone, organization, position, attend, category) VALUES (?, ?, ?, ?, ?, ?, ?)");
 $stmt->bind_param('sssssss', $fullname, $email, $phone, $organization, $position, $attend, $category);
 $stmt->execute();
+
 
 // Generate ticket ID
 $ticket_id = date('mi') . rand(100, 999);
@@ -88,15 +89,15 @@ info@jobroleng.com<br>
 $mail = new PHPMailer(true);
 
     // SMTP Settings
-    // $mail->IsSMTP();    
-    // $mail->Port = 465;
-    // $mail->SMTPAuth = true;               
-    // //sendgrid
-    //  $mail->Username='aledoysolutions231@gmail.com';
-    // $mail->Password = 'jhah axwo ykxl pbmx';  //yahoo app password for noreply email 
-    // $mail->Host='smtp.gmail.com';
-    // $mail->SMTPSecure = 'ssl'; 
-    // $mail->From = 'aledoysolutions231@gmail.com';
+    $mail->IsSMTP();    
+    $mail->Port = 465;
+    $mail->SMTPAuth = true;               
+    //sendgrid
+     $mail->Username= 'aledoysolutions2@gmail.com';
+    $mail->Password = 'zuvw gzmb ljea kcga';  //yahoo app password for noreply email 
+    $mail->Host='smtp.gmail.com';
+    $mail->SMTPSecure = 'ssl'; 
+    $mail->From = 'aledoysolutions2@gmail.com';
     $mail->FromName = "JOBROLE WRBSITE";
 
     // Email Headers
