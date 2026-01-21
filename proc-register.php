@@ -37,7 +37,7 @@ if (!preg_match('/^\d{11}$/', $phone)) {
 if ($category === 'no') {
     $category = 'Standard Ticket - FREE';
 } else {
-    $category = 'Premium Ticket - N15,000';
+    $category = 'Premium Ticket - N30,000';
 }
 
 // Database connection
@@ -94,9 +94,8 @@ info@jobroleng.com<br>
 // ✅ Modern PHPMailer usage
 $mail = new PHPMailer(true);
 
-try {
     // SMTP Settings
-       $mail->IsSMTP();    
+    $mail->IsSMTP();    
     $mail->Port = 465;
     $mail->SMTPAuth = true;               
     //sendgrid
@@ -122,16 +121,8 @@ try {
     // $mail->SMTPDebug = 2; 
     // $mail->Debugoutput = 'html';
 
-    $mail->send();
+    // $mail->send();
 
     $msg = 'success';
     include('thankyou.php');
     exit;
-
-} catch (Exception $e) {
-    error_log('Mailer Error: ' . $mail->ErrorInfo);
-    $msg = 'error';
-    $comment = 'Unable to send confirmation email at the moment.';
-    include('register-form.php');
-    exit;
-}
