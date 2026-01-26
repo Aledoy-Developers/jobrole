@@ -142,10 +142,9 @@ select {
 
     <div class="dropdown mb-3">
         <div class="select-wrapper">
-            <label for="choose">Category:</label>
-            <select id="choose" name="category">
-                <option value="" disabled selected>Select an option</option>                
-                <option value="yes">Premium Ticket - ₦30,000</option>
+            <label for="choose">Ticket Type:</label>
+            <select id="choose" name="category">               
+                <option value="Early Bird N20,000">Early Bird ₦20,000</option>
             </select>
         </div>
     </div>
@@ -176,7 +175,7 @@ select {
 
     <div class="dropdown mb-3">
         <div class="select-wrapper">
-            <div id="hide" hidden>
+            <div id="hide">
                 <p>
                     Please make payment to the account details below. Send receipt via WhatsApp
                     <strong>+234 916 000 5955</strong>
@@ -185,7 +184,7 @@ select {
                     <strong>Account number: </strong>1023747141<br>
                     <strong>Bank: </strong>UBA <br>
                     <strong>Name: </strong>Jobrole Consulting Limited. <br>
-                    <strong>Price: </strong>30,000. <br>
+                    <strong>Price: </strong>20,000. <br>
                 </p>
             </div>
         </div>
@@ -204,41 +203,16 @@ select {
 
     <?php include('footer.php'); ?>
 
-
-    <script>
-    document.getElementById('choose').addEventListener('change', function() {
-        const message = document.getElementById('hide');
-        if (this.value === "yes") {
-            message.hidden = false;
-        } else {
-            message.hidden = true;
-        }
-    });
+<script src="dist/js/jquery.js">
     </script>
-
     <script>
-    const fruitSelect = document.getElementById('fruitSelect');
-    const display = document.getElementById('displaySelection');
+    $(function(){
+        $('#hide').hide();
 
-    fruitSelect.addEventListener('change', function() {
-        const selected = this.value;
-        display.textContent = 'You selected: ' + selected;
-    });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-    function togglePitch(selected) {
-    const yes = document.getElementById('pitchYes');
-    const no = document.getElementById('pitchNo');
-
-    if (selected === yes) {
-        no.checked = false;
-    } else {
-        yes.checked = false;
-    }
-}
+    $('#position').focus(function(){
+        $('#hide').show();
+    })
+    })
 </script>
 
 
