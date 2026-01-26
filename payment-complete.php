@@ -63,19 +63,19 @@ info@jobroleng.com<br>
 $mail = new PHPMailer(true);
 
 // SMTP Settings
-$mail->IsSMTP();
-$mail->Port = 465;
-$mail->SMTPAuth = true;
+// $mail->IsSMTP();
+// $mail->Port = 465;
+// $mail->SMTPAuth = true;
 //sendgrid
-$mail->Username = 'aledoysolutions2@gmail.com';
-$mail->Password = 'zuvw gzmb ljea kcga';  //yahoo app password for noreply email 
-$mail->Host = 'smtp.gmail.com';
-$mail->SMTPSecure = 'ssl';
-$mail->From = 'aledoysolutions2@gmail.com';
+// $mail->Username = 'aledoysolutions2@gmail.com';
+// $mail->Password = 'zuvw gzmb ljea kcga';  //yahoo app password for noreply email 
+// $mail->Host = 'smtp.gmail.com';
+// $mail->SMTPSecure = 'ssl';
+// $mail->From = 'aledoysolutions2@gmail.com';
 $mail->FromName = "JOBROLE WRBSITE";
 
 // Email Headers
-$mail->setFrom('aledoysolutions2@gmail.com', 'Next Frontier');
+$mail->setFrom('noreply@jobroleng.com', 'Next Frontier');
 $mail->addAddress("$email");
 $mail->addReplyTo('info@jobroleng.com', 'Jobrole Consulting');
 
