@@ -79,7 +79,6 @@ li {
 
     <div class="container">
         <h1>Next Frontier Conference 2026</h1>
- | Saturday,
         <div class="event-details">
             <p><strong>Venue:</strong> AGIP Recital Hall, Muson Centre, Onikan, Lagos</p>
             <p><strong>Date:</strong> Saturday, September 19, 2026</p>
@@ -103,7 +102,7 @@ li {
 
         <div class="ticket-type">
     <h3>₦30,000 Ticket</h3>
-    
+
     <p>Early Birds - ₦20,000 (Limited Time Offer)</p>
     <p class="description">For professionals, founders, and serious growth-minded attendees who want the full immersive experience.</p>
 
