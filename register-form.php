@@ -173,7 +173,7 @@ select {
 </div>
 <!-- ✅ END PITCH DECK SECTION -->
 
-    <div class="dropdown mb-3">
+    <!-- <div class="dropdown mb-3">
         <div class="select-wrapper">
             <div id="hide">
                 <p>
@@ -188,7 +188,7 @@ select {
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="text-center">
         <button type="submit" class="btn btn-primary">Submit</button>

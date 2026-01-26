@@ -5,8 +5,10 @@
     <link rel="shortcut icon" href="image/icon.png" />
     <script src="jquery.js"></script>
     <style>
+
         body {
             background-color: #ccc;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
     </style>
 
@@ -36,10 +38,9 @@
                 <input type="hidden" id="last-name" />
             </div>
             <div class="form-submit">
-                <button type="submit" style="width:50%; height: 40px; background-color:#2C9846; color:#fff; font-weight:bold; font-size:18px;" onclick="payWithPaystack()">Pay with Debit Card </button>
+                <button type="submit" style="width:50%; height: 40px; background-color:#2C9846; color:#fff; font-weight:bold; font-size:18px;" onclick="payWithPaystack()">Online payment</button>
             </div>
         </form>
-        <br>
         <img src="dist/images/paystack-logo.png" style="height: 60px; margin-top:50px;">
 
         <br><br> <a href="./">Back to Home Page</a>
