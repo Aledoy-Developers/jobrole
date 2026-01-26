@@ -90,7 +90,7 @@
                     <form action="proc-register.php" method="post">
 
                         <?php if (!empty($msg) && $msg == 'success') : ?>
-                            <div class="alert alert-success">Thank you <?php echo $fullname; ?>!<br><br>Your registration
+                            <div class="alert alert-success">Thank you <?php echo $name; ?>!<br><br>Your registration
                                 was
                                 successful. <br><br>
                                 <?php if ($pitch_session == 'yes') { ?>

@@ -14,7 +14,8 @@ $reference = $_GET['reference'];
 $email = base64_decode($_GET['em']);
 
 $name = base64_decode($_GET['name']);
-$phone = base64_decode($_GET['phone']);
+$phone = base64_decode($_GET['p']);
+$pitch_session = base64_decode($_GET['s']);
 
 $transaction_date = date('y-m-d');
 
@@ -24,7 +25,7 @@ $query->execute([$reference, $email, $name, $phone]);
 
 $select = $conn->prepare("SELECT * FROM registration where email = ? and fullname = ? and phone = ?");
 $select->execute([$email, $name, $phone]);
-$result = $stmt->get_result();
+$result = $select->get_result();
 $row = $result->fetch_assoc();
 $category = $row['category'];
 $ticket_id = $row['ticked_id'];
@@ -44,8 +45,7 @@ Thank you for registering for <strong>Next Frontier Conference 2026</strong>, pr
 
 📍 <strong>Venue:</strong> AGIP Recital Hall, Muson Centre, Onikan, Lagos<br>
 📅 <strong>Date:</strong> Saturday, September 19, 2026<br>
-🎟️ <strong>Ticket Category:</strong> {$category}<br>
-🆔 <strong>Ticket ID:</strong> #{$ticket_id}<br><br>
+🆔 <strong>Ticket ID:</strong> #{$reference}<br><br>
 $pitch <br><br>
 
 
@@ -75,7 +75,7 @@ $mail->From = 'aledoysolutions2@gmail.com';
 $mail->FromName = "JOBROLE WRBSITE";
 
 // Email Headers
-$mail->setFrom('noreply@jobroleng.com', 'Next Frontier');
+$mail->setFrom('aledoysolutions2@gmail.com', 'Next Frontier');
 $mail->addAddress("$email");
 $mail->addReplyTo('info@jobroleng.com', 'Jobrole Consulting');
 
