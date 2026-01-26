@@ -102,21 +102,21 @@ li {
         </div> -->
 
         <div class="ticket-type">
-            <h3>Ticket - ₦30,000</h3>
-            <p>Early Birds - ₦20,000 (Limited Time Offer)</p>
-            <p class="description">For professionals, founders, and serious growth-minded attendees who want the full
-                immersive experience.</p>
+    <h3>₦30,000 Ticket</h3>
+    <p class="description">For professionals, founders, and serious growth-minded attendees who want the full immersive experience.</p>
 
-            <h4>What You Get (Includes Everything in Free Ticket, PLUS):</h4>
-            <ul>
-                <li>15-minute Business/Personal Branding speed mentoring</li>
-                <li>30 Minutes Post Conference Consultation</li>
-                <li>Career Clarity workbook</li>
-                <li>Investor-Ready Pitch Deck Template</li>
-                <li>Exclusive Conference Souvenirs</li>
-                <li>Legal Starter Pack for SMEs (MOU, NDA, SLA)</li>
-            </ul>
-        </div>
+    <h4>What You Will Get (₦30,000 Ticket Value):</h4>
+    <ul>
+        <li><strong>30-Minute Post-Conference Strategy Consultation</strong> – One-on-one business or career growth session with Jobrole Consulting (worth ₦50,000)</li>
+        <li><strong>₦30,000 Discount Voucher</strong> – Redeemable on any Jobrole Business or HR Consulting Service within 3 months</li>
+        <li><strong>VIP Check-In & Priority Seating</strong> – Fast-track registration and front-row or reserved seating access</li>
+        <li><strong>Conference Material Pack</strong> – Practical worksheets, templates, and strategy tools used during the sessions</li>
+        <li><strong>Light Refreshments</strong> – Snacks and drinks throughout the conference</li>
+        <li><strong>Premium Conference Souvenirs</strong> – Curated business-themed gift pack</li>
+        <li><strong>Priority Networking Access</strong> – Special access to speakers, panelists, and key participants</li>
+    </ul>
+</div>
+
     </div>
     <div class="re">
         <a href="register-form.php" class="btn">Register Now</a>
