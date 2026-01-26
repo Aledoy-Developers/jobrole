@@ -103,6 +103,7 @@ li {
 
         <div class="ticket-type">
     <h3>₦30,000 Ticket</h3>
+    <p>Early Birds - ₦20,000 (Limited Time Offer)</p>
     <p class="description">For professionals, founders, and serious growth-minded attendees who want the full immersive experience.</p>
 
     <h4>What You Will Get (₦30,000 Ticket Value):</h4>
