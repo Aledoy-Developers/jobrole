@@ -43,10 +43,17 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
-    $msg = 'error';
-    $comment = 'Sorry! It appears you already registered';
-    include('register-form.php');
-    exit;
+    $row = $result->fetch_assoc();
+    if (empty($row['certified'])) {
+        include('payment.php');
+        exit;  
+    }else{
+        $msg = 'error';
+        $comment = 'Sorry! It appears you already registered';
+        include('register-form.php');
+        exit;
+    }
+   
 }
 
 // Insert into database securely
@@ -58,65 +65,8 @@ $stmt->execute();
 // Generate ticket ID
 $ticket_id = date('mi') . rand(100, 999);
 
-if ($pitch_session == 'yes') {
-    $pitch = '<a target="_blank" href="https://forms.gle/pJ91iC4osoreirLi8">Click this link to submit your prosposal for the pitch deck session</a>';
-}
+
 // Build email content
-$subject = 'You registered for Next Frontier Conference 2026';
-$body = "
-Dear {$fullname},<br><br>
 
-Thank you for registering for <strong>Next Frontier Conference 2026</strong>, proudly organized by Jobrole Consulting Limited.<br><br>
-
-📍 <strong>Venue:</strong> AGIP Recital Hall, Muson Centre, Onikan, Lagos<br>
-📅 <strong>Date:</strong> Saturday, September 19, 2026<br>
-🎟️ <strong>Ticket Category:</strong> {$category}<br>
-🆔 <strong>Ticket ID:</strong> #{$ticket_id}<br><br>
-$pitch <br><br>
-
-
-We look forward to igniting your potential and fueling your growth at Next Frontier Conference 2025.<br><br>
-
-For any questions, feel free to reply to this email.<br><br>
-
-Warm regards,<br>
-<strong>The Jobrole Consulting Team</strong><br>
-info@jobroleng.com<br>
-<a href='https://www.jobroleng.com'>www.jobroleng.com</a><br>
-";
-
-// ✅ Modern PHPMailer usage
-$mail = new PHPMailer(true);
-
-    // SMTP Settings
-    $mail->IsSMTP();    
-    $mail->Port = 465;
-    $mail->SMTPAuth = true;               
-    //sendgrid
-     $mail->Username= 'aledoysolutions2@gmail.com';
-    $mail->Password = 'zuvw gzmb ljea kcga';  //yahoo app password for noreply email 
-    $mail->Host='smtp.gmail.com';
-    $mail->SMTPSecure = 'ssl'; 
-    $mail->From = 'aledoysolutions2@gmail.com';
-    $mail->FromName = "JOBROLE WRBSITE";
-
-    // Email Headers
-    $mail->setFrom('noreply@jobroleng.com', 'Next Frontier');
-    $mail->addAddress("$email");
-    $mail->addReplyTo('info@jobroleng.com', 'Jobrole Consulting');
-
-    // Content
-    $mail->isHTML(true);
-    $mail->CharSet = 'UTF-8';
-    $mail->Subject = $subject;
-    $mail->Body    = $body;
-
-    // Optional Debugging
-    // $mail->SMTPDebug = 2; 
-    // $mail->Debugoutput = 'html';
-
-    $mail->send();
-
-    $msg = 'success';
-    include('thankyou.php');
-    exit;
+include('payment.php');
+exit;
