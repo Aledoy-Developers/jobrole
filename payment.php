@@ -27,7 +27,7 @@ include('conn.php');
             <div>
                 <input type="hidden" id="email-address" required value="<?php echo $email; ?>" />
 
-                <input type="hidden" id="amount" required value="100" />
+                <input type="hidden" id="amount" required value="20000" />
                 <input type="hidden" id="name" value="<?php echo $fullname ?>" />
                 <input type="hidden" id="phone" value="<?php echo $phone ?>" />
                 <input type="hidden" id="pitch" value="<?php echo $pitch_session ?>" />
@@ -35,10 +35,10 @@ include('conn.php');
                 <input type="hidden" id="last-name" />
             </div>
             <div class="form-submit">
-                <button type="submit" style="width:50%; height: 40px; background-color:#2C9846; color:#fff; font-weight:bold; font-size:18px;" onclick="payWithPaystack()">Online payment</button>
+                <button type="submit" style="width:50%; margin-top:30px; height: 40px; background-color:#2C9846; color:#fff; font-weight:bold; font-size:18px;" onclick="payWithPaystack()">Pay Now!</button>
             </div>
         </form>
-        <img src="dist/images/paystack-logo.png" style="height: 60px; margin-top:50px;">
+        <img src="dist/images/paystack-logo.png" style="height: 60px; margin-top:30px;">
 
         <br><br> <a href="./">Back to Home Page</a>
 
