@@ -92,9 +92,12 @@
                         <?php if (!empty($msg) && $msg == 'success') : ?>
                             <div class="alert alert-success">Thank you <?php echo $name; ?>!<br><br>Your registration
                                 was
-                                successful. <br><br>
+                                successful. Your confirmation ticket has been sent to your email.<br><br>
+
+                                <div style="font-size:12px; color:#FF6C0D;">If you do not see the email in your inbox, please check your <strong>Junk/Spam</strong> folder.</div> <br><br>
+
                                 <?php if ($pitch_session == 'yes') { ?>
-                                    If you would like to submit your proposal, Kindly check your mail for further info or <a target="_blank" href="https://forms.gle/pJ91iC4osoreirLi8">Click this link to submit your prosposal for the pitch deck session</a> 
+                                    <a target="_blank" href="https://forms.gle/pJ91iC4osoreirLi8">Click this link to submit your prosposal for the pitch deck session</a> 
                             </div>
 
                     <?php }
