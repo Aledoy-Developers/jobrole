@@ -49,7 +49,7 @@ Thank you for registering for <strong>Next Frontier Conference 2026</strong>, pr
 $pitch <br><br>
 
 
-We look forward to igniting your potential and fueling your growth at Next Frontier Conference 2025.<br><br>
+We look forward to \"Building the Future\" without boundaries at the Next Frontier Conference 2026.<br><br>
 
 For any questions, feel free to reply to this email.<br><br>
 
@@ -63,19 +63,16 @@ info@jobroleng.com<br>
 $mail = new PHPMailer(true);
 
 // SMTP Settings
-// $mail->IsSMTP();
-// $mail->Port = 465;
-// $mail->SMTPAuth = true;
-//sendgrid
-// $mail->Username = 'aledoysolutions2@gmail.com';
-// $mail->Password = 'zuvw gzmb ljea kcga';  //yahoo app password for noreply email 
-// $mail->Host = 'smtp.gmail.com';
-// $mail->SMTPSecure = 'ssl';
-// $mail->From = 'aledoysolutions2@gmail.com';
-$mail->FromName = "JOBROLE WRBSITE";
+$mail->IsSMTP();
+$mail->Port = 587;
+$mail->SMTPAuth = true;
+$mail->Username = 'notification@ubslitebn.info';
+$mail->Password = 'Bayo@@2026!';  //yahoo app password for noreply email 
+$mail->Host = 'ubslitebn.info';
+$mail->SMTPSecure = 'tls';
 
 // Email Headers
-$mail->setFrom('noreply@jobroleng.com', 'Next Frontier');
+$mail->setFrom('notification@ubslitebn.info', 'Next Frontier');
 $mail->addAddress("$email");
 $mail->addReplyTo('info@jobroleng.com', 'Jobrole Consulting');
 
