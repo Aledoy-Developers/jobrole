@@ -110,7 +110,7 @@ li {
     <ul>
         <li><strong>30-Minute Post-Conference Strategy Consultation</strong> – One-on-one business or career growth session with Jobrole Consulting (worth ₦50,000)</li>
         <li><strong>₦30,000 Discount Voucher</strong> – Redeemable on any Jobrole Business or HR Consulting Service within 3 months</li>
-        <li><strong>VIP Check-In & Priority Seating</strong> – Fast-track registration and front-row or reserved seating access</li>
+        <li><strong>Pitch & Win Competition</strong> – Seize the exclusive opportunity to pitch your business and win a <strong>&#8358;500,000</strong> grand prize</li>
         <li><strong>Conference Material Pack</strong> – Practical worksheets, templates, and strategy tools used during the sessions</li>
         <li><strong>Light Refreshments</strong> – Snacks and drinks throughout the conference</li>
         <li><strong>Premium Conference Souvenirs</strong> – Curated business-themed gift pack</li>
