@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  www:
+    image: luabikoye/aledoy-php7:latest
+    # image: php:8.1-apache-buster
+    volumes:
+      - "./:/var/www/html"
+    ports:
+      - "8880:80"
+      # - "443:443"
+    networks:
+      - lamp-docker
+  
+
+networks:
+  lamp-docker:
+    driver: bridge
