@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Next Frontier 2026</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href=""> -->
     <!-- <script src="script.js"></script> -->
@@ -18,7 +19,7 @@ h1 {
 
 h2 {
     color: #2c3e50;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #b9b9b9;
     padding-bottom: 10px;
     margin-top: 30px;
 }
@@ -53,6 +54,7 @@ ul {
 
 li {
     margin-bottom: 5px;
+    list-style: none;
 }
 
 .re {
@@ -66,6 +68,60 @@ li {
     color: black !important;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+</style>
+
+
+
+<style>
+
+    .card-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        background: #ffffff;
+        width: 28%;
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card h2 {
+        margin: 0;
+        font-size: 22px;
+        color: #222;
+    }
+
+    .price {
+        font-size: 26px;
+        font-weight: bold;
+        margin: 15px 0;
+        color: #022083;
+    }
+
+    .card ul {
+        padding-left: 18px;
+        margin: 15px 0;
+    }
+
+    .card ul li {
+        margin-bottom: 8px;
+        color: #3a3a3a;
+    }
+    ul li i {
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #046d24;
 }
 </style>
 
@@ -100,7 +156,7 @@ li {
             </ul>
         </div> -->
 
-        <div class="ticket-type">
+        <!-- <div class="ticket-type">
     <h3>₦30,000 Ticket</h3>
 
     <p>Early Birds - ₦20,000 (Limited Time Offer)</p>
@@ -116,12 +172,80 @@ li {
         <li><strong>Premium Conference Souvenirs</strong> – Curated business-themed gift pack</li>
         <li><strong>Priority Networking Access</strong> – Special access to speakers, panelists, and key participants</li>
     </ul>
-</div>
+</div> -->
 
     </div>
-    <div class="re">
+    
+
+
+
+
+<div class="card-container">
+
+    <!-- General Pass -->
+    <div class="card">
+        <div>
+            <h2>General</h2>
+            <div class="price">₦10,000</div>
+            <ul>
+    <li><i class="fa-solid fa-check"></i> Main conference sessions</li>
+    <li><i class="fa-solid fa-check"></i> Keynotes & panels</li>
+    <li><i class="fa-solid fa-check"></i> Exhibition & networking areas</li>
+    <li><i class="fa-solid fa-xmark" style="color:#e74c3c;"></i> No pitch access</li>
+    <li><i class="fa-solid fa-xmark" style="color:#e74c3c;"></i> Not eligible for grant</li>
+</ul>
+
+        </div>
+        <div class="re">
         <a href="register-form.php" class="btn">Register Now</a>
     </div>
+
+    </div>
+
+    <!-- Aspiring Entrepreneur Pass -->
+    <div class="card">
+        <div>
+            <h2>Aspiring Entrepreneur</h2>
+            <div class="price">₦20,000</div>
+            <ul>
+                <li><i class="fa-solid fa-check"></i> Everything in General</li>
+                <li><i class="fa-solid fa-check"></i> Eligible for business pitch deck</li>
+                <li><i class="fa-solid fa-check"></i> Grand prize of ₦500,000</li>
+                <li><i class="fa-solid fa-check"></i> Refreshments</li>
+                <li><i class="fa-solid fa-check"></i> Premium conference souvenirs</li>
+            </ul>
+        </div>
+        <div class="re">
+        <a href="register-form.php" class="btn">Register Now</a>
+    </div>
+
+    </div>
+
+    <!-- Premium Pitch Pass -->
+    <div class="card">
+        <div>
+            <h2>Premium Pitch</h2>
+            <div class="price">₦30,000</div>
+            <ul>
+                <li><i class="fa-solid fa-check"></i> Everything in Aspiring Entrepreneur</li>
+                <li><i class="fa-solid fa-check"></i> 30-minute post-conference strategy consultation</li>
+                <li><i class="fa-solid fa-check"></i> One-on-one session with Jobrole Consulting</li>
+                <li><i class="fa-solid fa-check"></i> ₦30,000 discount voucher (3 months validity)</li>
+            </ul>
+        </div>
+        <div class="re">
+        <a href="register-form.php" class="btn">Register Now</a>
+    </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
 
     <br>
 
