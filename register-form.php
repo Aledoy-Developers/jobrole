@@ -1,3 +1,8 @@
+<?php
+$cat = base64_decode($_GET['cat']);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -143,8 +148,16 @@ select {
     <div class="dropdown mb-3">
         <div class="select-wrapper">
             <label for="choose">Ticket Type:</label>
-            <select id="choose" name="category">               
-                <option value="Early Bird N20,000">Early Bird ₦20,000</option>
+            <select id="choose" name="category">  
+                <?php if($_GET['cat'])
+                {
+                    ?>
+                <option value="<?php echo $cat; ?>"><?php echo $cat; ?></option> 
+            <?php }
+            ?>             
+                <option value="General N10,000">General ₦10,000</option>               
+                <option value="Aspiring Entrepreneur N20,000">Aspiring Entrepreneur ₦20,000</option>               
+                <option value="Premium Pitch N30,000">Premium Pitch ₦30,000</option>
             </select>
         </div>
     </div>

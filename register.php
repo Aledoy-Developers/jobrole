@@ -207,8 +207,8 @@ li {
 </ul>
 
         </div>
-        <div class="re">
-        <a href="register-form.php" class="btn">Register Now</a>
+        <div class="">
+        <a href="register-form.php?cat=<?php echo base64_encode('General ₦10,000'); ?>" class="btn">Register Now</a>
     </div>
 
     </div>
@@ -226,8 +226,8 @@ li {
                 <li><i class="fa-solid fa-check"></i> Premium conference souvenirs</li>
             </ul>
         </div>
-        <div class="re">
-        <a href="register-form.php" class="btn">Register Now</a>
+        <div class="">
+        <a href="register-form.php?cat=<?php echo base64_encode('Aspiring Entrepreneur ₦20,000'); ?>" class="btn">Register Now</a>
     </div>
 
     </div>
@@ -244,8 +244,8 @@ li {
                 <li><i class="fa-solid fa-check"></i> ₦30,000 discount voucher (3 months validity)</li>
             </ul>
         </div>
-        <div class="re">
-        <a href="register-form.php" class="btn">Register Now</a>
+        <div class="">
+        <a href="register-form.php?cat=<?php echo base64_encode('Premium Pitch ₦30,000'); ?>" class="btn">Register Now</a>
     </div>
 
     </div>

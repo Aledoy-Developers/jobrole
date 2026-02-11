@@ -27,7 +27,7 @@ include('conn.php');
             <div>
                 <input type="hidden" id="email-address" required value="<?php echo $email; ?>" />
 
-                <input type="hidden" id="amount" required value="20000" />
+                <input type="hidden" id="amount" required value="<?php echo $final_amount; ?>" />
                 <input type="hidden" id="name" value="<?php echo $fullname ?>" />
                 <input type="hidden" id="phone" value="<?php echo $phone ?>" />
                 <input type="hidden" id="pitch" value="<?php echo $pitch_session ?>" />

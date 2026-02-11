@@ -17,6 +17,11 @@ $category     = trim($_POST['category'] ?? '');
 $attend       = trim($_POST['attend'] ?? '');
 $pitch_session = $_POST['pitch_session'];
 
+$category = str_replace('₦','N',$category);
+
+$amount = explode('N',$category);
+$final_amount = str_replace(',','',$amount[1]);
+
 
 // Validation
 if (!$fullname || !$email || !$phone || !$organization || !$position || !$attend || !$category) {
@@ -67,6 +72,5 @@ $ticket_id = date('mi') . rand(100, 999);
 
 
 // Build email content
-
 include('payment.php');
 exit;
