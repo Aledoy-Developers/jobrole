@@ -62,7 +62,9 @@ li {
     align-items: center;
     justify-content: center;
 }
-
+.re .btn{
+    margin-bottom: 20px;
+}
 .re .btn:hover {
     background-color: transparent;
     color: black !important;
@@ -81,7 +83,16 @@ li {
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
+    }
+    @media (max-width: 768px) {
+        .card-container{
+            display: block;
+        }
+        .card{
+            width: 85% !important;
+            margin: 35px auto;
+        }
     }
 
     .card {
@@ -121,7 +132,7 @@ li {
     margin-right: 5px;
     font-size: 20px;
     font-weight: 500;
-    color: #046d24;
+    color: #FF6C0D;
 }
 </style>
 
@@ -191,8 +202,8 @@ li {
     <li><i class="fa-solid fa-check"></i> Main conference sessions</li>
     <li><i class="fa-solid fa-check"></i> Keynotes & panels</li>
     <li><i class="fa-solid fa-check"></i> Exhibition & networking areas</li>
-    <li><i class="fa-solid fa-xmark" style="color:#e74c3c;"></i> No pitch access</li>
-    <li><i class="fa-solid fa-xmark" style="color:#e74c3c;"></i> Not eligible for grant</li>
+    <li><i class="fa-solid fa-xmark"></i> No pitch access</li>
+    <li><i class="fa-solid fa-xmark"></i> Not eligible for grant</li>
 </ul>
 
         </div>

@@ -102,8 +102,8 @@
                     <div class="speaker-info">
                         <h3>Mr Chigbo Okeke</h3>
                         <p class="position">Host/Lead Consultant, Jobrole Consulting</p>
-                        <p class="bio">Meet the visionary thinkers and doers who will share their expertise at the Next
-                            Frontier Conference 2025!</p>
+                        <p class="bio">Chigbo Okeke is the founder and lead consultant of Jobrole Consulting Limited, A leading Nigerian HR and talent management firm.</p>
+                        
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -128,14 +128,12 @@
 
                 <!-- Speaker 7 -->
                 <div class="speaker-card">
-                    <img src="images/bright.jpg" alt="Bright Sekoni" class="speaker-image">
+                <img src="images/ikechukwu.jpg" alt="Ikechukwu Oragwu" class="speaker-image">
+
                     <div class="speaker-info">
-                        <h3>Mr Bright Sekoni</h3>
-                        <p class="position">Founder and CEO, Audacia Properties</p>
-                        <p class="bio">An inspiring tale of resilience, ambition, and innovation. A prominent
-                        Nigerian entrepreneur, Bright is the Founder and CEO of Audacia Propertiesi, one of Nigeria’s
-                        fastest-growing real estate firms. 
-</p>
+                        <h3>Mr Ikechuwkwu Oragwu</h3>
+                        <p class="position">Finance professional and passionate entrepreneur.</p>
+                        <p class="bio">Ikechukwu Oragwu is a finance professional and passionate entrepreneur. He has dedicated his time to building businesses that create sustainable value in the finance, technology and real estate sectors. </p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
