@@ -155,14 +155,18 @@ select {
                 <option value="<?php echo $cat; ?>"><?php echo $cat; ?></option> 
             <?php }
             ?>             
-                <option value="General N10,000">General ₦10,000</option>               
+                <!-- <option value="General N10,000">General ₦10,000</option>               
                 <option value="Aspiring Entrepreneur N20,000">Aspiring Entrepreneur ₦20,000</option>               
-                <option value="Premium Pitch N30,000">Premium Pitch ₦30,000</option>
+                <option value="Premium Pitch N30,000">Premium Pitch ₦30,000</option> -->
             </select>
         </div>
     </div>
 
-   <!-- ✅ PITCH DECK SECTION -->
+   <!-- ✅ PITCH DECK SECTION
+   Not applicable for Genenal N10,000 
+   -->
+<?php if ($cat != 'General ₦10,000') {
+    ?>
 <div class="mb-4">
     <label class="form-label fw-bold mb-3">
         Would you like to be part of our pitch deck session?
@@ -182,9 +186,16 @@ select {
             <span class="checkmark"></span>
             No
         </label>
+        
     </div>
 </div>
+        
+<?php } 
+else{
+    echo '<br><br>';
+    }?>
 <!-- ✅ END PITCH DECK SECTION -->
+
 
     <!-- <div class="dropdown mb-3">
         <div class="select-wrapper">
