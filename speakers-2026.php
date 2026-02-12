@@ -31,7 +31,7 @@
 
                     <div class="speaker-info">
                         <h3>Mr Ikechuwkwu Oragwu</h3>
-                        <p class="position">Finance Professional and Passionate Entrepreneur.</p>
+                        <p class="position">CEO, Liquiditti Solutions.</p>
                         <p class="bio">Ikechukwu Oragwu is a finance professional and passionate entrepreneur. He has dedicated his time to building businesses that create sustainable value in the finance, technology and real estate sectors. </p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
