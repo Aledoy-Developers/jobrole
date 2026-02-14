@@ -43,7 +43,7 @@
                 <!-- Speaker 4 -->
 
                 <div class="speaker-card">
-                    <img src="images/Babatunde Akin.jpg.jpeg" alt="Babatunde Akin" class="speaker-image">
+                    <img src="images/Babatunde Akin.jpg" alt="Babatunde Akin" class="speaker-image">
                     <div class="speaker-info">
                         <h3>Babatunde Akin</h3>
                         <p class="position">Co-Founder and CEO of Sycamore Group</p>
