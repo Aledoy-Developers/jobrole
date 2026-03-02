@@ -1,3 +1,23 @@
+<style>
+/* Ensure footer styles render consistently across pages */
+footer {
+    background-color: #000 !important;
+    color: #fff !important;
+    padding: 50px 0 20px !important;
+}
+footer .footer-content { display:flex; flex-wrap:wrap; justify-content:space-between; }
+footer .footer-column { flex:1; min-width:300px; margin-bottom:30px; text-align: left; }
+footer .footer-column h3 { color: #085CB6 !important; }
+footer .footer-column p { color: #ddd !important; text-align: left; }
+footer .footer-column ul { list-style: none; padding-left: 0 !important; margin-left: 0 !important; text-align: left; }
+footer .footer-column ul li { margin-bottom: 10px; text-align: left; }
+footer .footer-column ul li a { color: #ddd !important; text-decoration: none !important; }
+footer .footer-column ul li a:hover { color: var(--accent) !important; }
+/* Remove any accidental background added to social wrapper */
+footer .social-links, footer .footer-column > div[style] { background-color: transparent !important; }
+.whatsapp-float { z-index: 9999 !important; }
+</style>
+
 <footer>
     <div class="container">
         <div class="footer-content row">
@@ -88,11 +108,6 @@
     </div>
 </footer>
 
-<a href="https://wa.me/
-    
-    2349160005955" 
-   class="whatsapp-float" 
-   target="_blank" 
-   aria-label="Chat with us on WhatsApp">
+<a href="https://wa.me/2349160005955" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
     <i class="fab fa-whatsapp"></i>
 </a>

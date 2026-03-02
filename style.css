@@ -527,7 +527,7 @@ nav ul li:last-child {
 
 
 .nfc-testimonials {
-  margin-top: 90px;
+  /* margin-top: 90px; */
     background: #252b86;
     padding: 70px 20px;
     color: #fff;
@@ -917,9 +917,15 @@ footer .social-links a:hover {
   color: #aaa;
 }
 
+/* Footer alignment helpers: remove excessive left padding from .af and
+   ensure footer row/columns have consistent gutter spacing so lists
+   and paragraphs align to the left across pages. */
 .af {
-    padding-left: 100px;
+  padding-left: 0;
 }
+
+footer .footer-content.row { margin-left: 0 !important; margin-right: 0 !important; }
+footer .footer-column { padding-left: 15px; padding-right: 15px; }
 
 .form {
     max-width: 600px;
@@ -1298,7 +1304,7 @@ footer .social-links a:hover {
 }
 
 .keynote-content p.position {
-  color: var(--accent);
+  color: #085CB6;
   font-weight: 600;
   margin-bottom: 20px;
   font-size: 1.2rem;
@@ -1356,7 +1362,7 @@ footer .social-links a:hover {
   margin-top: 20px;
   background-color: transparent;
   color: white;
-  border: 2px solid var(--accent);
+  border: 2px solid #085CB6;
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
@@ -1364,7 +1370,7 @@ footer .social-links a:hover {
 }
 
 .track-btn.active, .track-btn:hover {
-  background-color: var(--accent);
+  background-color: #085CB6;
   color: white;
 }
 
@@ -1425,7 +1431,7 @@ footer .social-links a:hover {
   top: 0;
   width: 70px;
   font-weight: 600;
-  color: var(--accent);
+  color: #085CB6;
 }
 
 .about-swap{
@@ -1439,7 +1445,7 @@ footer .social-links a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   padding: 25px;
   width: 100%;
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid #085CB6;
 }
 
 .session-header {
@@ -1458,7 +1464,7 @@ footer .social-links a:hover {
 .session-track {
   display: inline-block;
   padding: 3px 10px;
-  background-color: var(--accent);
+  background-color: #085CB6;
   /* color: var(--dark); */
   color: #fff;
   border-radius: 4px;
@@ -1481,7 +1487,7 @@ footer .social-links a:hover {
 .session-location {
   display: flex;
   align-items: center;
-  color: var(--accent);
+  color: #085CB6;
   font-weight: 500;
 }
 
