@@ -292,6 +292,15 @@
 
 
     <?php include('footer.php'); ?>
+
+    <a href="https://wa.me/
+    
+    2349160005955" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
 </body>
 
 </html>

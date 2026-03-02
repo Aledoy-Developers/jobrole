@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <div class="header-content">
-            <a href="index.php" class="logo"><img src="images/logo.png"></span></a>
+            <a href="index.php" class="logo"><img src="images/Navbar Logo.svg"></span></a>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
             </button>
@@ -15,7 +15,7 @@
                     <!-- <li><a href="award.php">Awards</a></li> -->
                     
                       <li>
-                        <a href="register.php" class="new-btton">Register</a>
+                        <a href="register.php" class="new-btton">Register Now</a>
                      </li>
                 </ul>
             </nav>
