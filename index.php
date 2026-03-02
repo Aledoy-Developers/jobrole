@@ -7,7 +7,6 @@
     <title>Next Frontier Conference 2026 | JobRole Consulting</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
@@ -25,10 +24,13 @@
             <source src="video/hero.webm" type="video/mp4">
         </video>
     </div>
+    
 
     <div class="carousel-content">
         <h1>Next Frontier Conference 2026</h1>
         <p>Theme: Beyond Boundaries: Building the Future.</p>
+        <p>Join 200+ founders, operators, and leaders for one day that redefines your next decade.
+</p>
         <p>📍 AGIP Recital Hall, Muson Centre, Onikan, Lagos | Saturday, September 19, 2026</p>
         <a href="register.php" class="btn">Register Now</a>
     </div>
@@ -86,7 +88,46 @@
             <div class="carousel-dots" id="carouselDots">
             </div>
         </div>
+        
+
+
+
     </section>
+
+   <!-- Premium Countdown Section Start -->
+<section class="conference-countdown">
+    <div class="container text-center">
+        <h2 class="countdown-heading">Next Frontier 2026 Begins In</h2>
+
+        <div class="countdown-wrapper">
+            <div class="countdown-card">
+                <span id="days">00</span>
+                <p>DAYS</p>
+            </div>
+
+            <div class="countdown-card">
+                <span id="hours">00</span>
+                <p>HOURS</p>
+            </div>
+
+            <div class="countdown-card">
+                <span id="minutes">00</span>
+                <p>MINS</p>
+            </div>
+
+            <div class="countdown-card">
+                <span id="seconds">00</span>
+                <p>SECS</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Premium Countdown Section End -->
+
+      <?php include('ticket.php'); ?>
+
+      <?php include('testimonails.php'); ?>
+
         <?php include('speakers-2026.php'); ?>
 
     <!-- About Section -->
@@ -94,9 +135,10 @@
         <div class="container">
             <div class="section-title">
                 <h2>Next Frontier Conference 2026</h2>
-                <p>Welcome to The Next Frontier Conference 2026 <strong>Date:</strong> September 19, 2026
+                <p>Welcome to The Next  Frontier Conference 2026 <strong>Date:</strong> September 19, 2026
                 </p>
             </div>
+            
 
             <div class="about-content">
                 <div class="about-text">
@@ -201,6 +243,57 @@
         </div>
     </section>
 
+
+    <!-- FAQ Start -->
+<section class="nfc-faq">
+    <div class="container">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">Is lunch included?</button>
+            <div class="faq-answer">
+                Yes — lunch and refreshments are included in all ticket tiers throughout the day at AGIP Recital Hall, Muson Centre.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can I attend online?</button>
+            <div class="faq-answer">
+                The 2026 edition is fully in-person. The experience is designed for the room. Virtual options may be considered for future editions.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What is the refund policy?</button>
+            <div class="faq-answer">
+                Tickets can be transferred to another person up to 7 days before the event. For refunds, contact info@jobrole.com at least 30 days before the event.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can my company register a team?</button>
+            <div class="faq-answer">
+                Yes — group discounts are available for 5 or more registrations. Email info@jobrole.com for a group invoice and pricing.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How do I access the Pitch Showcase?</button>
+            <div class="faq-answer">
+                The Pitch Showcase is application-only. Applications are reviewed on merit. Click "Notify Me When Applications Open" to be alerted when submissions begin.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How do I get to the venue?</button>
+            <div class="faq-answer">
+                Muson Centre is located at 8/9 Marina, Onikan, Lagos Island. Accessible by car, Bolt/Uber, and public transport. Parking is available on site.
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ End -->
+
   
 
 
@@ -279,6 +372,53 @@
 
     carousel.addEventListener('mouseleave', startAutoPlay);
     </script>
+
+    <script>
+    const eventDate = new Date("September 19, 2026 08:00:00").getTime();
+
+    const countdown = setInterval(function () {
+
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.querySelector(".countdown-wrapper").innerHTML = "Event Started";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+    }, 1000);
+</script>
+
+    <script src="script.js"></script>
+
+
+    <script>
+document.querySelectorAll(".faq-question").forEach(btn => {
+    btn.addEventListener("click", function() {
+        const answer = this.nextElementSibling;
+        answer.style.display =
+            answer.style.display === "block" ? "none" : "block";
+    });
+});
+</script>
+
+<a href="https://wa.me/2349160005955" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
 </body>
 
 </html>

@@ -53,6 +53,10 @@ header {
   font-weight: 700;
   color: white;
   text-decoration: none;
+
+  img{
+    height: 50px;
+  }
 }
 
 .logo span {
@@ -71,14 +75,17 @@ nav ul li {
 
 li a.new-btton{
   padding: 12px 30px;
-  background-color: var(--accent);
+  background-color: #085CB6;
   color: var(--dark);
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s;
-  border: 2px solid var(--accent);
+  border: 2px solid #085CB6;
   width: fit-content;
+  
+  
+;
 }
 
 li a.new-btton:hover {
@@ -248,16 +255,408 @@ nav ul li:last-child {
 .btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: var(--accent);
+  background-color: #085CB6;
   color: var(--dark);
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s;
-  border: 2px solid var(--accent);
+  border: 2px solid #085CB6;
   width: fit-content;
 
   
+}
+
+
+/* .conference-countdown {
+    padding: 80px 0;
+    background: #111;
+}
+
+.countdown-title {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.countdown-box {
+    text-align: center;
+}
+
+.countdown-box span {
+    display: block;
+    font-size: 42px;
+    font-weight: 700;
+    color: #e85f02;
+}
+
+.countdown-box small {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #aaa;
+} */
+
+
+
+.conference-countdown {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #686686, #1a1a1a);
+}
+
+.countdown-heading {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.countdown-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(184, 135, 58, 0.3);
+    border-radius: 16px;
+    padding: 30px 35px;
+    width: 150px;
+    backdrop-filter: blur(6px);
+    transition: 0.3s ease;
+}
+
+.countdown-card:hover {
+    transform: translateY(-6px);
+    border-color: #B8873A;
+    box-shadow: 0 15px 40px rgba(184, 135, 58, 0.15);
+}
+
+.countdown-card span {
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFA500;
+    line-height: 1;
+    
+}
+
+.countdown-card p {
+    margin-top: 12px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #cccccc;
+    text-align: center;
+}
+
+
+.tickets-section {
+  /* margin-top: 80px; */
+  padding: 70px;
+  background: #0E0E0E;
+  color: #fff;
+ 
+}
+
+
+.tickets-header {
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+.section-label {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #FFA500;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+
+
+.tickets-row {
+  display: flex;
+  /* gap: 25px; */
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+.ticket-card {
+  background: #111;
+  border: 1px solid #222;
+  padding: 40px 25px;
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.ticket-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.ticket-card ul li {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.tier-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #aaa;
+}
+
+.ticket-price {
+  font-size: 38px;
+  font-weight: 700;
+  color: #FFA500
+;
+  margin: 10px 0;
+}
+
+.ticket-price.free {
+  color: #FFA500;
+}
+
+.ticket-tagline {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.btn-outline-ticket {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.btn-outline-ticket:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn-gold-ticket {
+  background: #FFA500;
+  color: #000;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: auto;
+  font-weight: 600;
+}
+
+.featured {
+  border: 1px solid #FFA500;
+}
+
+.badge-top {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FFA500;
+  color: #000;
+  padding: 5px 14px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.badge-outline {
+  position: absolute;
+  top: -12px;
+  right: 15px;
+  border: 1px solid #FFA500;
+  color: #FFA500;
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+
+.price-wrapper {
+    margin-bottom: 10px;
+}
+
+.current-price {
+    font-size: 42px;
+    font-weight: 700;
+    color: #FFA500;
+    display: block;
+}
+
+.old-price {
+    font-size: 16px;
+    color: #777;
+    text-decoration: line-through;
+}
+
+.savings-badge {
+    color: #22c55e;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+.nfc-testimonials {
+  margin-top: 90px;
+    background: #252b86;
+    padding: 70px 20px;
+    color: #fff;
+}
+
+.section-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #FFA500;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    opacity: 0.7;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: #1a1a1a;
+    padding: 35px;
+    border: 1px solid #2a2a2a;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+    border-color: #B8873A;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 11px;
+    padding: 5px 10px;
+    background: #FFA500;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-style: italic;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+.role {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+
+
+.nfc-faq {
+    background: #333485;
+    padding: 50px 20px;
+    color: #fff;
+}
+
+.faq-item {
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+    margin: 0px 10%;
+  
+    /* width: fit-content; */
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    text-align: left;
+    padding: 20px 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding-bottom: 20px;
+    opacity: 0.8;
+}
+
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background: #25D366;
+    color: #fff;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    z-index: 9999;
+}
+
+
+
+
+@media (max-width: 992px) {
+  .tickets-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ticket-card {
+    max-width: 320px;
+  }
 }
 
 
@@ -1541,6 +1940,20 @@ footer .social-links a:hover {
     color: #fff;
     font-size: 12px;
     font-weight: bold;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 

@@ -38,7 +38,7 @@
   color: white !important;
   text-decoration: none;
   transition: all 0.3s;" onmouseover="this.style.backgroundColor='#FF6C0D'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.1)'; this.style.transform='none';"><i class="fab fa-instagram"></i></a>
-                    <a href="#"  style="  display: inline-flex;
+                    <a href="https://www.instagram.com/nfcbyjobroleng?igsh=YWVqcDFweXk1MmY="  style="  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 40px;
