@@ -82,15 +82,13 @@ li a.new-btton{
   font-weight: 600;
   transition: all 0.3s;
   border: 2px solid #085CB6;
+  color: #fff !important;
   width: fit-content;
-  
-  
-;
 }
 
 li a.new-btton:hover {
-  background-color: transparent;
-  color: white;
+  background-color: #fff;
+  color: #085CB6;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -104,7 +102,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--accent);
+  color: #085CB6;
 }
 
 
@@ -256,14 +254,14 @@ nav ul li:last-child {
   display: inline-block;
   padding: 12px 30px;
   background-color: #085CB6;
-  color: var(--dark);
+  /* color: var(--dark); */
+  color: #fff;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s;
   border: 2px solid #085CB6;
   width: fit-content;
-
   
 }
 
@@ -598,6 +596,7 @@ nav ul li:last-child {
 .nfc-faq {
     background: #333485;
     padding: 50px 20px;
+    padding-bottom: 100px;
     color: #fff;
 }
 
@@ -607,6 +606,10 @@ nav ul li:last-child {
     margin: 0px 10%;
   
     /* width: fit-content; */
+}
+
+.speaker-2025{
+  background-color: #fff;
 }
 
 .faq-question {
@@ -690,13 +693,15 @@ nav ul li:last-child {
 .about-content .btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: var(--accent);
-  color: var(--dark);
+  background-color: #085CB6;
+  color: #fff;
+  /* background-color: var(--accent);
+  color: var(--dark); */
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s;
-  border: 2px solid var(--accent);
+  border: 2px solid #085CB6;
 }
 
 .btn:hover {
@@ -854,7 +859,7 @@ footer {
 .footer-column h3 {
   font-size: 1.3rem;
   margin-bottom: 20px;
-  color: var(--accent);
+  color: #085CB6;
 }
 
 .footer-column ul {
@@ -1137,13 +1142,13 @@ footer .social-links a:hover {
 .cta-section .btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: var(--accent);
-  color: var(--dark);
+  background-color: #085CB6;
+  color: #fff;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s;
-  border: 2px solid var(--accent);
+  border: 2px solid #085CB6;
 }
 
 .cta-section .btn:hover {

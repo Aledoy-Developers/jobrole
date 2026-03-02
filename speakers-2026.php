@@ -1,4 +1,8 @@
+<?php
+$spek =  array_reverse(explode('/', $_SERVER['SCRIPT_NAME']));
+$myspeakers = $spek[0];
 
+?>
     <section class="speakers-section">
         <div class="container">
             <div class="section-title">
@@ -13,12 +17,14 @@
                     <div class="speaker-info">
                         <h3>Mr Chigbo Okeke</h3>
                         <p class="position">Host/Lead Consultant, Jobrole Consulting</p>
+                        <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Chigbo Okeke is the founder and lead consultant of Jobrole Consulting Limited, A leading Nigerian HR and talent management firm.</p>
                         
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
+                    <?php } ?>
                     </div>
                 </div>
 
@@ -32,11 +38,13 @@
                     <div class="speaker-info">
                         <h3>Mr Ikechuwkwu Oragwu</h3>
                         <p class="position">CEO, Liquiditti Solutions.</p>
+                        <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Ikechukwu Oragwu is a finance professional and passionate entrepreneur. He has dedicated his time to building businesses that create sustainable value in the finance, technology and real estate sectors. </p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
+                    <?php } ?>
                     </div>
                 </div>
 
@@ -47,25 +55,39 @@
                     <div class="speaker-info">
                         <h3>Babatunde Akin</h3>
                         <p class="position">Co-Founder and CEO of Sycamore Group</p>
+                        <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Babatunde Akin-Moses is the Co-Founder and CEO of Sycamore Group, a borderless fintech providing credit, savings, investment, and related financial services to individuals and growing businesses</p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
+                    <?php } ?>
                     </div>
                 </div>
+
+                <!-- All Others below appears on only speakers --> 
+<?php 
+
+if($myspeakers == 'speaker.php') 
+    
+    { ?>
+
+
                 <div class="speaker-card">
                     <img src="images/Kelechi .jpg" alt="Kelechi Enyioha" class="speaker-image">
                     <div class="speaker-info">
                         <h3>Kelechi Enyioha 
                         </h3>
-                        <p class="position">Enterprise Digital Transformation Leader .
+
+                        <p class="position">Enterprise Digital Transformation Leader.
                         </p>
+                        <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Kelechi Enyioha is an Enterprise Digital Transformation Leader with over 18 years of experience designing and delivering large-scale digital, data, and AI-enabled transformation in complex and highly regulated environments..</p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
+                    <?php } ?>
                     </div>
                 </div>
                 <div class="speaker-card">
@@ -73,13 +95,16 @@
                     <div class="speaker-info">
                         <h3>Chisom Emenalom BL CPP
                         </h3>
+                        
                         <p class="position">Seasoned expert in Legal and Enterprise risk management with over 15 years of experience.
                         </p>
+                        <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Throughout her career, Chisom has worked with various companies to restructure business operations, strategy and management while leveraging on her expertise to drive growth and efficiency.</p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
+                    <?php } ?>
                     </div>
                 </div>
                 <div class="speaker-card">
@@ -87,13 +112,16 @@
                     <div class="speaker-info">
                         <h3>Nigel Newman
                         </h3>
+                        
                         <p class="position">Co-Founder & Managing Director, Big 5 Assessment Ltd
                         </p>
+                        <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Nigel Newman is a highly experienced facilitator and a Global Master Practitioner in Dr. Edward de Bono's Thinking Methods.</p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
+                    <?php } ?>
                     </div>
                 </div>
                 <div class="speaker-card">
@@ -103,11 +131,14 @@
                         </h3>
                         <p class="position">CEO, M.Bryan Consulting Limited
                         </p>
+                        <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Sandra Ihenacho, known as The Oracle, is a globally respected authority on Training Transfer Effectiveness (TTE) and the CEO of M.Bryan Consulting Limited. </p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
+                    <?php } ?>
+
                     </div>
                 </div>
                 <div class="speaker-card">
@@ -117,11 +148,13 @@
                         </h3>
                         <p class="position">CEO of Aigle Limited,
                         </p>
+                        <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Sola Oladunjoye is the CEO of Aigle Limited, a financial services company advancing access to SME financing.</p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
+                    <?php } ?>
                     </div>
                 </div>
 
@@ -130,18 +163,24 @@
                     <div class="speaker-info">
                         <h3>Mr Paul Onwuanibe</h3>
                         <p class="position">CEO, Landmark Group</p>
+                        <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Paul Onwuanibe is the Founder and Group Chief Executive Officer, of Landmark
                             Group.</p>
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
+                    <?php } ?>
                     </div>
                 </div>
                 
 
                 
-               
+            <?php
+
+    }
+
+    ?>
                 
 
                 

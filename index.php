@@ -31,8 +31,8 @@
         <p>Theme: Beyond Boundaries: Building the Future.</p>
         <p>Join 200+ founders, operators, and leaders for one day that redefines your next decade.
 </p>
-        <p>📍 AGIP Recital Hall, Muson Centre, Onikan, Lagos | Saturday, September 19, 2026</p>
-        <a href="register.php" class="btn">Register Now</a>
+        <!-- <p>📍 AGIP Recital Hall, Muson Centre, Onikan, Lagos | Saturday, September 19, 2026</p> -->
+        <a href="register.php" class="btn">Secure your seat - September 19</a>
     </div>
 </div>
 
@@ -130,8 +130,14 @@
 
         <?php include('speakers-2026.php'); ?>
 
+         <section class="speaker-2025" style="margin-bottom: 40px 0;">
+        <div class="container" style="text-align: center;">
+<a href="speaker.php" class="btn btn-light">View all Speakers</a>
+        </div>
+ </section>
+
     <!-- About Section -->
-    <section class="about" id="about">
+    <section class="about" id="about" style="margin-top: 60px; border-top-width: 1px; border-top-color: #ccc; border-top-style: solid;">
         <div class="container">
             <div class="section-title">
                 <h2>Next Frontier Conference 2026</h2>
