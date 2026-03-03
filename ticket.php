@@ -13,7 +13,7 @@
 
       <!-- CARD 1 -->
       <div class="ticket-card">
-        <p class="tier-label">BUILDER'S PASS (Individual)</p> <br>
+        <h1 class="tier-label">BUILDER'S PASS (Individual)</h1> <br>
         <h4 class="ticket-tagline">For Founders & Professionals</h4>
         <p>
           You are here to upgrade your skills, find your next big opportunity, and connect with the people shaping the market.
@@ -78,7 +78,7 @@
       </div>
 
       <!-- CARD 4 -->
-      <div class="ticket-card">
+      <!-- <div class="ticket-card">
         <div class="badge-outline">APPLICATION ONLY</div>
         <p class="tier-label">THE PITCH SHOWCASE</p> <br>
         <h4 class="ticket-tagline">The Stage is Awarded, Not Sold</h4>
@@ -89,10 +89,10 @@
         <ul>
           <li>Selection is strict and merit-based. Ticket holders get no advantage.</li>
           <li>Goal: Secure the capital and partners to build your future.</li>
-          <!-- <li>Capital access potential</li> -->
+        
         </ul>
         <a href="#" class="btn-outline-ticket">Notify Me When Applications Open </a>
-      </div>
+      </div> -->
 
     </div>
   </div>

@@ -45,7 +45,7 @@
                         <p>Innovation, Talent & Vision in a Changing World</p>
                         <p>Be part of a future-forward gathering where ideas, talent, and technology collide to shape
                             what's next.</p>
-                        <a href="agenda.php" class="btn">Explore Full Agenda</a>
+                        <a href="register.php" class="btn">Secure your seat - September 19</a>
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@
                     <div class="carousel-content">
                         <h1>Dynamic Speakers. Powerful Conversations.</h1>
                         <p>From startups to enterprises, meet Africa's top thinkers, doers, and builders.</p>
-                        <a href="speaker.php" class="btn">Meet the Speakers</a>
+                        <a href="register.php" class="btn">Secure your seat - September 19</a>
                     </div>
                 </div>
 
@@ -64,7 +64,10 @@
                         <h1>Workshops. Networking. Live Problem-Solving.</h1>
                         <p>Design your 2026 blueprint in breakout sessions for career, SME, or founder growth.</p>
                         <p>Take part in The Growth Exchange – Solve It Live!</p>
+
+                        <a href="register.php" class="btn">Secure your seat - September 19</a>
                     </div>
+                    
                 </div>
 
                 <!-- Slide 5 - Awards & Celebration -->
@@ -126,6 +129,48 @@
 <!-- Premium Countdown Section End -->
 
       <?php include('ticket.php'); ?>
+
+      <!-- Pitch Showcase Section -->
+<section class="nfc-pitch-section">
+    <div class="container">
+
+        <div class="pitch-wrapper">
+
+            <div class="pitch-badge">APPLICATION ONLY</div>
+
+            <div class="pitch-content">
+
+                <h3 class="pitch-label">THE PITCH SHOWCASE</h3>
+
+                <h2 class="pitch-tagline">“The Stage is Awarded, Not Sold”</h2>
+
+                <p class="pitch-description">
+                    This is not a ticket — it is a launchpad. We are looking for the boldest innovations solving critical African challenges. Selected founders will present live to a jury of VCs, Operators, and Ecosystem Leaders.
+                </p>
+
+                <div class="pitch-price">
+                    FREE — Application only. No payment required.
+                </div>
+
+                <div class="pitch-status">
+                    APPLICATIONS OPEN — [INSERT OPEN DATE]
+                </div>
+
+                <ul class="pitch-details">
+                    <li>Selection is strict and merit-based. Ticket holders get no advantage.</li>
+                    <li>Goal: Secure the capital and partners to build your future.</li>
+                </ul>
+
+                <a href="#notify-form" class="pitch-btn">
+                    Notify Me When Applications Open
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
       <?php include('testimonails.php'); ?>
 

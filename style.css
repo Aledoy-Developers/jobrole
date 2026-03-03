@@ -65,6 +65,112 @@ h2 {
   padding: 0 20px;
 }
 
+
+.nfc-pitch-section {
+    background: #0b0b0b;
+    padding: 120px 20px;
+    color: #fff;
+}
+
+.pitch-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #444;
+    padding: 60px;
+    position: relative;
+    background: transparent;
+}
+
+.pitch-badge {
+    position: absolute;
+    top: -14px;
+    left: 40px;
+    background: #1a1a1a;
+    color: #ffa500;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    padding: 6px 14px;
+    border: 1px solid #ffa500;
+    font-weight: 600;
+}
+
+.pitch-label {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffa500;
+    margin-bottom: 20px;
+}
+
+.pitch-tagline {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.pitch-description {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #ccc;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.pitch-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #22c55e;
+    margin-bottom: 10px;
+}
+
+.pitch-status {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffa500;
+    margin-bottom: 30px;
+}
+
+.pitch-details {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.pitch-details li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    color: #ddd;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.pitch-details li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #B8873A;
+}
+
+.pitch-btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 14px 28px;
+    text-decoration: none;
+    color: #ffa500;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.pitch-btn:hover {
+    background: #ffa500;
+    color: #000;
+    border-color: #ffa500;
+}
+
 /* Header */
 header {
   background-color: white;
@@ -420,7 +526,7 @@ nav ul li:last-child {
 }
 
 .section-subtitle {
-  font-size: 16px;
+  font-size: 20px;
   color: #ccc;
   line-height: 1.6;
 }
@@ -461,10 +567,10 @@ nav ul li:last-child {
 }
 
 .tier-label {
-  font-size: 12px;
-  text-transform: uppercase;
+  font-size: 17px;
+  /* text-transform: lowercase !important; */
   letter-spacing: 1px;
-  color: #aaa;
+  color: #ffa500;
 }
 
 .ticket-price {
