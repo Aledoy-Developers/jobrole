@@ -25,6 +25,39 @@ body {
   line-height: 1.6;
 }
 
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+/* Body text */
+body, p, li, span, a {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+}
+
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    
+}
+
+h1 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -774,6 +807,7 @@ nav ul li:last-child {
 .about {
   padding: 100px 0;
   background-color: white;
+  color: black;
 }
 
 .abt {
@@ -1168,11 +1202,13 @@ footer .footer-column { padding-left: 15px; padding-right: 15px; }
 
 
 .speakers-section {
+  
   padding: 80px 0;
   background-color: white;
 }
 
 .section-title {
+  margin-top: 40px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -1228,7 +1264,7 @@ footer .footer-column { padding-left: 15px; padding-right: 15px; }
 }
 
 .speaker-info p.position {
-  color: var(--accent);
+  color: #ffa500;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -1326,6 +1362,23 @@ footer .footer-column { padding-left: 15px; padding-right: 15px; }
   text-align: center;
   color: white;
   padding-top: 80px;
+}
+
+/* hero variant used on speaker/pastevent pages; add same offset so title isn't hidden behind fixed header */
+.speakers-hero,
+.about-hero,
+.agenda-hero {
+  padding-top: 80px;
+}
+
+/* basic styling for speakers-hero section if not defined elsewhere */
+.speakers-hero {
+  background-color: #f8f9fa; /* light default so text is readable */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1a1a1a;
+  height: 50vh;
 }
 
 .agenda-hero-content h1 {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speakers - Next Frontier 2026!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- <script src="script.js"></script> -->
 </head>
@@ -19,9 +20,8 @@
     <section class="speakers-hero">
         <div class="container">
             <div class="speakers-hero-content">
-                <h1>Past Conference Speakers</h1>
-                <p>A lineup of trailblazers whose insights, experiences, and ideas helped define the future at previous Next Frontier conferences
-                </p>
+                 <h1>Past Conference Highlights</h1>
+            <p>A glimpse into the moments, conversations, and connections from previous Next Frontier conferences</p>
             </div>
         </div>
     </section>
@@ -53,10 +53,10 @@
     <!-- Past Events Gallery -->
 <section class="gallery-section">
     <div class="container">
-        <div class="section-title">
+        <!-- <div class="section-title">
             <h2>Past Conference Highlights</h2>
             <p>A glimpse into the moments, conversations, and connections from previous Next Frontier conferences</p>
-        </div>
+        </div> -->
 
         <div class="gallery-grid">
             <!-- Gallery Item 1 -->

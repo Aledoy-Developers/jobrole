@@ -93,10 +93,10 @@ if($myspeakers == 'speaker.php')
                 <div class="speaker-card">
                     <img src="images/chisom.jpg" alt="Chisom Emenalom" class="speaker-image">
                     <div class="speaker-info">
-                        <h3>Chisom Emenalom BL CPP
+                        <h3>Chisom Emenalom 
                         </h3>
                         
-                        <p class="position">Seasoned expert in Legal and Enterprise risk management with over 15 years of experience.
+                        <p class="position">AVP,Business Operations & Growth
                         </p>
                         <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Throughout her career, Chisom has worked with various companies to restructure business operations, strategy and management while leveraging on her expertise to drive growth and efficiency.</p>

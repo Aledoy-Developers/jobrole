@@ -7,6 +7,7 @@
     <title>Register - Next Frontier 2026</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href=""> -->
     <!-- <script src="script.js"></script> -->
@@ -128,12 +129,14 @@ li {
         margin-bottom: 8px;
         color: #3a3a3a;
     }
-    ul li i {
-    margin-right: 5px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #FF6C0D;
-}
+    /* icons inside ticket/cardi controls only; avoid affecting footer */
+    .card ul li i,
+    .ticket-type ul li i {
+        margin-right: 5px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #FF6C0D;
+    }
 </style>
 
 <body>
@@ -153,7 +156,7 @@ li {
             <p><strong>Organized by:</strong> Jobrole Consulting Limited</p>
         </div>
 
-        <h2>Ticket</h2>
+        <!-- <h2>Ticket</h2> -->
 
         <!-- <div class="ticket-type">
             <h3>Standard Ticket - FREE
@@ -188,13 +191,15 @@ li {
     </div>
     
 
+ <?php include('ticket.php'); ?>
 
 
+<!-- <div class="card-container"> -->
 
-<div class="card-container">
+
 
     <!-- General Pass -->
-    <div class="card">
+    <!-- <div class="card">
         <div>
             <h2>General</h2>
             <div class="price">₦10,000</div>
@@ -211,10 +216,10 @@ li {
         <a href="register-form.php?cat=<?php echo base64_encode('General ₦10,000'); ?>" class="btn">Register Now</a>
     </div>
 
-    </div>
+    </div> -->
 
     <!-- Aspiring Entrepreneur Pass -->
-    <div class="card">
+    <!-- <div class="card">
         <div>
             <h2>Aspiring Entrepreneur</h2>
             <div class="price">₦20,000</div>
@@ -230,10 +235,10 @@ li {
         <a href="register-form.php?cat=<?php echo base64_encode('Aspiring Entrepreneur ₦20,000'); ?>" class="btn">Register Now</a>
     </div>
 
-    </div>
+    </div> -->
 
     <!-- Premium Pitch Pass -->
-    <div class="card">
+    <!-- <div class="card">
         <div>
             <h2>Premium Pitch</h2>
             <div class="price">₦30,000</div>
@@ -248,7 +253,7 @@ li {
         <a href="register-form.php?cat=<?php echo base64_encode('Premium Pitch ₦30,000'); ?>" class="btn">Register Now</a>
     </div>
 
-    </div>
+    </div> -->
 
 </div>
 
@@ -258,7 +263,7 @@ li {
 
 
 
-    <br>
+    
 
     <?php include('footer.php'); ?>
 
