@@ -226,8 +226,8 @@ li a.new-btton{
 }
 
 li a.new-btton:hover {
-  background-color: #fff;
-  color: #085CB6;
+  background-color: #fff !important;
+  color: #085CB6 !important;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
