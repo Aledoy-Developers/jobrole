@@ -16,7 +16,7 @@
 
 
     <!-- Speakers Hero Section -->
-    <section class="speakers-hero">
+    <!-- <section class="speakers-hero">
         <div class="container">
             <div class="speakers-hero-content">
                 <h1>Past Conference Speakers 2025</h1>
@@ -24,7 +24,7 @@
                 </p>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Featured Keynote Speaker -->
     <!-- <section class="keynote-section">

@@ -108,6 +108,6 @@ footer .social-links, footer .footer-column > div[style] { background-color: tra
     </div>
 </footer>
 
-<a href="https://wa.me/2349160005955" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+<a href="https://wa.me/2347070815471" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
     <i class="fab fa-whatsapp"></i>
 </a>
