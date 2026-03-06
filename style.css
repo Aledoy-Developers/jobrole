@@ -2133,4 +2133,56 @@ footer .footer-column { padding-left: 15px; padding-right: 15px; }
 }
 
 
+.nfc-sponsor-section{
+    background:#217EE2;
+    padding:60px 20px;
+    text-align:center;
+    color:#fff;
+}
+
+.sponsor-content{
+    max-width:800px;
+    margin:auto;
+}
+
+.sponsor-label{
+    font-family:'Cabinet Grotesk', sans-serif;
+    font-size:23px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#ffa500;
+    margin-bottom:20px;
+}
+
+.sponsor-title{
+    font-family:'Cabinet Grotesk', sans-serif;
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.sponsor-description{
+    font-family:'Satoshi', sans-serif;
+    font-size:19px;
+    line-height:1.7;
+    color:#ccc !important;
+    margin-bottom:40px;
+}
+
+.sponsor-btn{
+    display:inline-block;
+    background:#ffa500;
+    color:#000;
+    border-radius: 25px;
+    padding:13px 25px;
+    font-family:'Satoshi', sans-serif;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.sponsor-btn:hover{
+    background:#d3a04a;
+}
+
 

@@ -193,6 +193,73 @@ li {
 
  <?php include('ticket.php'); ?>
 
+   <!-- Pitch Showcase Section -->
+<section class="nfc-pitch-section">
+    <div class="container">
+
+        <div class="pitch-wrapper">
+
+            <div class="pitch-badge">APPLICATION ONLY</div>
+
+            <div class="pitch-content">
+
+                <h3 class="pitch-label">THE PITCH SHOWCASE</h3>
+
+                <h2 class="pitch-tagline">“The Stage is Awarded, Not Sold”</h2>
+
+                <p class="pitch-description">
+                    This is not a ticket — it is a launchpad. We are looking for the boldest innovations solving critical African challenges. Selected founders will present live to a jury of VCs, Operators, and Ecosystem Leaders.
+                </p>
+
+                <div class="pitch-price">
+                    FREE — Application only. No payment required.
+                </div>
+
+                <div class="pitch-status">
+                    APPLICATIONS OPEN — [Closes June 12, 2026]
+                </div>
+
+                <ul class="pitch-details">
+                    <li>Selection is strict and merit-based. Ticket holders get no advantage.</li>
+                    <li>Goal: Secure the capital and partners to build your future.</li>
+                </ul>
+
+                <a href="https://forms.gle/t2UwR5RgH1tMZU1AA " class="pitch-btn">
+                    Apply to Pitch My Startup
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Sponsorship Section -->
+<section class="nfc-sponsor-section">
+    <div class="container">
+
+        <div class="sponsor-content">
+
+            <p class="sponsor-label">PARTNER WITH US</p>
+
+            <h2 class="sponsor-title">
+                Partner With The Next Frontier Conference
+            </h2>
+
+            <p class="sponsor-description">
+                The Next Frontier Conference brings together founders, operators, investors, and decision-makers shaping Africa’s next wave of innovation. Sponsoring the conference places your brand directly in the room where meaningful conversations, partnerships, and opportunities are created.
+            </p>
+
+            <a class="sponsor-btn"
+               href="mailto:sales@jobroleng.com?cc=info@jobroleng.com&subject=Sponsorship%20Inquiry%3A%20Next%20Frontier%20Conference%202026&body=Hello%20Team%2C%0D%0A%0D%0AI%20am%20interested%20in%20learning%20more%20about%20sponsorship%20opportunities%20for%20the%20Next%20Frontier%20Conference%202026.%20Please%20share%20your%20sponsorship%20deck%20or%20let%20me%20know%20the%20best%20time%20to%20connect.%0D%0A%0D%0AThank%20you">
+                Become a Sponsor
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
 
 <!-- <div class="card-container"> -->
 

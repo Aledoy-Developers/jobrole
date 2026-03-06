@@ -158,7 +158,7 @@ if($myspeakers == 'speaker.php')
                     </div>
                 </div>
 
-                <div class="speaker-card">
+                <!-- <div class="speaker-card">
                     <img src="images/paul.jpg" alt="Paul Inwuanibe" class="speaker-image">
                     <div class="speaker-info">
                         <h3>Mr Paul Onwuanibe</h3>
@@ -171,7 +171,7 @@ if($myspeakers == 'speaker.php')
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
                     <?php } ?>
-                    </div>
+                    </div> -->
                 </div>
                 
 

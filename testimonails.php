@@ -15,7 +15,7 @@
                 <p class="quote">
                     “I have spoken at conferences across the continent. What sets the Next Frontier Conference apart is the quality of the room. The audience does not just listen — they engage, they challenge, and they execute. Speaking here is genuinely rewarding.”
                 </p>
-                <h4>Babatunde Akin-Moses</h4>
+                <h4>Mr Olusola Oladunjoye</h4>
                 <p class="role">Co-Founder & CEO, Sycamore Group</p>
             </div>
 
