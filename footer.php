@@ -22,7 +22,7 @@ footer .social-links, footer .footer-column > div[style] { background-color: tra
     <div class="container">
         <div class="footer-content row">
             <div class="footer-column">
-                <h3>Next Frontier</h3>
+               <a href="index.php" class="logo"><img src="images/Navbar Logo.svg"></span></a> <br>
                 <p>Empowering Africa's talent and businesses to thrive in the future of work.</p>
                 <div class="" style=" display: flex;
   justify-content: flex-start;

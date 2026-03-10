@@ -141,6 +141,7 @@ if($myspeakers == 'speaker.php')
 
                     </div>
                 </div>
+
                 <div class="speaker-card">
                     <img src="images/Sola Oladunjoye Pic.jpg" alt="Sola Oladunjoye" class="speaker-image">
                     <div class="speaker-info">
@@ -150,6 +151,43 @@ if($myspeakers == 'speaker.php')
                         </p>
                         <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Sola Oladunjoye is the CEO of Aigle Limited, a financial services company advancing access to SME financing.</p>
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    <?php } ?>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/chinonso22.jpeg" alt="Sola Oladunjoye" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Chinonso Ogbogu
+                        </h3>
+                        <p class="position">CEO/Founder Sabi Writers,
+                        </p>
+                        <?php if($myspeakers == 'speaker.php') { ?>
+                        <p class="bio">Chinonso Ogbogu is the CEO/Founder of Sabi Writers, Africa's
+leading writing solution company with presence in Lagos and Abuja
+and clients spread across the world.</p>
+                        <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div> -->
+                    <?php } ?>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/dradora22.jpeg" alt="Sola Oladunjoye" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Dr. Adora Ikwuemesi
+                        </h3>
+                        <p class="position"> MD, Kendor Consulting,
+                        </p>
+                        <?php if($myspeakers == 'speaker.php') { ?>
+                        <p class="bio">Dr. Adora Ikwuemesi is a distinguished human resources management expert, speaker, author,
+coach, and trusted advisor. She is the Founder and Director of Kendor Consulting. a leading HR
+consulting firm specialising in innovative learning and organisational development solutions.</p>
+
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -171,7 +209,7 @@ if($myspeakers == 'speaker.php')
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
                     <?php } ?>
-                    </div> -->
+                    </div> 
                 </div>
                 
 
