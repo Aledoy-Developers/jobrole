@@ -7,6 +7,7 @@
     <title>Speakers - Next Frontier 2026!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/nfc favicon  32x 32.png">
     <!-- <script src="script.js"></script> -->
 </head>
 

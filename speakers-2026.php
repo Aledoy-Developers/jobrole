@@ -185,8 +185,7 @@ and clients spread across the world.</p>
                         </p>
                         <?php if($myspeakers == 'speaker.php') { ?>
                         <p class="bio">Dr. Adora Ikwuemesi is a distinguished human resources management expert, speaker, author,
-coach, and trusted advisor. She is the Founder and Director of Kendor Consulting. a leading HR
-consulting firm specialising in innovative learning and organisational development solutions.</p>
+                        coach, and trusted advisor. She is the Founder and Director of Kendor Consulting.</p>
 
                         <!-- <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>

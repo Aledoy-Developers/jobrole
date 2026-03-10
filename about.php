@@ -11,6 +11,7 @@
         <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/nfc favicon  32x 32.png">
 </head>
 
 <body>

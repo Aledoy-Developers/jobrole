@@ -5,7 +5,7 @@ include('conn.php');
 
 <head>
     <title>Jobrole Payment Page</title>
-    <link rel="shortcut icon" href="image/icon.png" />
+    <link rel="shortcut icon" href="images/nfc favicon  32x 32.png" />
     <script src="jquery.js"></script>
     <style>
         body {
