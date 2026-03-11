@@ -25,12 +25,12 @@ include('conn.php');
             Click the button below to pay securely with Paystack.</p>
         <form id="paymentForm">
             <div>
-                <input type="hidden" id="email-address" required value="<?php echo $email; ?>" />
+                <input type="hidden" id="email-address" required value="<?php echo base64_decode($_GET['e']); ?>" />
 
-                <input type="hidden" id="amount" required value="<?php echo $final_amount; ?>" />
-                <input type="hidden" id="name" value="<?php echo $fullname ?>" />
-                <input type="hidden" id="phone" value="<?php echo $phone ?>" />
-                <input type="hidden" id="pitch" value="<?php echo $pitch_session ?>" />
+                <input type="hidden" id="amount" required value="<?php echo base64_decode($_GET['am']); ?>" />
+                <input type="hidden" id="name" value="<?php echo base64_decode($_GET['nm']); ?>" />
+                <input type="hidden" id="phone" value="<?php echo base64_decode($_GET['ph']); ?>" />
+                <input type="hidden" id="pitch" value="<?php echo base64_decode($_GET['pt']); ?>" />
 
                 <input type="hidden" id="last-name" />
             </div>
@@ -61,7 +61,7 @@ include('conn.php');
     function payWithPaystack(e) {
         e.preventDefault();
         let handler = PaystackPop.setup({
-            key: "pk_live_09914a9ba5e76f04a0baaa5db1b4a45958af48f9", // Replace with your public key
+            key: "pk_test_59e6e667d3990cda6c6a6849eb0c8c303cc333fd", // Replace with your public key
             email: document.getElementById("email-address").value,
             amount: document.getElementById("amount").value * 100,
             ref: "" + Math.floor(Math.random() * 1000000000 + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
@@ -72,7 +72,7 @@ include('conn.php');
             callback: function(response) {
                 //   let message = 'Payment complete! Reference: ' + response.reference;
                 //   alert(message);
-                document.location.href = 'payment-complete.php?em=<?php echo base64_encode($email); ?>&name=<?php echo base64_encode($fullname); ?>&p=<?php echo base64_encode($phone); ?>&s=<?php echo base64_encode($pitch_session); ?>&reference=' + response.reference;
+                document.location.href = 'payment-complete.php?em=<?php echo base64_encode($_GET['e']); ?>&name=<?php echo $_GET['nm']; ?>&p=<?php echo base64_encode($_GET['ph']); ?>&token=<?php echo ($_GET['token']); ?>&reference=' + response.reference;
             },
         });
         handler.openIframe();

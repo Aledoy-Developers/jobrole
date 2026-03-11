@@ -1,5 +1,12 @@
 <?php
-$cat = base64_decode($_GET['cat']);
+include('conn.php');
+
+if($_GET['cat'])
+{
+    $cat = base64_decode($_GET['cat']);
+    $no_att = base64_decode($_GET['no_att']);
+}
+
 
 ?>
 
@@ -97,7 +104,8 @@ select {
                 <div class="form p-4 border rounded bg-light">
                     <h2 class="text-center mb-4">Conference Registration Form</h2>
 
-                  <form action="proc-register.php" method="post">
+
+                  <form action="proc-register" method="post">
 
     <?php if (!empty($msg) && $msg == 'success') : ?>
         <div class="alert alert-success">Message Sent</div>
@@ -107,40 +115,48 @@ select {
         <div class="alert alert-danger"><?php echo htmlspecialchars($comment); ?></div>
     <?php endif; ?>
 
+    <?php
+    for($i=0; $i<$no_att; $i++)
+        {
+            ?>
+    
+                    <h4>Attendee <?php echo $i+1; ?></h4>
+                    <br>
+
     <div class="mb-3">
         <label for="name" class="form-label">Full Name:</label>
-        <input type="text" id="name" name="fullname" class="form-control"
-            value="<?php echo htmlspecialchars($fullname ?? ''); ?>">
+        <input type="text" id="name" name="fullname[]" class="form-control"
+            value="<?php echo $fullname[$i]; ?>" required="required">
     </div>
 
     <div class="mb-3">
         <label for="email" class="form-label">Email:</label>
-        <input type="email" id="email" name="email" class="form-control"
-            value="<?php echo htmlspecialchars($email ?? ''); ?>">
+        <input type="email" id="email" name="email[]" class="form-control"
+            value="<?php echo $email[$i]; ?>" required="required">
     </div>
 
     <div class="mb-3">
         <label for="phone" class="form-label">Phone Number:</label>
-        <input type="number" id="phone" name="phone" class="form-control"
-            value="<?php echo htmlspecialchars($phone ?? ''); ?>">
+        <input type="number" id="phone" name="phone[]" class="form-control"
+            value="<?php echo $phone[$i]; ?>"  required="required">
     </div>
 
     <div class="mb-3">
         <label for="organization" class="form-label">Organization/Company:</label>
-        <input type="text" id="organization" name="organization" class="form-control"
-            value="<?php echo htmlspecialchars($organization ?? ''); ?>">
+        <input type="text" id="organization" name="organization[]" class="form-control"
+            value="<?php echo $organization[$i]; ?>" required="required"> 
     </div>
 
     <div class="mb-3">
         <label for="position" class="form-label">Position:</label>
-        <input type="text" id="position" name="position" class="form-control"
-            value="<?php echo htmlspecialchars($position ?? ''); ?>">
+        <input type="text" id="position" name="position[]" class="form-control"
+            value="<?php echo $position[$i]; ?>"  required="required">
     </div>
 
     <div class="dropdown mb-3">
         <div class="select-wrapper">
             <label for="fruitSelect">How you do you want to attend?</label>
-            <select id="fruitSelect" name="attend">
+            <select id="fruitSelect" name="attend" required="required">
                 <option value="physical">Physical</option>
             </select>
         </div>
@@ -150,7 +166,7 @@ select {
         <div class="select-wrapper">
             <label for="choose">Ticket Type:</label>
             <select id="choose" name="category">  
-                <?php if($_GET['cat'])
+                <?php if($cat)
                 {
                     ?>
                 <option value="<?php echo $cat; ?>"><?php echo $cat; ?></option> 
@@ -168,7 +184,7 @@ select {
    -->
 <?php if ($cat != 'General ₦10,000') {
     ?>
-<div class="mb-4">
+<!-- <div class="mb-4">
     <label class="form-label fw-bold mb-3">
         Would you like to be part of our pitch deck session?
     </label>
@@ -189,8 +205,8 @@ select {
         </label>
         
     </div>
-</div>
-        
+</div> -->
+       <br><br> 
 <?php } 
 else{
     echo '<br><br>';
@@ -215,7 +231,16 @@ else{
         </div>
     </div> -->
 
+
+    <?php
+
+        } //loop ends here
+
+        ?>
+
+
     <div class="text-center">
+        <input type="hidden" name="no_att" value="<?php echo $no_att; ?>">
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 

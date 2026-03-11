@@ -25,7 +25,7 @@
           <li>Entry to the Networking & Exhibition area</li>
           <li>The exact blueprints and tools to grow your career or business</li>
         </ul>
-        <a href="https://app.eventeps.com/events/checkout-ticket/NzQy/MTAzNQ==" class="btn-outline-ticket">Get My Builder's Pass</a>
+        <a href="register-form?cat=<?php echo base64_encode('BUILDERS PASS'); ?>&no_att=<?php echo base64_encode(1); ?>" class="btn-outline-ticket">Get My Builder's Pass</a>
       </div>
 
       <!-- CARD 2 FEATURED -->
@@ -50,7 +50,7 @@
           <li>Priority Access — skip the regular registration queue</li>
           <li>Full access to all sessions, networking, and exhibition areas</li>
         </ul>
-        <a href="https://app.eventeps.com/events/checkout-ticket/NzQy/MTAzNg==" class="btn-gold-ticket">Get Squad Pass</a>
+        <a href="register-form?cat=<?php echo base64_encode('STRATEGY SQUAD: SME'); ?>&no_att=<?php echo base64_encode(3); ?>" class="btn-gold-ticket">Get Squad Pass</a>
       </div>
 
       <!-- CARD 3 -->
@@ -74,7 +74,7 @@
           <li>Priority Access — fast-track corporate check-in</li>
           <li>Full access to all sessions, networking, and exhibition areas</li>
         </ul>
-        <a href="https://app.eventeps.com/events/checkout-ticket/NzQy/MTAzNw==" class="btn-outline-ticket"> Register My Team</a>
+        <a href="register-form?cat=<?php echo base64_encode('STRATEGY SQUAD: CORPORATE'); ?>&no_att=<?php echo base64_encode(5); ?>" class="btn-outline-ticket"> Register My Team</a>
       </div>
 
       <!-- CARD 4 -->

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 21, 2026 at 11:45 AM
--- Server version: 10.11.15-MariaDB
--- PHP Version: 8.4.16
+-- Generation Time: Mar 11, 2026 at 11:38 AM
+-- Server version: 10.11.16-MariaDB
+-- PHP Version: 8.4.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -35,6 +35,8 @@ CREATE TABLE `registration` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
+-- Dumping data for table `registration`
+--
 -- Indexes for dumped tables
 --
 
@@ -52,5 +54,5 @@ ALTER TABLE `registration`
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;

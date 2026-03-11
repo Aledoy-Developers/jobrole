@@ -93,7 +93,7 @@
                         <?php if (!empty($msg) && $msg == 'success') : ?>
                             <div class="alert alert-success">Thank you <?php echo $name; ?>!<br><br>Your registration
                                 was
-                                successful. Your confirmation ticket has been sent to your email.<br><br>
+                                successful. Your confirmation ticket has been sent to your email(s).<br><br>
 
                                 <div style="font-size:12px; color:#FF6C0D;">If you do not see the email in your inbox, please check your <strong>Junk/Spam</strong> folder.</div> <br><br>
 
