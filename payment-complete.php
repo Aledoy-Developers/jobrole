@@ -43,25 +43,62 @@ for($i=0; $i<$num2; $i++)
         //     $pitch = '<a target="_blank" href="https://forms.gle/pJ91iC4osoreirLi8">Click this link to submit your prosposal for the pitch deck session</a>';
         // }
 
+        $qr_code_url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=".$ticket_id;
+
         $subject = 'You registered for Next Frontier Conference 2026';
-        $body = "Dear ".$row2['fullname'].",<br><br>
+        $body = "
+<div style='background:#f5f5f5;padding:30px;font-family:Arial,Helvetica,sans-serif;'>
 
-        Thank you for registering for <strong>Next Frontier Conference 2026</strong>, proudly organized by Jobrole Consulting Limited.<br><br>
+    <div style='max-width:600px;margin:auto;background:#ffffff;border-radius:6px;border:1px solid #e6e6e6;'>
 
-        📍 <strong>Venue:</strong> AGIP Recital Hall, Muson Centre, Onikan, Lagos<br>
-        📅 <strong>Date:</strong> Saturday, September 19, 2026<br>
-        🆔 <strong>Ticket ID:</strong> #".$ticket_id."<br><br>
+        <div style='background:#1f3c88;color:#ffffff;padding:20px;text-align:center;font-size:22px;font-weight:bold;'>
+            Next Frontier Conference 2026
+        </div>
 
+        <div style='padding:25px;font-size:14px;color:#333333;line-height:22px;'>
 
-        We look forward to \"Building the Future\" without boundaries at the Next Frontier Conference 2026.<br><br>
+            Dear ".$row2['fullname'].",<br><br>
 
-        For any questions, feel free to reply to this email.<br><br>
+            Thank you for registering for <strong>Next Frontier Conference 2026</strong>, proudly organized by Jobrole Consulting Limited.<br><br>
 
-        Warm regards,<br>
-        <strong>The Jobrole Consulting Team</strong><br>
-        info@jobroleng.com<br>
-        <a href='https://www.jobroleng.com'>www.jobroleng.com</a><br>
-        ";
+            <strong>Event Details</strong><br>
+            📍 <strong>Venue:</strong> AGIP Recital Hall, Muson Centre, Onikan, Lagos<br>
+            📅 <strong>Date:</strong> Saturday, September 19, 2026<br>
+            🆔 <strong>Ticket ID:</strong> #".$ticket_id."<br><br>
+
+            <div style='text-align:center;margin-top:25px;margin-bottom:25px;'>
+
+                <div style='font-size:16px;font-weight:bold;margin-bottom:10px;'>Your eTicket QR Code</div>
+
+                <img src='".$qr_code_url."' alt='Ticket QR Code' style='width:200px;height:200px;border:1px solid #ddd;padding:10px;background:#ffffff;'>
+
+                <div style='font-size:13px;color:#777;margin-top:10px;'>
+                    Present this QR code at the event entrance for check-in.
+                </div>
+
+            </div>
+
+            Please print this email or have it available on your mobile device when arriving at the venue.<br><br>
+
+            We look forward to <strong>\"Building the Future\"</strong> without boundaries at the Next Frontier Conference 2026.<br><br>
+
+            For any questions, feel free to reply to this email.<br><br>
+
+            Warm regards,<br>
+            <strong>The Jobrole Consulting Team</strong><br>
+            info@jobroleng.com<br>
+            <a href='https://www.jobroleng.com' style='color:#1f3c88;text-decoration:none;'>www.jobroleng.com</a>
+
+        </div>
+
+        <div style='background:#f0f0f0;padding:12px;text-align:center;font-size:12px;color:#666;'>
+            © 2026 Jobrole Consulting Limited
+        </div>
+
+    </div>
+
+</div>
+";
 
              // ✅ Modern PHPMailer usage
         $mail = new PHPMailer(true);
@@ -70,11 +107,11 @@ for($i=0; $i<$num2; $i++)
         $mail->IsSMTP();
         $mail->Port = 465;
         $mail->SMTPAuth = true;
-        $mail->Username='notification@jobroleng.com';
-        $mail->Password = 'LXgrl?qnDt5f~C9E'; // $mail->Password = 'wntl yuzg lirk gvqf';  //oabikay
-        $mail->Host='mail.jobroleng.com';
+        $mail->Username='nextfrontier.conference@jobroleng.com';
+        $mail->Password = 'Aledoy@2024@@!!!!@#'; // $mail->Password = 'wntl yuzg lirk gvqf';  //oabikay
+        $mail->Host='smtppro.zoho.com';
         $mail->SMTPSecure = 'ssl'; 
-        $mail->From = 'notification@jobroleng.com';
+        $mail->From = 'nextfrontier.conference@jobroleng.com';
         $mail->FromName = 'Next Frontier Conference 2026';
 
         // Email Headers

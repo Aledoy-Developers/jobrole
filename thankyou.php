@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/nfc favicon  32x 32.png">
 </head>
+<?php include('analytics.php'); ?>
 <style>
     .custom-select-container {
         position: relative;

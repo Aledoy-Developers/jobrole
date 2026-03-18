@@ -149,6 +149,7 @@
         }
     </style>
 </head>
+<?php include('analytics.php'); ?>
 <body>
     <div class="container">
         <div class="header">

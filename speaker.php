@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/nfc favicon  32x 32.png">
     <!-- <script src="script.js"></script> -->
 </head>
+<?php include('analytics.php'); ?>
 
 <body>
     <!-- Header -->

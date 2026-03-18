@@ -24,6 +24,7 @@ if($_GET['cat'])
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/nfc favicon  32x 32.png">
 </head>
+<?php include('analytics.php'); ?>
 <style>
 .custom-select-container {
     position: relative;
@@ -119,10 +120,12 @@ select {
     for($i=0; $i<$no_att; $i++)
         {
             ?>
-    
+    <?php if($no_att > 1) {
+        ?>
                     <h4>Attendee <?php echo $i+1; ?></h4>
                     <br>
-
+        <?php } ?>
+        
     <div class="mb-3">
         <label for="name" class="form-label">Full Name:</label>
         <input type="text" id="name" name="fullname[]" class="form-control"

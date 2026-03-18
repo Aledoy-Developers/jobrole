@@ -15,6 +15,7 @@ include('conn.php');
     </style>
 
 </head>
+<?php include('analytics.php'); ?>
 
 <body>
     <div style="margin: auto; width:600px; padding:20px; background-color:#fff; text-align: center; margin-top: 50px;">
@@ -61,7 +62,7 @@ include('conn.php');
     function payWithPaystack(e) {
         e.preventDefault();
         let handler = PaystackPop.setup({
-            key: "pk_test_59e6e667d3990cda6c6a6849eb0c8c303cc333fd", // Replace with your public key
+            key: "pk_live_09914a9ba5e76f04a0baaa5db1b4a45958af48f9", // Replace with your public key
             email: document.getElementById("email-address").value,
             amount: document.getElementById("amount").value * 100,
             ref: "" + Math.floor(Math.random() * 1000000000 + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you

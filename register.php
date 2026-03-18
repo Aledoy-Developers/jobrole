@@ -13,6 +13,7 @@
     <!-- <link rel="stylesheet" href=""> -->
     <!-- <script src="script.js"></script> -->
 </head>
+<?php include('analytics.php'); ?>
 <style>
 h1 {
     color: #2c3e50;
