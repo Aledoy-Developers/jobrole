@@ -31,6 +31,7 @@ if ($total > 0) {
         echo '<strong>Position:</strong> ' . htmlspecialchars($row['position']) . '<br>';
         echo '<strong>Attendance:</strong> ' . htmlspecialchars($row['attend']) . '<br>';
         echo '<strong>Category:</strong> ' . htmlspecialchars($row['category']) . '<br>';
+        echo '<strong>Ref Code:</strong> ' . htmlspecialchars($row['ref']) . '<br>';
         echo '<hr>';
         echo '</div>';
     }
