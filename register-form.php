@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 include('conn.php');
 
 if($_GET['cat'])
@@ -180,6 +183,13 @@ select {
                 <option value="Premium Pitch N30,000">Premium Pitch ₦30,000</option> -->
             </select>
         </div>
+    </div>
+
+    
+    <div class="mb-3">
+        <label for="ref" class="form-label">Ref Code:</label>
+        <input type="text" id="ref" name="ref" class="form-control"
+            value="<?php echo $_SESSION['ref']; ?>"  required="required">
     </div>
 
    <!-- ✅ PITCH DECK SECTION

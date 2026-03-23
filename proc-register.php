@@ -1,4 +1,5 @@
 <?php
+session_start();
 error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
 ini_set('display_errors', 1);
 
@@ -24,6 +25,10 @@ $category  = $cat   = $_POST['category'];
 $attend       = $_POST['attend'];
 $pitch_session = $_POST['pitch_session'];
 $no_att = $_POST['no_att'];
+
+$_SESSION['ref'] = $ref = $_POST['ref'];
+
+
 
 $token = date('mi') . rand(100, 999);
 
@@ -54,6 +59,8 @@ for($i=0; $i<$no_att; $i++)
             exit;
         }
 
+        
+
         // if (!preg_match('/^\d{11}$/', $phone[$i])) {
         //     $msg = 'error';
         //     $comment = 'Please enter a valid 11-digit phone number for  attendee '.$y;
@@ -62,10 +69,11 @@ for($i=0; $i<$no_att; $i++)
         // }
 
         // Insert into database securely
-        $stmt = $conn->prepare("INSERT INTO registration (token, fullname, email, phone, organization, position, attend, category) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssssss", $token, $fullname[$i], $email[$i], $phone[$i], $organization[$i], $position[$i], $attend, $category);
+        $stmt = $conn->prepare("INSERT INTO registration (token, fullname, email, phone, organization, position, attend, category, ref) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssssssss", $token, $fullname[$i], $email[$i], $phone[$i], $organization[$i], $position[$i], $attend, $category, $_SESSION['ref']);
 
         $stmt->execute();
+
 
 
 }

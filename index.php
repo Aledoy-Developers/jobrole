@@ -1,3 +1,8 @@
+<?php
+session_start();
+$_SESSION['ref'] = $_GET['ref'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
