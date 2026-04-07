@@ -39,7 +39,7 @@ if($no_att == 1)
         $amount = '10,000';
         $final_amount = 10000;
     }
-    elseif($no_att == 2)
+    elseif($no_att == 3)
         {   
         $amount = '25,000';
         $final_amount = 25000;

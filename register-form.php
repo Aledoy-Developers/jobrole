@@ -189,7 +189,7 @@ select {
     <div class="mb-3">
         <label for="ref" class="form-label">Ref Code:</label>
         <input type="text" id="ref" name="ref" class="form-control"
-            value="<?php echo $_SESSION['ref']; ?>"  required="required">
+            value="<?php echo $_SESSION['ref']; ?>">
     </div>
 
    <!-- ✅ PITCH DECK SECTION
