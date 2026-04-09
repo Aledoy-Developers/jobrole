@@ -36,8 +36,15 @@ $y = $i+1;
 
 if($no_att == 1)
     {
-        $amount = '10,000';
-        $final_amount = 10000;
+        if($category == 'Executive VIP PASS')
+            {
+                $amount = '30,000';
+                $final_amount = 30000;
+            }else{
+                
+                $amount = '10,000';
+                $final_amount = 10000;
+            }
     }
     elseif($no_att == 3)
         {   

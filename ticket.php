@@ -42,7 +42,7 @@
                     <li>Exclusive VIP networking session.</li>
                 </ul>
 
-                <a href="https://forms.gle/t2UwR5RgH1tMZU1AA " class="pitch-btn">
+                <a href="register-form?cat=<?php echo base64_encode('Executive VIP PASS'); ?>&no_att=<?php echo base64_encode(1); ?>" class="pitch-btn">
                     Get My VIP Pass
                 </a>
 
