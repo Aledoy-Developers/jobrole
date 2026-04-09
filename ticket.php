@@ -9,6 +9,52 @@
 </h1>
 </div>
 
+
+<!-- Pitch Showcase Section -->
+<section class="nfc-pitch-section">
+    <div class="container">
+
+        <div class="pitch-wrapper">
+
+            <div class="pitch-badge">Executive</div>
+
+            <div class="pitch-content">
+
+                <h3 class="pitch-label">Executive / VIP Pass</h3>
+
+                <!-- <h2 class="pitch-tagline">“The Stage is Awarded, Not Sold”</h2> -->
+
+                <p class="pitch-description">
+                    For serious growth leaders, founders, and decision-makers seeking deeper access, high-level connections, and a premium conference experience.
+                </p>
+
+                <h3 class="ticket-price">₦30,000</h3>
+
+                <!-- <div class="pitch-status">
+                    APPLICATIONS OPEN — [Closes June 12, 2026]
+                </div> -->
+
+                <ul class="pitch-details">
+                    <li>Reserved front-row seating.</li>
+                    <li>Priority registration (no queues).</li>
+                    <li>VIP access badge.</li>
+                    <li>Meet & greet with speakers.</li>
+                    <li>Exclusive VIP networking session.</li>
+                </ul>
+
+                <a href="https://forms.gle/t2UwR5RgH1tMZU1AA " class="pitch-btn">
+                    Get My VIP Pass
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
     <div class="tickets-row">
 
       <!-- CARD 1 -->
