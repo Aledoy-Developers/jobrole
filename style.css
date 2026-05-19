@@ -73,6 +73,7 @@ h2 {
 }
 
 .pitch-wrapper {
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
     border: 1px solid #444;
@@ -80,6 +81,11 @@ h2 {
     border-radius: 10px;
     position: relative;
     background: transparent;
+    box-sizing: border-box;
+}
+
+.pitch-content {
+    width: 100%;
 }
 
 .pitch-badge {
@@ -109,6 +115,7 @@ h2 {
     font-weight: 700;
     font-size: 36px;
     margin-bottom: 25px;
+    line-height: 1.1;
 }
 
 .pitch-description {
@@ -117,7 +124,7 @@ h2 {
     line-height: 1.7;
     color: #ccc;
     margin-bottom: 30px;
-    max-width: 700px;
+    max-width: 100%;
 }
 
 .pitch-price {
@@ -536,7 +543,6 @@ nav ul li:last-child {
 
 .tickets-row {
   display: flex;
-  /* gap: 25px; */
   justify-content: center;
   align-items: stretch;
   flex-wrap: nowrap;
@@ -556,6 +562,12 @@ nav ul li:last-child {
   transition: 0.3s ease;
 }
 
+.ticket-card p {
+  color: #ccc;
+  margin-bottom: 16px;
+  line-height: 1.75;
+}
+
 .ticket-card ul {
   list-style: none;
   padding: 0;
@@ -570,7 +582,6 @@ nav ul li:last-child {
 
 .tier-label {
   font-size: 17px;
-  /* text-transform: lowercase !important; */
   letter-spacing: 1px;
   color: #ffa500;
 }
@@ -578,8 +589,7 @@ nav ul li:last-child {
 .ticket-price {
   font-size: 38px;
   font-weight: 700;
-  color: #FFA500
-;
+  color: #FFA500;
   margin: 10px 0;
 }
 
@@ -592,14 +602,19 @@ nav ul li:last-child {
   margin-bottom: 10px;
 }
 
+.btn-outline-ticket,
+.btn-gold-ticket {
+  border-radius: 30px;
+  margin-top: auto;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
 .btn-outline-ticket {
   border: 1px solid #fff;
   color: #fff;
-  padding: 12px;
-  border-radius: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin-top: auto;
+  background: transparent;
 }
 
 .btn-outline-ticket:hover {
@@ -610,11 +625,6 @@ nav ul li:last-child {
 .btn-gold-ticket {
   background: #FFA500;
   color: #000;
-  padding: 12px;
-  text-align: center;
-  border-radius: 30px;
-  text-decoration: none;
-  margin-top: auto;
   font-weight: 600;
 }
 
@@ -643,7 +653,6 @@ nav ul li:last-child {
   padding: 4px 10px;
   font-size: 11px;
 }
-
 
 .price-wrapper {
     margin-bottom: 10px;
@@ -796,13 +805,119 @@ nav ul li:last-child {
 
 
 @media (max-width: 992px) {
+  .nfc-pitch-section {
+    padding: 56px 20px;
+  }
+
+  .pitch-wrapper {
+    padding: 42px 22px;
+    border-radius: 14px;
+  }
+
+  .pitch-tagline {
+    font-size: 30px;
+  }
+
+  .pitch-description {
+    margin-bottom: 24px;
+  }
+
+  .tickets-section {
+    padding: 48px 20px;
+  }
+
   .tickets-row {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
   }
 
   .ticket-card {
     max-width: 320px;
+    padding: 28px 20px;
+  }
+
+  .ticket-card ul {
+    margin: 18px 0;
+  }
+
+  .ticket-card ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nfc-pitch-section {
+    padding: 46px 16px;
+  }
+
+  .pitch-wrapper {
+    padding: 30px 16px;
+  }
+
+  .pitch-badge {
+    left: 16px;
+  }
+
+  .pitch-tagline {
+    font-size: 26px;
+  }
+
+  .pitch-description,
+  .ticket-card p {
+    font-size: 15px;
+  }
+
+  .ticket-card {
+    padding: 24px 16px;
+    max-width: 100%;
+  }
+
+  .btn-outline-ticket,
+  .btn-gold-ticket {
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nfc-pitch-section {
+    padding: 34px 14px;
+  }
+
+  .pitch-wrapper {
+    padding: 24px 14px;
+  }
+
+  .pitch-badge {
+    left: 14px;
+  }
+
+  .pitch-tagline {
+    font-size: 22px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .ticket-card {
+    border-radius: 14px;
+    padding: 20px 16px;
+  }
+
+  .ticket-card ul li {
+    font-size: 13px;
+  }
+
+  .badge-top {
+    top: -8px;
+    font-size: 9px;
+    padding: 4px 10px;
   }
 }
 

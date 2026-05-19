@@ -1,4 +1,8 @@
 <section class="tickets-section py-5">
+
+
+
+  
   <div class="">
 
     <div class="tickets-header text-center mb-5">
@@ -22,7 +26,7 @@
 
                 <h3 class="pitch-label">Executive / VIP Pass</h3>
 
-                <!-- <h2 class="pitch-tagline">“The Stage is Awarded, Not Sold”</h2> -->
+               
 
                 <p class="pitch-description">
                     For serious growth leaders, founders, and decision-makers seeking deeper access, high-level connections, and a premium conference experience.
@@ -30,9 +34,7 @@
 
                 <h3 class="ticket-price">₦30,000</h3>
 
-                <!-- <div class="pitch-status">
-                    APPLICATIONS OPEN — [Closes June 12, 2026]
-                </div> -->
+               
 
                 <ul class="pitch-details">
                     <li>Reserved front-row seating.</li>
@@ -59,44 +61,49 @@
 
       <!-- CARD 1 -->
       <div class="ticket-card">
-        <h1 class="tier-label">BUILDER'S PASS (Individual)</h1> <br>
-        <h4 class="ticket-tagline">For Founders & Professionals</h4>
-        <p>
-          You are here to upgrade your skills, find your next big opportunity, and connect with the people shaping the market.
-        </p>
-        <h3 class="ticket-price">₦10,000</h3>
+        <h1 class="tier-label">Free Community Pass </h1> <br>
+        <h4 class="ticket-tagline">For Students & Early career professionals</h4>
+
+        <div class="pitch-price">
+                    FREE  Admission 
+                </div>
         
+       <h4>Access Includes:</h4>
         <ul>
-          <li>Full access to all Keynotes and Masterclass sessions</li>
-          <li>Entry to the Networking & Exhibition area</li>
-          <li>The exact blueprints and tools to grow your career or business</li>
+          <li>General admission</li>
+          <li>Community networking</li>
+          <li>Access to exhibition/networking area</li>
+          <li>General seating</li>
+          <li>No gift package </li>
+          <li>No VIP networking</li>
+          <li>No certificate (optional)</li>
+         
         </ul>
-        <a href="register-form?cat=<?php echo base64_encode('BUILDERS PASS'); ?>&no_att=<?php echo base64_encode(1); ?>" class="btn-outline-ticket">Get My Builder's Pass</a>
+        <a href="register-form?cat=<?php echo base64_encode('BUILDERS PASS'); ?>&no_att=<?php echo base64_encode(1); ?>" class="btn-outline-ticket">Get My Community Pass</a>
       </div>
 
       <!-- CARD 2 FEATURED -->
       <div class="ticket-card featured">
         <div class="badge-top">BEST VALUE</div>
-        <p class="tier-label">STRATEGY SQUAD: SME  (Team of 3)</p> <br>
-        <h4 class="ticket-tagline">For Small Business Owners & Core Startup Teams</h4>
+        <p class="tier-label">BUILDER'S PASS (Individual)</p> <br>
+        <h4 class="ticket-tagline">For Founders & Professionals</h4>
         <p>
-          Growth is a team sport. Bring your co-founders or core team members so you can learn together and execute faster.
+          You are here to upgrade your skills, find your next big opportunity, and connect with the people shaping the market.
         </p>
          <div class="price-wrapper">
-        <span class="current-price">₦25,000</span>
-        <span class="old-price">₦30,000</span>
+        <h3 class="ticket-price">₦10,000</h3>
     </div>
 
     <div class="savings-badge">
-        You save ₦5,000 — 16.6% off
+        <!-- You save ₦5,000 — 16.6% off -->
     </div>
         
-        <ul>
-          <li>3 Builder's Passes (one per team member)</li>
-          <li>Priority Access — skip the regular registration queue</li>
-          <li>Full access to all sessions, networking, and exhibition areas</li>
+         <ul>
+          <li>Full access to all Keynotes and Masterclass sessions</li>
+          <li>Entry to the Networking & Exhibition area</li>
+          <li>The exact blueprints and tools to grow your career or business</li>
         </ul>
-        <a href="register-form?cat=<?php echo base64_encode('STRATEGY SQUAD: SME'); ?>&no_att=<?php echo base64_encode(3); ?>" class="btn-gold-ticket">Get Squad Pass</a>
+        <a href="register-form?cat=<?php echo base64_encode('BUILDERS PASS'); ?>&no_att=<?php echo base64_encode(1); ?>" class="btn-gold-ticket">Get My Builder's Pass</a>
       </div>
 
       <!-- CARD 3 -->
@@ -123,22 +130,7 @@
         <a href="register-form?cat=<?php echo base64_encode('STRATEGY SQUAD: CORPORATE'); ?>&no_att=<?php echo base64_encode(5); ?>" class="btn-outline-ticket"> Register My Team</a>
       </div>
 
-      <!-- CARD 4 -->
-      <!-- <div class="ticket-card">
-        <div class="badge-outline">APPLICATION ONLY</div>
-        <p class="tier-label">THE PITCH SHOWCASE</p> <br>
-        <h4 class="ticket-tagline">The Stage is Awarded, Not Sold</h4>
-        <p class="ticket-subtitle">This is not a ticket — it is a launchpad. We are looking for the boldest innovations solving critical African challenges. Selected founders will present live to a jury of VCs, Operators, and Ecosystem Leaders.</p>
-
-        <h3 class="ticket-price free">FREE</h3>
-        <p>Application only. No payment required.</p>
-        <ul>
-          <li>Selection is strict and merit-based. Ticket holders get no advantage.</li>
-          <li>Goal: Secure the capital and partners to build your future.</li>
-        
-        </ul>
-        <a href="#" class="btn-outline-ticket">Notify Me When Applications Open </a>
-      </div> -->
+     
 
     </div>
   </div>
