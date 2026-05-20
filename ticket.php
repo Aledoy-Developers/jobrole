@@ -80,7 +80,7 @@
           <li>No certificate (optional)</li>
          
         </ul>
-        <a href="register-form?cat=<?php echo base64_encode('BUILDERS PASS'); ?>&no_att=<?php echo base64_encode(1); ?>" class="btn-outline-ticket">Get My Community Pass</a>
+        <a href="register-form?cat=<?php echo base64_encode('COMMUNITY PASS'); ?>&no_att=<?php echo base64_encode(1); ?>" class="btn-outline-ticket">Get My Community Pass</a>
       </div>
 
       <!-- CARD 2 FEATURED -->

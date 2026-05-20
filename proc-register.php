@@ -40,17 +40,16 @@ if($no_att == 1)
             {
                 $amount = '30,000';
                 $final_amount = 30000;
-            }else{
-                
+            }elseif($category == 'BUILDERS PASS')
+            {
                 $amount = '10,000';
                 $final_amount = 10000;
             }
+            else{
+                $amount = '0';
+                $final_amount = 0;
+            }
     }
-    elseif($no_att == 3)
-        {   
-        $amount = '25,000';
-        $final_amount = 25000;
-        }
     else{   
     $amount = '45,000';
     $final_amount = 45000;
@@ -84,6 +83,13 @@ for($i=0; $i<$no_att; $i++)
 
 
 }
+
+IF($final_amount == 0)
+    {
+        $reg_reference = 'F'.date('dis').rand(100, 999);
+        header("Location: payment-complete.php?em=".base64_encode($email[0])."&name=".base64_encode($fullname[0])."&p=".base64_encode($phone[0])."&s=".base64_encode($pitch_session)."&token=".$token.'&reference='.$reg_reference);
+        exit;
+    }
 
 // Build email content
 header("Location: payment.php?e=".base64_encode($email[0])."&nm=".base64_encode($fullname[0])."&ph=".base64_encode($phone[0])."&am=".base64_encode($final_amount)."&token=".$token);
