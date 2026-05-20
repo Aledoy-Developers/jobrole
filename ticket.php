@@ -38,10 +38,11 @@
 
                 <ul class="pitch-details">
                     <li>Reserved front-row seating.</li>
-                    <li>Priority registration (no queues).</li>
+                    <li>Five minutes speaking opportunity</li>
+                    <li>Executive gift package</li>
+                    <li>Priority registration (no queues)..</li>
                     <li>VIP access badge.</li>
-                    <li>Meet & greet with speakers.</li>
-                    <li>Exclusive VIP networking session.</li>
+                    <li>Executive access to speakers and investors.</li>
                 </ul>
 
                 <a href="register-form?cat=<?php echo base64_encode('Executive VIP PASS'); ?>&no_att=<?php echo base64_encode(1); ?>" class="pitch-btn">
@@ -86,7 +87,7 @@
       <div class="ticket-card featured">
         <div class="badge-top">BEST VALUE</div>
         <p class="tier-label">BUILDER'S PASS (Individual)</p> <br>
-        <h4 class="ticket-tagline">For Founders & Professionals</h4>
+        <h4 class="ticket-tagline">For Individuals and SMEs</h4>
         <p>
           You are here to upgrade your skills, find your next big opportunity, and connect with the people shaping the market.
         </p>
@@ -102,6 +103,7 @@
           <li>Full access to all Keynotes and Masterclass sessions</li>
           <li>Entry to the Networking & Exhibition area</li>
           <li>The exact blueprints and tools to grow your career or business</li>
+          <li>Get digital certificate of attendance</li>
         </ul>
         <a href="register-form?cat=<?php echo base64_encode('BUILDERS PASS'); ?>&no_att=<?php echo base64_encode(1); ?>" class="btn-gold-ticket">Get My Builder's Pass</a>
       </div>
@@ -123,9 +125,12 @@
     </div>
         
         <ul>
-          <li>5 Builder's Passes (one per team member)</li>
-          <li>Priority Access — fast-track corporate check-in</li>
+          <li>5 standard tickets (one per team member)</li>
+          <li>Priority Access fast-track corporate check-in</li>
           <li>Full access to all sessions, networking, and exhibition areas</li>
+          <li>Free exhibition </li>
+          <li>The exact blueprints and tools to grow your career or business</li>
+          <li>Get digital certificate of attendance</li>
         </ul>
         <a href="register-form?cat=<?php echo base64_encode('STRATEGY SQUAD: CORPORATE'); ?>&no_att=<?php echo base64_encode(5); ?>" class="btn-outline-ticket"> Register My Team</a>
       </div>
